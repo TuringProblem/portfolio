@@ -1,0 +1,219 @@
+:root {
+    /* Default theme (Arch) */
+    --bg-primary: #1a1b26;
+    --bg-secondary: #24283b;
+    --text-primary: #a9b1d6;
+    --text-secondary: #565f89;
+    --accent: #7aa2f7;
+    --border: #414868;
+    --active-bg: #7aa2f7;
+    --active-text: #1a1b26;
+    --window-controls-display: flex;
+    --terminal-font: 'JetBrains Mono', monospace;
+    --terminal-radius: 8px;
+    --header-bg: #24283b;
+}
+
+/* macOS Theme */
+[data-theme="mac"] {
+    --bg-primary: #2c2c2c;
+    --bg-secondary: #1e1e1e;
+    --text-primary: #ffffff;
+    --text-secondary: #a7a7a7;
+    --accent: #0fb9b1;
+    --border: #404040;
+    --active-bg: #0fb9b1;
+    --active-text: #ffffff;
+    --window-controls-display: flex;
+    --terminal-font: 'SF Mono', 'JetBrains Mono', monospace;
+    --terminal-radius: 6px;
+    --header-bg: #3a3a3a;
+}
+
+/* Windows Theme */
+[data-theme="windows"] {
+    --bg-primary: #012456;
+    --bg-secondary: #012456;
+    --text-primary: #ffffff;
+    --text-secondary: #b6b6b6;
+    --accent: #ffff00;
+    --border: #223c6f;
+    --active-bg: #223c6f;
+    --active-text: #ffffff;
+    --window-controls-display: none;
+    --terminal-font: 'Cascadia Code', 'Consolas', monospace;
+    --terminal-radius: 0;
+    --header-bg: #012456;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--terminal-font);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.terminal-container {
+    margin: 2rem;
+    height: calc(100vh - 4rem);
+    border: 1px solid var(--border);
+    border-radius: var(--terminal-radius);
+    overflow: hidden;
+    transition: border-radius 0.3s;
+}
+
+.terminal-header {
+    background-color: var(--header-bg);
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    transition: background-color 0.3s;
+}
+
+.window-controls {
+    display: var(--window-controls-display);
+    gap: 0.5rem;
+}
+
+.control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.close { background-color: #ff5f57; }
+.minimize { background-color: #febc2e; }
+.maximize { background-color: #28c841; }
+
+.terminal-content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    height: calc(100% - 35px);
+}
+
+.main-content {
+    border-right: 1px solid var(--border);
+    padding: 1rem;
+    overflow-y: auto;
+    transition: background-color 0.3s;
+}
+
+.side-panel {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-secondary);
+    transition: background-color 0.3s;
+}
+
+.system-info {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.os-selector {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.os-option {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.os-option.active {
+    background-color: var(--active-bg);
+    color: var(--active-text);
+}
+
+.os-option:hover:not(.active) {
+    background-color: var(--border);
+}
+
+.info-label {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.project-list {
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.project-item {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.project-item:hover {
+    background-color: var(--bg-secondary);
+}
+
+.project-item.active {
+    background-color: var(--bg-secondary);
+    border-left: 2px solid var(--accent);
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background-color: var(--text-primary);
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* OS-specific prompt styles */
+[data-theme="arch"] #user-name::before {
+    content: "➜ ";
+    color: var(--accent);
+}
+
+[data-theme="mac"] #user-name::before {
+    content: "% ";
+    color: var(--accent);
+}
+
+[data-theme="windows"] #user-name::before {
+    content: "PS ";
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .terminal-content {
+        grid-template-columns: 1fr;
+    }
+
+    .side-panel {
+        display: none;
+    }
+
+    .side-panel.active {
+        display: block;
+        position: fixed;
+        top: 35px;
+        right: 2rem;
+        bottom: 2rem;
+        width: 300px;
+        background-color: var(--bg-primary);
+        border: 1px solid var(--border);
+        border-top: none;
+    }
+}
