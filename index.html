@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Portfolio</title>
+    <style>
+        :root {
+            --bg-primary: #1a1b26;
+            --bg-secondary: #24283b;
+            --text-primary: #a9b1d6;
+            --text-secondary: #565f89;
+            --accent: #7aa2f7;
+            --border: #414868;
+            --active-bg: #7aa2f7;
+            --active-text: #1a1b26;
+            --arch-bg: #7aa2f7;
+            --arch-text: #000000;
+            --mac-bg: #414868;
+            --mac-text: #ffffff;
+            --windows-bg: #82eefd;
+            --windows-text: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .terminal-container {
+            margin: 2rem;
+            height: calc(100vh - 4rem);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .terminal-header {
+            background-color: var(--bg-secondary);
+            padding: 0.5rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .window-controls {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .control {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .close { background-color: #ff5f57; }
+        .minimize { background-color: #febc2e; }
+        .maximize { background-color: #28c841; }
+
+        .terminal-content {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            height: calc(100% - 35px);
+        }
+
+        .main-content {
+            border-right: 1px solid var(--border);
+            padding: 1rem;
+            overflow-y: auto;
+        }
+
+        .side-panel {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .system-info {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .os-selector {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .os-option {
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .os-option[data-os="arch"].active {
+          background-color: var(--arch-bg);
+          color: var(--arch-text);
+        }
+
+        .os-option[data-os="mac"].active {
+          background-color: var(--mac-bg);
+          color: var(--mac-text);
+        }
+
+        .os-option[data-os="windows"].active {
+          background-color: var(--windows-bg);
+          color: var(--windows-text);
+        }
+
+        .os-option[data-os="arch"]:hover {
+          background-color: color-mix(in srgb, var(--arch-bg) 70%, transparent);
+        }
+
+        .os-option[data-os="mac"]:hover {
+          background-color: color-mix(in srgb, var(--mac-bg) 70%, transparent);
+        }
+
+        .os-option[data-os="windows"]:hover {
+          background-color: color-mix(in srgb, var(--windows-bg) 70%, transparent);
+
+}        .info-label {
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .info-content {
+
+        }
+        .info-section {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            overflow-wrap: break-word;
+        }
+
+        .social-links {
+            margin-top: auto;
+            padding-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--accent);
+            text-decoration: none;
+            margin-right: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .social-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .project-list {
+            padding: 1rem;
+            overflow-y: auto;
+        }
+
+        .project-item {
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        .project-item:hover {
+            background-color: var(--bg-secondary);
+        }
+
+        .project-item.active {
+            background-color: var(--bg-secondary);
+            border-left: 2px solid var(--accent);
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 16px;
+            background-color: var(--text-primary);
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .terminal-content {
+                grid-template-columns: 1fr;
+            }
+
+            .side-panel {
+                display: none;
+            }
+
+            .side-panel.active {
+                display: block;
+                position: fixed;
+                top: 35px;
+                right: 2rem;
+                bottom: 2rem;
+                width: 300px;
+                background-color: var(--bg-primary);
+                border: 1px solid var(--border);
+                border-top: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <div class="window-controls">
+                <div class="control close"></div>
+                <div class="control minimize"></div>
+                <div class="control maximize"></div>
+            </div>
+            <span id="user-name"><a href="https://github.com/TuringProblem">portfolio@Override: ~</a></span>
+            <span></span>
+        </div>
+        
+        <div class="terminal-content">
+            <main class="main-content">
+                <div id="terminal-output">
+                    Welcome to the portfolio terminal...
+                    <span class="cursor"></span>
+                </div>
+            </main>
+            
+            <aside class="side-panel">
+                <div class="system-info">
+                    <div class="os-selector">
+                        <div class="os-option active" data-os="arch">Arch</div>
+                        <div class="os-option" data-os="mac">macOS</div>
+                        <div class="os-option" data-os="windows">Windows</div>
+                    </div>
+                    <div class="info-content">
+                        <!-- This will be populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="project-list">
+                    <!-- Project list content -->
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script>
+        // OS-specific information
+        const osData = {
+            arch: {
+                experience: "2 years",
+                skills: ["Bash", "Python", "Vim", "C"],
+                tools: ["i3wm", "Gnome", "Kitty"],
+                proficiency: "Intermediate Linux User"
+            },
+            mac: {
+                experience: "10 years",
+                skills: ["Swift", "Xcode", "Homebrew"],
+                tools: ["iTerm2", "Kitty", "NeoVim", "FL Studio"],
+                proficiency: "Advanced macOS User"
+            },
+            windows: {
+                experience: "15 years+",
+                skills: [".NET", "PowerShell", "WSL", "O365", "Azure", "Java"],
+                tools: ["NeoVim", "Windows Terminal", "Active Directory"],
+                proficiency: "Advanced Windows User"
+            }
+        };
+
+        class TerminalPortfolio {
+            constructor() {
+                this.currentProject = null;
+                this.currentOS = 'arch';
+                this.terminalOutput = document.getElementById('terminal-output');
+                this.init();
+            }
+
+            init() {
+                this.setupProjects();
+                this.updateSystemInfo(this.currentOS);
+                this.setupEventListeners();
+            }
+
+            setupProjects() {
+                const projectList = document.querySelector('.project-list');
+                const projects = [
+                    { name: 'Project1.md', tech: 'C', date: '2024' },
+                    { name: 'Project2.md', tech: 'Java', date: '2023' },
+                    { name: 'Project3.md', tech: 'Powershell/C#/Bash', date: '2023' }
+                ];
+
+                projects.forEach(project => {
+                    const projectElement = this.createProjectElement(project);
+                    projectList.appendChild(projectElement);
+                });
+            }
+
+            updateSystemInfo(os) {
+                const infoContent = document.querySelector('.info-content');
+                const osInfo = osData[os];
+                
+                infoContent.innerHTML = `
+                    <div class="info-section">
+                        <span class="info-label">Name:</span> Override
+                    </div>
+                    <div class="info-section">
+                        <span class="info-label">Experience:</span> ${osInfo.experience}
+                    </div>
+                    <div class="info-section">
+                        <span class="info-label">Proficiency:</span> ${osInfo.proficiency}
+                    </div>
+                    <div class="info-section">
+                        <span class="info-label">Skills:</span> ${osInfo.skills.join(', ')}
+                    </div>
+                    <div class="info-section">
+                        <span class="info-label">Tools:</span> ${osInfo.tools.join(', ')}
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/TuringProblem" target="_blank">GitHub</a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                        <a href="mailto:your@email.com">Email</a>
+                    </div>
+                `;
+            }
+
+            createProjectElement(project) {
+                const div = document.createElement('div');
+                div.className = 'project-item';
+                div.innerHTML = `
+                    <div>${project.name}</div>
+                    <small style="color: var(--text-secondary)">
+                        ${project.tech} • ${project.date}
+                    </small>
+                `;
+                
+                div.addEventListener('click', () => this.selectProject(project));
+                return div;
+            }
+
+            setupEventListeners() {
+                document.querySelectorAll('.os-option').forEach(option => {
+                    option.addEventListener('click', () => {
+                        // Update active state
+                        document.querySelectorAll('.os-option').forEach(opt => {
+                            opt.classList.remove('active');
+                        });
+                        option.classList.add('active');
+                        
+                        // Update system info
+                        const os = option.dataset.os;
+                        this.currentOS = os;
+                        this.updateSystemInfo(os);
+                    });
+                });
+            }
+
+            selectProject(project) {
+                this.currentProject = project;
+                this.typeText(`Loading ${project.name}...`);
+            }
+
+            async typeText(text, speed = 50) {
+                this.terminalOutput.innerHTML = '';
+                for (let char of text) {
+                    await new Promise(resolve => setTimeout(resolve, speed));
+                    this.terminalOutput.innerHTML += char;
+                }
+                this.terminalOutput.innerHTML += '<span class="cursor"></span>';
+            }
+        }
+
+        // Initialize the terminal
+        document.addEventListener('DOMContentLoaded', () => {
+            const terminal = new TerminalPortfolio();
+        });
+    </script>
+</body>
+</html>
