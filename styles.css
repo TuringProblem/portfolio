@@ -1,7 +1,7 @@
 :root {
     /* Default theme (Arch) */
     --bg-primary: #1a1b26;
-    --bg-secondary: #24283b;
+    --bg-secondary: rgba(36,40,59, 0.3);
     --text-primary: #a9b1d6;
     --text-secondary: #565f89;
     --accent: #7aa2f7;
@@ -9,7 +9,7 @@
     --active-bg: #7aa2f7;
     --active-text: #1a1b26;
     --window-controls-display: flex;
-    --terminal-font: 'JetBrains Mono', monospace;
+    --terminal-font: 'Comic Code', monospace;
     --terminal-radius: 8px;
     --header-bg: #24283b;
 }
@@ -17,7 +17,7 @@
 /* macOS Theme */
 [data-theme="mac"] {
     --bg-primary: #2c2c2c;
-    --bg-secondary: #1e1e1e;
+    --bg-secondary: rgba(100, 100, 100, 0.2);
     --text-primary: #ffffff;
     --text-secondary: #a7a7a7;
     --accent: #0fb9b1;
@@ -33,7 +33,7 @@
 /* Windows Theme */
 [data-theme="windows"] {
     --bg-primary: #012456;
-    --bg-secondary: #012456;
+    --bg-secondary: rgba(255, 255, 255, 0.3);
     --text-primary: #ffffff;
     --text-secondary: #b6b6b6;
     --accent: #ffff00;
@@ -161,6 +161,7 @@ body {
 
 .project-item:hover {
     background-color: var(--bg-secondary);
+    box-shadow: 0 0 20px var(--accent);
 }
 
 .project-item.active {
@@ -176,8 +177,55 @@ body {
     animation: blink 1s step-end infinite;
 }
 
+.code-block {
+    background-color: var(--bg-secondary);
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    white-space: pre-wrap;
+    color: var(--text-primary);
+}
+
+.md-heading {
+    color: var(--accent);
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+#terminal-output {
+    white-space: pre-wrap;
+    font-family: var(--terminal-font);
+}
+
 @keyframes blink {
     50% { opacity: 0; }
+}
+
+.social-links a[href*="github"] {
+  color: ;
+}
+
+.social-links a[href*="linkedin"] {
+  color: #f85149;
+}
+
+.social-links a[href*="mailto"] {
+  color: #f85149;
+}
+
+[data-theme="arch"] .social-links a:hover { 
+  background-color: color-mix(in srgb, var(--accent) 15%, transparent);
+  border-color: var(--accent);
+  box-shadow: 0 0 10px var(--text-primary);
+}
+
+[data-theme="mac"] .social-links a:hover { 
+
+}
+
+[data-theme="windows"] .social-links a:hover { 
+
 }
 
 /* OS-specific prompt styles */
