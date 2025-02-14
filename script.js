@@ -38,9 +38,9 @@ class TerminalPortfolio {
     setupProjects() {
         const projectList = document.querySelector('.project-list');
         const projects = [
-            { name: 'Project1.md', tech: 'C', date: '2024' },
-            { name: 'Project2.md', tech: 'Java', date: '2023' },
-            { name: 'Project3.md', tech: 'Powershell/C#/Bash', date: '2023' }
+            { name: 'Deej', tech: 'C', date: '2024 - Current' },
+            { name: 'TimeHack', tech: 'Java', date: '2023 - 2024' },
+            { name: 'HUT (Helpdesk Utility Tool)', tech: 'Powershell/C#', date: '2024 - Current' }
         ];
 
         projects.forEach(project => {
@@ -139,7 +139,7 @@ class TerminalPortfolio {
         this.terminalOutput.innerHTML = '';
         
         const mockMarkdown = {
-            'Project1.md': `
+            'Deej': `
          ____  ___________     __
        / ** \\/ **__/ ____/    / /
       / / / / **/ / **/ __   / / 
@@ -222,7 +222,7 @@ void setupModes() {
     registerMode(VISUAL_MODE, 'v');
 }
 \`\`\``,
-            'Project2.md': `# Java Application
+            'TimeHack': `# Java Application
 \`\`\`java
 public class Main {
     public static void main(String[] args) {
@@ -230,7 +230,7 @@ public class Main {
     }
 }
 \`\`\``,
-            'Project3.md': `# Script Collection
+            'HUT (Helpdesk Utility Tool)': `# Script Collection
 \`\`\`powershell
 Write-Host "Hello from PowerShell"
 \`\`\`

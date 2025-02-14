@@ -33,7 +33,7 @@
 /* Windows Theme */
 [data-theme="windows"] {
     --bg-primary: #012456;
-    --bg-secondary: rgba(255, 255, 255, 0.3);
+    --bg-secondary: rgba(255, 255, 255, 0.2);
     --text-primary: #ffffff;
     --text-secondary: #b6b6b6;
     --accent: #ffff00;
@@ -133,12 +133,18 @@ body {
 }
 
 .os-option.active {
+
+    transform: translateY(-5px);
     background-color: var(--active-bg);
     color: var(--active-text);
+    box-shadow: 0 0 20px var(--accent);
+    transition: transform 0.2s ease;
 }
 
 .os-option:hover:not(.active) {
+    transform: translateY(-5px);
     background-color: var(--border);
+    transition: transform 0.2s ease;
 }
 
 .info-label {
@@ -156,10 +162,11 @@ body {
     margin-bottom: 0.5rem;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.2s;
+    transition: transform 0.2s ease, background-color 0.2s;
 }
 
 .project-item:hover {
+    transform: translateY(-5px);
     background-color: var(--bg-secondary);
     box-shadow: 0 0 20px var(--accent);
 }
@@ -167,6 +174,7 @@ body {
 .project-item.active {
     background-color: var(--bg-secondary);
     border-left: 2px solid var(--accent);
+    box-shadow: 0 0 20px var(--accent);
 }
 
 .cursor {
@@ -202,16 +210,19 @@ body {
     50% { opacity: 0; }
 }
 
+.social-links.active {
+  transform: translateY(2px);
+}
 .social-links a[href*="github"] {
-  color: ;
+  color: var(--accent);
 }
 
 .social-links a[href*="linkedin"] {
-  color: #f85149;
+  color: var(--accent);
 }
 
 .social-links a[href*="mailto"] {
-  color: #f85149;
+  color: var(--accent);
 }
 
 [data-theme="arch"] .social-links a:hover { 
@@ -221,11 +232,15 @@ body {
 }
 
 [data-theme="mac"] .social-links a:hover { 
-
+  background-color: color-mix(in srgb, var(--accent) 15%, transparent);
+  border-color: var(--accent);
+  box-shadow: 0 0 10px var(--text-primary);
 }
 
 [data-theme="windows"] .social-links a:hover { 
-
+  background-color: color-mix(in srgb, var(--accent) 15%, transparent);
+  border-color: var(--accent);
+  box-shadow: 0 0 10px var(--text-primary);
 }
 
 /* OS-specific prompt styles */
