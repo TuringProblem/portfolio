@@ -1,18 +1,14 @@
-import { ThemeToggle } from './components/ThemeToggle';
-import { IntroButton } from './components/buttons';
+import { Routes, Route } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { Introduction } from './pages/Introduction';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div style={{ position: 'absolute', top: '20px', right: '20px' }}>
-          <ThemeToggle />
-        </div>
-        <h1>My Portfolio</h1>
-        <IntroButton />
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/intro" element={<Introduction />} />
+    </Routes>
   );
 }
 
