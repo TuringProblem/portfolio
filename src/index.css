@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom CSS variables and styles will still work with Tailwind */
+/* The styles.css file will be imported after this, so your custom styles take precedence */
+
