@@ -1,48 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terminal Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body data-theme="arch">
-    <div class="terminal-container">
-        <div class="terminal-header">
-            <div class="window-controls">
-                <div class="control close"></div>
-                <div class="control minimize"></div>
-                <div class="control maximize"></div>
-            </div>
-            <span id="user-name"><a href="https://github.com/TuringProblem">portfolio@Override: ~</a></span>
-            <span></span>
-        </div>
-        
-        <div class="terminal-content">
-            <main class="main-content">
-                <div id="terminal-output">
-                    Welcome to the portfolio terminal...
-                    <span class="cursor"></span>
-                </div>
-            </main>
-            
-            <aside class="side-panel">
-                <div class="system-info">
-                    <div class="os-selector">
-                        <div class="os-option active" data-os="arch">Arch</div>
-                        <div class="os-option" data-os="mac">macOS</div>
-                        <div class="os-option" data-os="windows">Windows</div>
-                    </div>
-                    <div class="info-content">
-                        <!-- This will be populated by JavaScript -->
-                    </div>
-                </div>
-                <div class="project-list">
-                    <!-- Project list content -->
-                </div>
-            </aside>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
