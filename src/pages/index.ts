@@ -1,3 +1,3 @@
-export { Home } from './Home';
-export { Introduction } from './Introduction';
+export * from './Home';
+export * from './Introduction';
 
