@@ -34,6 +34,7 @@
     --text-primary: #a9b1d6;
     --text-secondary: #565f89;
     --accent: #7aa2f7;
+    --back: rgba(255, 255, 255, 0.1);
     --border: #414868;
     --active-bg: #7aa2f7;
     --active-text: #1a1b26;

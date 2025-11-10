@@ -9,7 +9,7 @@ export const Home: React.FC = () => {
           <ThemeToggle />
         </div>
         <div className="gap-10">
-          <h1>My Portfolio</h1>
+          <h1 className="">My Portfolio</h1>
           <IntroButton />
         </div>
       </header>
