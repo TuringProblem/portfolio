@@ -1,6 +1,7 @@
 import { BreadcrumbButton } from '../../components/buttons/breadcrumb';
 import { ThemeToggle } from '../../components/ThemeToggle';
 import { Download, Linkedin, Github, Twitter } from 'lucide-react';
+import { MainCard } from '../../components/cards';
 
 
 const GITHUB_PROFILE = "https://github.com/TuringProblem";
@@ -31,6 +32,8 @@ export const Introduction: React.FC = () => {
 
         <div className="flex-col bg-[var(--bg-secondary)]]] ">
 
+          {/* I'm going to break this up into a component so its cleaner to read */}
+
           <div className="py-10 flex justify-between">
             <h1 className="text-4xl min-w-[250px] max-w-[300px] font-bold text-[var(--text-primary)] flex justify-between items-center">
               Welcome! 👋
@@ -56,9 +59,15 @@ export const Introduction: React.FC = () => {
               </div>
             </div>
 
-            <img src="https://media.giphy.com/media/l0MYd5o7l9g8o/giphy.gif" alt="gif" className="w-full rounded-full max-w-[150px] max-h-[150px]" />
+            <img src="https://i.imgur.com/Ofi28uY.gif" alt="gif" className="w-full rounded-full max-w-[175px] max-h-[175px]" />
           </div>
+
+
           <div className="text-[var(--text-secondary)]">
+            <MainCard title="Hello" className="">
+              yo
+            </MainCard>
+
             <div className="max-w-[75vw]">
               This is my portfolio bitch, welcome to this place.
             </div>
