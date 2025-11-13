@@ -8,8 +8,18 @@ interface MainCardProps {
 }
 
 export const MainCard: React.FC<MainCardProps> = ({ children, className, title }) => {
+
+  if (title == "") {
+    return (
+      <div className={`bg-white border border-[var(--accent)] rounded-md ${className}`}>
+        {children}
+      </div>
+
+    )
+  }
+
   return (
-    <div className='bg-white border border-[var(--accent)] rounded-md ${className}'>
+    <div className={`bg-white border border-[var(--accent)] rounded-md ${className}`}>
       <HeaderCard title={title} />
       {children}
     </div>

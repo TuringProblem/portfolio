@@ -63,14 +63,14 @@ export const Introduction: React.FC = () => {
           </div>
 
 
-          <div className="text-[var(--text-secondary)]">
-            <MainCard title="Hello" className="">
-              yo
-            </MainCard>
-
+          <div className="flex justify-between text-[var(--text-secondary)]">
             <div className="max-w-[75vw]">
               This is my portfolio bitch, welcome to this place.
             </div>
+            <MainCard title="Hello, world" className="">
+              yo
+            </MainCard>
+
           </div>
 
         </div>
