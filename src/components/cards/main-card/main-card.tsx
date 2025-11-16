@@ -11,7 +11,7 @@ export const MainCard: React.FC<MainCardProps> = ({ children, className, title }
 
   if (title == "") {
     return (
-      <div className={`bg-white border border-[var(--accent)] rounded-md ${className}`}>
+      <div className={`bg-[var(--legend)] border border-[var(--accent)] rounded-md ${className}`}>
         {children}
       </div>
 
@@ -19,7 +19,7 @@ export const MainCard: React.FC<MainCardProps> = ({ children, className, title }
   }
 
   return (
-    <div className={`bg-white border border-[var(--accent)] rounded-md ${className}`}>
+    <div className={`bg-[var(--legend)] border border-[var(--accent)] rounded-md ${className}`}>
       <HeaderCard title={title} />
       {children}
     </div>

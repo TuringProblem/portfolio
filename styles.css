@@ -24,6 +24,11 @@
     --border: #d0d0d0;
     --active-bg: #4a90e2;
     --active-text: #ffffff;
+    --legend: rgba(0, 0, 0, 0.1);
+    --legend-text: rgba(0, 89, 215, 0.6);
+    --menu-card: rgba(0, 0, 0, 0.1);
+    --menu-card-border: rgba(0, 0, 0, 0.3);
+    --menu-card-header: rgba(0, 89, 215, 0.6);
     --header-bg: #e8e8e8;
 }
 
@@ -38,6 +43,11 @@
     --border: #414868;
     --active-bg: #7aa2f7;
     --active-text: #1a1b26;
+    --legend: rgba(255, 255, 255, 0.1);
+    --legend-text: rgba(255, 255, 215, 0.6);
+    --menu-card: rgba(255, 255, 255, 0.1);
+    --menu-card-border: rgba(255, 255, 255, 0.3);
+    --menu-card-header: rgba(255, 255, 215, 0.6);
     --window-controls-display: flex;
     --terminal-font: 'Comic Code', monospace;
     --terminal-radius: 8px;
