@@ -2,8 +2,13 @@ import { BreadcrumbButton } from '../../components/buttons/breadcrumb';
 import { ThemeToggle } from '../../components/ThemeToggle';
 import { Download, Linkedin, Github, Twitter } from 'lucide-react';
 import { MainCard } from '../../components/cards';
-import { MenuCard } from './components/cards/menu';
+import { MenuCard, SubmenuCard } from './components/cards/';
 
+
+/**
+ * @author { @Override }
+ * @Since 2025-11-15 : @23:35
+ **/
 
 const GITHUB_PROFILE = "https://github.com/TuringProblem";
 const TWITTER_PROFILE = "https://twitter.com/TuringProblem";
@@ -66,12 +71,11 @@ export const Introduction: React.FC = () => {
           </div>
 
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-[var(--text-secondary)]">
-            <div className="max-w-[75vw]">
-
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_300px] lg:grid-cols-[1fr_300px] text-[var(--text-secondary)] h-[calc(100vh-200px)]">
+            {/*own floating window*/}
+            <div className="max-w-[66vw] h-full overflow-y-auto">
               <MenuCard title="hello" />
-              This is my portfolio bitch, welcome to this place.
-
+              <SubmenuCard />
             </div>
             <MainCard title="Legend" className="w-[400px] h-[400px] justify-self-end mr-10">
               <div className="flex justify-center items-center">
