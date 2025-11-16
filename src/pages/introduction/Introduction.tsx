@@ -33,12 +33,11 @@ export const Introduction: React.FC = () => {
         <div className="flex-col bg-[var(--bg-secondary)]]] ">
 
           {/* I'm going to break this up into a component so its cleaner to read */}
-
-          <div className="py-10 flex justify-between">
-            <h1 className="text-4xl min-w-[250px] max-w-[300px] font-bold text-[var(--text-primary)] flex justify-between items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 items-center gap-10 justify-items-center">
+             <h1 className="text-4xl min-w-[250px] max-w-[300px] font-bold text-[var(--text-primary)] flex justify-between items-center">
               Welcome! 👋
             </h1>
-            <div className="flex flex-col gap-2 min-w-[175px]">
+            <div className="flex flex-col gap-2 min-w-[200px] max-w-[200px]">
               <button className="flex gap-1" onClick={() => redirect(GITHUB_PROFILE)}>
                 <Github size={24} /> Github Profile
               </button>
@@ -59,18 +58,17 @@ export const Introduction: React.FC = () => {
               </div>
             </div>
 
-            <img src="https://i.imgur.com/Ofi28uY.gif" alt="gif" className="w-full rounded-full max-w-[175px] max-h-[175px]" />
+            <img src="https://i.imgur.com/Ofi28uY.gif" alt="gif" className="w-full rounded-full h-[300px] w-[300px]" />
           </div>
 
 
-          <div className="text-[var(--text-secondary)]">
-            <MainCard title="Hello" className="">
-              yo
-            </MainCard>
-
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 text-[var(--text-secondary)]">
             <div className="max-w-[75vw]">
               This is my portfolio bitch, welcome to this place.
             </div>
+            <MainCard title="Hello" className="">
+              yo
+            </MainCard>
           </div>
 
         </div>
