@@ -14,7 +14,7 @@ export const Default: React.FC = () => {
         <h2 className="flex justify-center text-[var(--menu-card-header)] text-2xl font-bold">
           Intro
         </h2>
-        <Divider color={"white"} />
+        <Divider color="white" />
         <div className="mt-4 ml-2">
 
           Welcome, Thanks for checking this out! So I'm

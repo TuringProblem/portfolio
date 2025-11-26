@@ -1,5 +1,3 @@
-import { match } from "ts-pattern";
-
 export type Colors = "red"
   | "green"
   | "blue"
@@ -7,25 +5,15 @@ export type Colors = "red"
   | "purple"
   | "orange"
   | "white"
-  | "black"
-  | undefined;
+  | "black";
 
-
-export const convertColor = (color: Colors): string => {
-  console.log(`Hey! We are actually calling this function: ${color}`);
-
-  return match(color)
-    .with("red", () => "--red-divider")
-    .with("green", () => "--green-divider")
-    .with("blue", () => "--white-divider")
-    .with("yellow", () => "--white-divider")
-    .with("purple", () => "--purple-divider")
-    .with("orange", () => "--orange-divider")
-    .with("white", () => "--white-divider")
-    .with("black", () => "--black-divider")
-    .with(undefined, () => "--white-divider")
-    .exhaustive()
-}
-
-
-
+export const ColorMap: Record<Colors, string> = {
+  "red": "var(--red-divider)",
+  "green": "var(--green-divider)",
+  "blue": "var(--blue-divider)",
+  "yellow": "var(--yellow-divider)",
+  "purple": "var(--purple-divider)",
+  "orange": "var(--orange-divider)",
+  "white": "var(--white-divider)",
+  "black": "var(--black-divider)",
+};

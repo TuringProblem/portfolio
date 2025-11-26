@@ -1,5 +1,5 @@
 import React from 'react';
-import { Colors, convertColor } from '../../const';
+import { Colors, ColorMap } from '../../const';
 import clsx from 'clsx';
 
 /**
@@ -8,9 +8,10 @@ import clsx from 'clsx';
  **/
 
 interface DividerProps {
-  color?: Colors;
+  color: Colors;
 }
 
 export const Divider: React.FC<DividerProps> = ({ color }) => {
-  return <div className={clsx(`p-2 bg-[var(${convertColor(color)})] my-3.5 mx-3.5 align-center rounded-md`)} />;
+  return <div className={clsx(`p-0.5 my-3.5 mx-3.5 align-center rounded-md`)}
+    style={{ backgroundColor: ColorMap[color] }} />;
 };
