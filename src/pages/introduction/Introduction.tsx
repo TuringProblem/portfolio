@@ -43,7 +43,7 @@ export const Introduction: React.FC = () => {
 
           {/* I'm going to break this up into a component so its cleaner to read */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 items-center gap-10 justify-items-center">
-             <h1 className="text-[var(--legend-text)] text-4xl min-w-[250px] max-w-[300px] font-bold text-[var(--text-primary)] flex justify-between items-center">
+            <h1 className="text-[var(--legend-text)] text-4xl min-w-[250px] max-w-[300px] font-bold text-[var(--text-primary)] flex justify-between items-center">
               Welcome! 👋
             </h1>
             <div className="flex flex-col gap-2 min-w-[200px] max-w-[200px]">
@@ -75,7 +75,7 @@ export const Introduction: React.FC = () => {
             {/*own floating window*/}
             <div className="max-w-[66vw] h-full overflow-y-auto">
               <MenuCard title="hello" />
-              <SubmenuCard />
+              <SubmenuCard version="v1" />
             </div>
             <MainCard title="Legend" className="w-[400px] h-[400px] justify-self-end mr-10">
               <div className="flex justify-center items-center">

@@ -1,12 +1,19 @@
 import React from 'react';
+import { VersionOne, Default } from './submenus';
 
 
-export const SubmenuCard: React.FC = () => {
-  return (
-    <div className="mt-2 flex justify-center bg-[var(--menu-card)] gap-2 w-full h-full rounded-md shadow-md">
-      <h2 className="text-[var(--menu-card-header)] text-2xl font-bold">
-        Submenu
-      </h2>
-    </div>
-  );
+// TODO: Need to figure out a way to make @see{MainCard.tsx} onClick -> change the version
+interface SubmenuProps {
+  version?: string;
+}
+
+
+export const SubmenuCard: React.FC<SubmenuProps> = ({ version }) => {
+  switch (version) {
+    case 'v1':
+      return <VersionOne />;
+
+    default:
+      return <Default />;
+  }
 };
