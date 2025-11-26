@@ -1,5 +1,14 @@
 import React from 'react';
-import { VersionOne, Default } from './submenus';
+import {
+  VersionOne,
+  Default
+} from './content';
+
+/**
+ * @author { @Override }
+ * @Since 2025-11-26 : @16:04
+ **/
+
 
 
 // TODO: Need to figure out a way to make @see{MainCard.tsx} onClick -> change the version

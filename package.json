@@ -23,10 +23,12 @@
   "dependencies": {
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
+    "clsx": "^2.1.1",
     "lucide-react": "^0.553.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.9.5",
+    "ts-pattern": "^5.9.0",
     "typescript": "^5.9.3"
   },
   "devDependencies": {

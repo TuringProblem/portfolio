@@ -1,2 +1,2 @@
 export * from './submenu-card';
-export * from './submenus';
+export * from './content';

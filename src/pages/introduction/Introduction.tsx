@@ -75,7 +75,7 @@ export const Introduction: React.FC = () => {
             {/*own floating window*/}
             <div className="max-w-[66vw] h-full overflow-y-auto">
               <MenuCard title="hello" />
-              <SubmenuCard version="v1" />
+              <SubmenuCard version="" />
             </div>
             <MainCard title="Legend" className="w-[400px] h-[400px] justify-self-end mr-10">
               <div className="flex justify-center items-center">

@@ -12,6 +12,12 @@
     --terminal-font: 'Comic Code', monospace;
     --terminal-radius: 8px;
     --header-bg: #24283b;
+    --black-divider: rgba(0, 0, 0, 1);
+    --green-divider: rgba(0, 255, 0, 1);
+    --orange-divider: rgba(255, 255, 0, 1);
+    --red-divider: rgba(255, 0, 0, 1);
+    --purple-divider: rgba(255, 0, 255, 1);
+    --white-divider: rgba(255, 255, 255, 1);
 }
 
 /* Light Mode Theme */
@@ -30,6 +36,12 @@
     --menu-card-border: rgba(0, 0, 0, 0.3);
     --menu-card-header: rgba(0, 89, 215, 0.6);
     --header-bg: #e8e8e8;
+    --black-divider: rgba(0, 0, 0, 1);
+    --green-divider: rgba(0, 255, 0, 1);
+    --orange-divider: rgba(255, 255, 0, 1);
+    --red-divider: rgba(255, 0, 0, 1);
+    --purple-divider: rgba(255, 0, 255, 1);
+    --white-divider: rgba(255, 255, 255, 1);
 }
 
 /* Dark Mode (default) - keep existing dark theme */

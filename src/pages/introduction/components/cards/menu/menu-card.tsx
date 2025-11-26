@@ -1,5 +1,10 @@
 import React from 'react';
 
+/**
+ * @author { @Override }
+ * @Since 2025-11-26 : @16:04
+ **/
+
 interface MenuCardProps {
   title?: string;
 }
