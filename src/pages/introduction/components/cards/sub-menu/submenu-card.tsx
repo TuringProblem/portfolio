@@ -3,6 +3,7 @@ import {
   VersionOne,
   Default
 } from './content';
+import { Version } from '../../../types';
 
 /**
  * @author { @Override }
@@ -10,10 +11,9 @@ import {
  **/
 
 
-
 // TODO: Need to figure out a way to make @see{MainCard.tsx} onClick -> change the version
 interface SubmenuProps {
-  version?: string;
+  version?: Version;
 }
 
 

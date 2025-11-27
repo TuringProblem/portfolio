@@ -77,7 +77,7 @@ export const Introduction: React.FC = () => {
               <MenuCard title="hello" />
               <SubmenuCard version="" />
             </div>
-            <MainCard title="Legend" className="w-[400px] h-[400px] justify-self-end mr-10">
+            <MainCard title="Legend" className="w-[400px] h-[400px] justify-self-end mr-10" color="legend">
               <div className="flex justify-center items-center">
                 <button>👋</button>
               </div>

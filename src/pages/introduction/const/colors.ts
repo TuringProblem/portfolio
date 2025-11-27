@@ -1,5 +1,12 @@
-export type Colors = "red"
-  | "green"
+/**
+ * @author { @Override }
+ * @Since 2025-11-26 : @16:31
+ **/
+
+
+export type Colors = "intro"
+  | "main"
+  | "legend"
   | "blue"
   | "yellow"
   | "purple"
@@ -8,8 +15,9 @@ export type Colors = "red"
   | "black";
 
 export const ColorMap: Record<Colors, string> = {
-  "red": "var(--red-divider)",
-  "green": "var(--green-divider)",
+  "intro": "var(--accent)",
+  "main": "var(--green-divider)",
+  "legend": "var(--legend)",
   "blue": "var(--blue-divider)",
   "yellow": "var(--yellow-divider)",
   "purple": "var(--purple-divider)",
