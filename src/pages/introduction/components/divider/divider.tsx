@@ -9,9 +9,9 @@ import clsx from 'clsx';
 
 interface DividerProps {
   color: Colors;
+  className?: string;
 }
 
-export const Divider: React.FC<DividerProps> = ({ color }) => {
-  return <div className={clsx(`p-0.5 my-3.5 mx-3.5 align-center rounded-md`)}
-    style={{ backgroundColor: ColorMap[color] }} />;
+export const Divider: React.FC<DividerProps> = ({ color, className }) => {
+  return <div className={clsx(`h-[1px] border border-[${ColorMap[color]}] my-3.5 mx-3.5 align-center rounded-md ${className}`)} />;
 };

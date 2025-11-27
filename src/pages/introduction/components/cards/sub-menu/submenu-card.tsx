@@ -17,6 +17,8 @@ interface SubmenuProps {
 }
 
 
+// TODO: Might make this as a array[] holding each object in it - that way we can map it based on the the click from the legend?
+
 export const SubmenuCard: React.FC<SubmenuProps> = ({ version }) => {
   switch (version) {
     case 'v1':
