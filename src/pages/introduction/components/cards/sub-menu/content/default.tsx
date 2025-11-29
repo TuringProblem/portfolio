@@ -13,13 +13,13 @@ import { MainCard } from '../../../../../../components';
 const ScrollableListContent: React.FC = () => {
   return (
     <div className="ml-5 flex flex-col gap-2 justify-center">
-      <h1 className="text-xl"> Programming Languages </h1>
-      <Divider color="intro" className="w-[100px] justify-center mt-0 !ml-0" />
+      <h1 className="text-xl mt-6"> Programming Languages </h1>
+      <Divider color="intro" className="w-[300px] justify-center mt-0 !ml-0" />
       <code className="m-5 bg-[var(--bg-secondary)] rounded-md p-2 text-[var(--text-secondary)]">
         <div className="flex flex-col gap-2">
-          <a href="" className="hover:text-[var(--active-text)] hover:bg-[var(--active-bg)] hover:cursor-pointer rounded-md w-[75px]">- Java</a>
-          <a href="" className="hover:text-[var(--active-text)] hover:bg-[var(--active-bg)] hover:cursor-pointer rounded-md w-[140px]">- TypeScript</a>
-          <a href="" className="hover:text-[var(--active-text)] hover:bg-[var(--active-bg)] hover:cursor-pointer rounded-md w-[100px]">- Python</a>
+          <a href="" className="p-2 hover:text-[var(--active-text)] hover:bg-[var(--active-bg)] hover:cursor-pointer rounded-md w-[100px]">- Java</a>
+          <a href="" className="p-2 hover:text-[var(--active-text)] hover:bg-[var(--active-bg)] hover:cursor-pointer rounded-md w-[175px]">- TypeScript</a>
+          <a href="" className="p-2 hover:text-[var(--active-text)] hover:bg-[var(--active-bg)] hover:cursor-pointer rounded-md w-[150px]">- Python</a>
         </div>
       </code>
 
@@ -31,7 +31,7 @@ const ScrollableListContent: React.FC = () => {
 
       <div className="flex gap-2 items-center">
         <div>
-          <h1 className="text-xl"> Text Editors</h1>
+          <h1 className="text-xl">Text Editors</h1>
           <Divider color="intro" className="w-[175px] justify-center mt-2 !ml-0" />
         </div>
         <img src={"https://download.logo.wine/logo/Vim_(text_editor)/Vim_(text_editor)-Logo.wine.png"} alt="Vim" className="w-[150px] h-[100px]" />
@@ -41,10 +41,42 @@ const ScrollableListContent: React.FC = () => {
         I us to use IntelliJ/VsCode and currently I've been using Neovim/Vim (over a year now)
       </div>
 
-      <h1 className="text-xl"> Operating Systems</h1>
+      <h1 className="text-xl">Operating Systems</h1>
       <Divider color="intro" className="w-[100px] justify-start mt-0 !ml-0" />
       <div>
-        - Arch, MacOS, Windows
+
+        <ul className="flex flex-col gap-4">
+          <code className="bg-[var(--bg-secondary)] rounded-md p-2 mr-8 text-[var(--text-secondary)]">
+            <li className='p-2 flex gap-4 items-center'>- Arch <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Arch_Linux_%22Crystal%22_icon.svg" alt="Arch" className="w-[50px] h-[50px]" /></li>
+            <li className='p-2 flex gap-4 items-center'>- MacOS <img src="https://cdn-icons-png.flaticon.com/512/2/2235.png" alt="MacOS" className="w-[50px] h-[50px]" /></li>
+            <li className='p-2 flex gap-4 items-center'>- Windows <img src="https://www.freepnglogos.com/uploads/windows-logo-png/windows-logo-logok-0.png" alt="" className="w-[50px] h-[50px]" /></li>
+          </code>
+        </ul>
+      </div>
+
+      <h1 className="text-xl">Mathematics</h1>
+      <Divider color="intro" className="w-[100px] justify-start mt-0 !ml-0" />
+      <div className="flex flex-col gap-2">
+
+
+        <ul>
+          <li>- Logic</li>
+          <li>- Set Theory</li>
+          <li>- Boolean Algebra</li>
+        </ul>
+      </div>
+
+      <h1 className="text-xl">Music</h1>
+      <Divider color="intro" className="w-[100px] justify-start mt-0 !ml-0" />
+      <div>
+        In my spare time I enjoy making <a href="https://open.spotify.com/artist/3tDv971K0ps2UBd2kaFPiJ" className="text-[var(--accent)] hover:text-[var(--active-text)]">music</a>, and listening to music.
+      </div>
+
+
+      <h1 className="text-xl">Education</h1>
+      <Divider color="intro" className="w-[100px] justify-start mt-0 !ml-0" />
+      <div>
+        I'm currently trying to do research with <a href="https://prl.khoury.northeastern.edu/">NEU Programming</a> language lab
       </div>
     </div>
   );
@@ -67,6 +99,11 @@ export const Default: React.FC = () => {
             <ScrollableListContent />
           </MainCard>
           You can see that I'm pretty decent at programming, I'm a progressional...
+        </div>
+
+        <div className="p-4">
+          <input type="text" className="rounded-md w-full" />
+          <button type="submit" className="mt-2 bg-[var(--accent)] hover:bg-[var(--active-bg)] text-[var(--text)] hover:text-[var(--active-text)] rounded-md px-4 py-2">Submit</button>
         </div>
       </div>
     </div>
