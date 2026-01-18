@@ -1,0 +1,24 @@
+introduction:
+  label: Introduction
+  permalink: /introduction
+  description: Introduction and welcome posts
+
+portfolio:
+  label: Portfolio
+  permalink: /portfolio
+  description: Posts about portfolio development and updates
+
+docusaurus:
+  label: Docusaurus
+  permalink: /docusaurus
+  description: Posts about Docusaurus development
+
+programming:
+  label: Programming
+  permalink: /programming
+  description: Programming tutorials and insights
+
+computer-science:
+  label: Computer Science
+  permalink: /computer-science
+  description: Academic and theoretical computer science topics
