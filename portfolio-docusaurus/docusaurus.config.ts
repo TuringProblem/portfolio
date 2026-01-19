@@ -1,11 +1,11 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Andrew Wellington Portfolio',
+  title: 'Andrew Portfolio',
   tagline: 'Software Engineer & Developer',
   favicon: 'img/favicon.ico',
 
@@ -75,7 +75,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Andrew Wellington',
+      title: 'Andrew',
       logo: {
         alt: 'Portfolio Logo',
         src: 'img/logo.svg',
@@ -87,8 +87,8 @@ const config: Config = {
           position: 'left',
           label: 'Projects',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {to: '/intro', label: 'About', position: 'left'},
+        { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/intro', label: 'About', position: 'left' },
         {
           href: 'https://github.com/TuringProblem/portfolio',
           label: 'GitHub',
@@ -143,7 +143,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Andrew Wellington. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Andrew. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

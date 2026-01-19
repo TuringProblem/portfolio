@@ -14,7 +14,7 @@ export default function IntroPage(): JSX.Element {
   return (
     <Layout
       title="About Me"
-      description="Introduction to Andrew Wellington">
+      description="Introduction to Andrew">
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
           {/* Header Section */}
@@ -22,23 +22,23 @@ export default function IntroPage(): JSX.Element {
             <h1 className="text-4xl min-w-[250px] max-w-[300px] font-bold flex justify-between items-center">
               Welcome! 👋
             </h1>
-            
+
             {/* Social Links */}
             <div className="flex flex-col gap-2 min-w-[200px] max-w-[200px]">
-              <button 
-                className="flex gap-1 hover:text-blue-600 transition-colors" 
+              <button
+                className="flex gap-1 hover:text-blue-600 transition-colors"
                 onClick={() => redirect(GITHUB_PROFILE)}
               >
                 <Github size={24} /> Github Profile
               </button>
-              <button 
-                className="flex gap-1 hover:text-blue-600 transition-colors" 
+              <button
+                className="flex gap-1 hover:text-blue-600 transition-colors"
                 onClick={() => redirect(TWITTER_PROFILE)}
               >
                 <Twitter size={24} /> (𝕏)* Account
               </button>
-              <button 
-                className="flex gap-1 hover:text-blue-600 transition-colors" 
+              <button
+                className="flex gap-1 hover:text-blue-600 transition-colors"
                 onClick={() => redirect(LINKEDIN_PROFILE)}
               >
                 <Linkedin size={24} /> Linkedin
@@ -56,10 +56,10 @@ export default function IntroPage(): JSX.Element {
             </div>
 
             {/* Profile Image */}
-            <img 
-              src="https://i.imgur.com/Ofi28uY.gif" 
-              alt="Profile gif" 
-              className="rounded-full h-[250px] w-[250px] object-cover" 
+            <img
+              src="https://i.imgur.com/Ofi28uY.gif"
+              alt="Profile gif"
+              className="rounded-full h-[250px] w-[250px] object-cover"
             />
           </div>
         </div>

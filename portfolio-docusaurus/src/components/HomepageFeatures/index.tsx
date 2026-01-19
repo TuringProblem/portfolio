@@ -1,6 +1,7 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
+import { useParallaxTransform } from '@site/src/hooks/useParallax';
 import styles from './styles.module.css';
 
 type FeatureItem = {
@@ -22,7 +23,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Computer Science Student',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/neu.svg').default,
     description: (
       <>
         Currently studying Computer Science at Northeastern University.
@@ -42,30 +43,63 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function FeatureSection({ title, Svg, description, index }: FeatureItem & { index: number }) {
+  const isLeft = index % 2 === 0;
+  const backgroundTransform = useParallaxTransform(0.2);
+  const contentTransform = useParallaxTransform(0.05);
+  const iconTransform = useParallaxTransform(0.1);
+  const shadowLogoTransform = useParallaxTransform(0.3);
+
+  const getEnvironmentClass = () => {
+    switch (index) {
+      case 0: return styles.devEnvironment;
+      case 1: return styles.academicEnvironment;
+      case 2: return styles.openSourceEnvironment;
+      default: return styles.devEnvironment;
+    }
+  };
+
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+    <section className={clsx(styles.featureEnvironment, getEnvironmentClass())}>
+      <div
+        className={styles.environmentBackground}
+        style={{ transform: backgroundTransform }}
+      />
+      
+      {/* Shadow Logo - Completely separate */}
+      <div
+        className={clsx(styles.shadowLogoContainer, isLeft ? styles.shadowRight : styles.shadowLeft)}
+      >
+        <Svg className={styles.shadowLogo} role="img" aria-hidden="true" />
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+      
+      {/* Content Card - Independent positioning */}
+      <div className="container">
+        <div className={clsx(styles.featureContent, isLeft ? styles.contentLeft : styles.contentRight)}>
+          <div className={styles.contentWrapper}>
+            <div className={styles.textContent}>
+              <Heading as="h2" className={styles.environmentTitle}>{title}</Heading>
+              <p className={styles.environmentDescription}>{description}</p>
+            </div>
+            <div
+              className={styles.iconContainer}
+              style={{ transform: iconTransform }}
+            >
+              <Svg className={styles.environmentIcon} role="img" />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
 export default function HomepageFeatures(): ReactNode {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
-    </section>
+    <>
+      {FeatureList.map((props, idx) => (
+        <FeatureSection key={idx} {...props} index={idx} />
+      ))}
+    </>
   );
 }
