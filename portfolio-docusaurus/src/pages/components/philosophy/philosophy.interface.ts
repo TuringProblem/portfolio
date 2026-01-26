@@ -7,4 +7,5 @@ export interface philosophyListProps {
 
 export interface ListProps {
   values: philosophyListProps[];
+  onClick?: (e: React.ReactNode) => void;
 }

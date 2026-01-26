@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { philosophyListProps } from "./philosophy.interface";
 
 export const values: philosophyListProps[] = [
@@ -40,3 +42,41 @@ export const values: philosophyListProps[] = [
     quote: '"It is the people who no one imagined anything of who do the things no one can imagine"'
   }
 ]
+
+export const getPilosopherTextValues = () => ({
+  ludwig: (
+    <>
+      <p>Ludwig Wittgenstein</ p >
+    </>
+  ),
+  descartes: (
+    <>
+      <p>René Descartes</p>
+    </>
+  ),
+  nietzsche: (
+    <>
+      <p>Friedrich Nietzsche </p>
+    </>
+  ),
+  plato: (
+    <>
+      <p>Plato </p>
+    </>
+  ),
+  kant: (
+    <>
+      <p>Immanuel Kant </p>
+    </>
+  ),
+  epictetus: (
+    <>
+      <p>Epictetus </p>
+    </>
+  ),
+  turing: (
+    <>
+      <p>Alan Turing </p>
+    </>
+  ),
+});

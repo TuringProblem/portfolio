@@ -19,22 +19,22 @@ const links = {
 
 
 
-
-const getChanges = (resumeImageUrl: string) => ({
+export const getChanges = (resumeImageUrl: string) => ({
   default: (
     <>
-      <p>I'm Andrew, a Computer Science student at Northeastern University. Academically, I'm interested in Compilers, Programming Languages, Mathematics, and Philosophy. With respect to leisurely activities - I enjoy programming, <a href="#" className="text - blue - 600 hover:underline">music</a>, and sports.</p>
+      <p>I'm Andrew, a Computer Science student at Northeastern University. Academically, I'm interested in Compilers, Programming Languages, Mathematics, and Philosophy.With respect to leisurely activities - I enjoy programming, <a href="#" className="text - blue - 600 hover:underline" > music < /a>, and sports.</p >
       <PhilosophyList />
+      foo
     </>
   ),
   github: (
     <>
-      <p> I make contributions to open source projects on GitHub. I'm also a maintainer of the <a href="https://github.com/TuringProblem/" className="text - blue - 600 hover:underline">portfolio</a> project, which is a static site generator built with Docusaurus. I'm excited to continue improving the project and contributing to the open source community.</p>
+      <p>I make contributions to open source projects on GitHub.I'm also a maintainer of the <a href="https://github.com/TuringProblem/" className="text - blue - 600 hover:underline">portfolio</a> project, which is a static site generator built with Docusaurus. I'm excited to continue improving the project and contributing to the open source community.</p>
     </>
   ),
   twitter: (
     <>
-      <p> I'm on Twitter as <a href="https://twitter.com/TuringProblem" className="text - blue - 600 hover:underline">@TuringProblem</a>. I tweet about programming, math, and computer science.</p>
+      <p>I'm on Twitter as <a href="https://twitter.com/TuringProblem" className="text - blue - 600 hover:underline">@TuringProblem</a>. I tweet about programming, math, and computer science.</p>
     </>
   ),
   linkedin: (
@@ -66,7 +66,7 @@ const CardContent: React.FC = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 items-center gap-10 justify-items-center">
       <div className="flex gap-[48px] items-center justify-center min-h-[100%] p-[0px_40px_40px_40px]">
-        <BaseCard className="flex-col shadow-xs justify-center items-center p-[24px] min-w-[1200px] bg-[var(--about-card-background)]  border border-transparent hover:border-[var(--ifm-color-primary)] shadow-[0px_0.5px_1px_0px] hover:shadow-[0px_0.5px_1px_0px]">
+        <BaseCard className="flex-col shadow-xs justify-center items-center p-[24px] min-w-[1200px] max-h-[850px] bg-[var(--about-card-background)]  border border-transparent hover:border-[var(--ifm-color-primary)] shadow-[0px_0.5px_1px_0px] hover:shadow-[0px_0.5px_1px_0px]">
           <div className="flex justify-center items-center mb-[24px] gap-[16px]">
             {/* TODO: Clean this up, and do funcitonal map approach -> map.((key, index) => something...))*/}
             <button
@@ -94,7 +94,7 @@ const CardContent: React.FC = () => {
             </button>
           </div>
           <div>
-            <div className="text-center min-h-[900px]">
+            <div className="text-center min-h-[900px] overflow-y-auto">
               {content}
             </div>
           </div>
