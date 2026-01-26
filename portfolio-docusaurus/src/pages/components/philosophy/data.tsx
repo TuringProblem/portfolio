@@ -1,5 +1,13 @@
 import { philosophyListProps } from "./philosophy.interface";
 
+export const defaultSideText = () => (
+  <>
+    <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
+      <p className="pt-[14px]">These are the philosophers I've been reading about.</p>
+    </div>
+  </>
+);
+
 export const values: philosophyListProps[] = [
   {
     philosopher: "Ludwig Wittgenstein",

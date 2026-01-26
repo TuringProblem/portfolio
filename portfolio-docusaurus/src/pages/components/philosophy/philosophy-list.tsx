@@ -1,6 +1,6 @@
 import React, { useState, ReactNode } from 'react';
 import { ListProps } from './philosophy.interface';
-import { values } from './data';
+import { values, defaultSideText } from './data';
 
 const PhilosophyListAbstract: React.FC<ListProps> = ({ values, onClick }) => {
   return (
@@ -21,7 +21,8 @@ const PhilosophyListAbstract: React.FC<ListProps> = ({ values, onClick }) => {
 }
 
 export const PhilosophyList = () => {
-  const [philosopher, setPhilosopher] = useState<string>("Ludwig Wittgenstein");
+  const sideText = defaultSideText;
+  const [philosopher, setPhilosopher] = useState<ReactNode | null>(sideText);
   const updateText = (e: string) => setPhilosopher(e);
 
 
@@ -33,7 +34,7 @@ export const PhilosophyList = () => {
         <PhilosophyListAbstract values={values} onClick={(e: string) => updateText(e)} />
       </div>
       {philosopher}
-    </div>
+    </div >
   );
 }
 
