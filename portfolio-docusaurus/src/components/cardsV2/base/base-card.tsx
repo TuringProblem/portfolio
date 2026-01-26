@@ -9,9 +9,6 @@ interface baseCardProps {
 }
 
 export const BaseCard: React.FC<baseCardProps> = ({ children, className }) => {
-
-
-
   return (
     <>
       <div className={`base-card ${className}`}>
