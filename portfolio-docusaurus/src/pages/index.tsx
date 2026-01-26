@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -12,14 +12,14 @@ import styles from './index.module.css';
 function ParallaxBackground() {
   const bgTransform = useParallaxTransform(0.3);
   const shapeTransform = useParallaxTransform(0.6);
-  
+
   return (
     <div className={styles.parallaxBackground}>
-      <div 
+      <div
         className={styles.backgroundLayer}
         style={{ transform: bgTransform }}
       />
-      <div 
+      <div
         className={styles.floatingShapes}
         style={{ transform: shapeTransform }}
       >
@@ -32,17 +32,17 @@ function ParallaxBackground() {
 }
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   const titleTransform = useParallaxTransform(0.2);
   const subtitleTransform = useParallaxTransform(0.4);
   const buttonTransform = useParallaxTransform(0.1);
-  
+
   return (
     <header className={clsx('hero', styles.parallaxHero)}>
       <ParallaxBackground />
       <div className={styles.heroContent}>
         <div className="container">
-          <div 
+          <div
             className={styles.titleWrapper}
             style={{ transform: titleTransform }}
           >
@@ -50,7 +50,7 @@ function HomepageHeader() {
               {siteConfig.title}
             </Heading>
           </div>
-          <div 
+          <div
             className={styles.subtitleWrapper}
             style={{ transform: subtitleTransform }}
           >
@@ -58,7 +58,7 @@ function HomepageHeader() {
               {siteConfig.tagline}
             </p>
           </div>
-          <div 
+          <div
             className={styles.buttonsWrapper}
             style={{ transform: buttonTransform }}
           >
@@ -82,7 +82,7 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
