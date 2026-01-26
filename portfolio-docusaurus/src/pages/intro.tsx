@@ -30,6 +30,9 @@ const LinkByName: React.FC<{ data: string }> = ({ data }) => {
 
 const redirect = (url: string) => window.location.href = url;
 
+
+
+
 const getChanges = (resumeImageUrl: string) => ({
   default: (
     <>
@@ -53,7 +56,7 @@ const getChanges = (resumeImageUrl: string) => ({
   ),
   resume: (
     <>
-      <img src={resumeImageUrl} alt="Resume" className="max-w-full max-h-96 object-contain" />
+      <img src={resumeImageUrl} alt="Resume" className="w-[1000px] object-contain" />
     </>
   ),
 })
@@ -61,61 +64,72 @@ const getChanges = (resumeImageUrl: string) => ({
 
 
 
-
-export default function IntroPage(): JSX.Element {
+const CardContent: React.FC = () => {
   const resumeImageUrl = useBaseUrl('/img/resume.png');
   const changes = getChanges(resumeImageUrl);
   const [content, setContent] = useState<ReactNode | null>(changes.default);
-
-
   const updateText = (e: ReactNode) => setContent(e);
 
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 items-center gap-10 justify-items-center">
+      <div className="flex gap-[48px] items-center justify-center min-h-[100%] p-[40px]">
+        <BaseCard className="flex-col shadow-xs justify-center items-center p-[24px] min-w-[1200px] w-full border-2 hover:border-[var(--ifm-color-primary)]">
+          <div className="flex justify-center items-center mb-[24px] gap-[16px]">
+            {/* TODO: Clean this up, and do funcitonal map approach -> map.((key, index) => something...))*/}
+            <button
+              className="flex gap-1 rounded-full justify-center items-center gap-[8px] border-2 hover:border-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary)] transition-colors"
+              onClick={() => updateText(changes.default)}
+            >
+              <Github size={24} /> Github Profile
+            </button>
+            <button
+              className="flex gap-1 hover:text-blue-600 transition-colors rounded-full justify-center items-center gap-[8px] border-2 hover:border-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary)] transition-colors"
+              onClick={() => updateText(changes.github)}
+            >
+              <Twitter size={24} /> (𝕏)* Account
+            </button>
+            <button
+              className="flex gap-1 hover:text-blue-600 transition-colors rounded-full justify-center items-center gap-[8px] border-2 hover:border-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary)] transition-colors"
+              onClick={() => updateText(changes.linkedin)}
+            >
+              <Linkedin size={24} /> Linkedin
+            </button>
+            <button className="flex gap-1 hover:text-blue-600 transition-colors rounded-full justify-center items-center gap-[8px] border-2 hover:border-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary)] transition-colors"
+              onClick={() => updateText(changes.resume)}
+            >
+              <Download size={24} /> Resume
+            </button>
+          </div>
+          <div className="">
+            <div className="text-center">
+              {content}
+            </div>
+          </div>
+        </BaseCard>
+      </div>
+    </div>
 
+  );
+
+}
+
+
+export const IntroPage: React.FC = () => {
   return (
     <Layout
       title="Me"
       description="Introduction to Andrew">
       <main className="container mx-auto px-4 py-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 items-center gap-10 justify-items-center">
-            <div className="flex gap-[48px] items-center justify-center min-h-[100%] p-[40px]">
-              <BaseCard className="flex-col shadow-xs justify-center items-center p-[24px] min-w-[800px] max-w-[800px]">
-                {/* Profile Image */}
-                <div className="flex justify-center items-center mb-[8px]">
-                  <button
-                    className="flex gap-1 hover:text-blue-600 transition-colors"
-                    onClick={() => updateText(changes.default)}
-                  >
-                    <Github size={24} /> Github Profile
-                  </button>
-                  <button
-                    className="flex gap-1 hover:text-blue-600 transition-colors rounded-full"
-                    onClick={() => updateText(changes.github)}
-                  >
-                    <Twitter size={24} /> (𝕏)* Account
-                  </button>
-                  <button
-                    className="flex gap-1 hover:text-blue-600 transition-colors"
-                    onClick={() => updateText(changes.linkedin)}
-                  >
-                    <Linkedin size={24} /> Linkedin
-                  </button>
-                  <button className="flex gap-1 hover:text-blue-600 transition-colors"
-                    onClick={() => updateText(changes.resume)}
-                  >
-                    <Download size={24} /> Resume
-                  </button>
-                </div>
-                <div className="">
-                  <div className="text-center">
-                    {content}
-                  </div>
-                </div>
-              </BaseCard>
-            </div>
-          </div>
+        <div className="mx-auto">
+          <CardContent />
+
+          <BaseCard className="flex-col shadow-xs justify-center items-center p-[24px] min-w-[800px] max-w-[1000px]">
+            hey
+          </BaseCard>
         </div>
       </main>
     </Layout>
   );
 }
+
+export default IntroPage;
