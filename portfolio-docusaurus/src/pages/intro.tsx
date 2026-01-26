@@ -79,28 +79,28 @@ const CardContent: React.FC = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 items-center gap-10 justify-items-center">
       <div className="flex gap-[48px] items-center justify-center min-h-[100%] p-[0px_40px_40px_40px]">
-        <BaseCard className="flex-col shadow-xs justify-center items-center p-[24px] min-w-[1200px] bg-[var(--about-card-background)]  border border-transparent hover:border-[var(--ifm-color-primary)]">
+        <BaseCard className="flex-col shadow-xs justify-center items-center p-[24px] min-w-[1200px] bg-[var(--about-card-background)]  border border-transparent hover:border-[var(--ifm-color-primary)] shadow-[0px_0.5px_1px_0px] hover:shadow-[0px_0.5px_1px_0px]">
           <div className="flex justify-center items-center mb-[24px] gap-[16px]">
             {/* TODO: Clean this up, and do funcitonal map approach -> map.((key, index) => something...))*/}
             <button
-              className="flex gap-1 rounded-full justify-center items-center gap-[8px] border-2 hover:border-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary)] transition-colors hover:cursor-pointer"
+              className="flex gap-1 hover:shadow-[0px_1px_1px_0px] p-[4px] rounded-[8px] justify-center items-center gap-[8px] border-2 hover:border-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary)] transition-colors hover:cursor-pointer"
               onClick={() => updateText(changes.github)}
             >
               <Github size={24} /> Github Profile
             </button>
             <button
-              className="flex transition-colors rounded-full justify-center items-center gap-[8px] border-2 hover:border-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary)] transition-colors hover:cursor-pointer"
+              className="flex transition-colors hover:shadow-[0px_1px_1px_0px] p-[4px] rounded-[8px] justify-center items-center gap-[8px] border-2 hover:border-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary)] transition-colors hover:cursor-pointer"
               onClick={() => updateText(changes.twitter)}
             >
               <Twitter size={24} /> (𝕏)* Account
             </button>
             <button
-              className="flex gap-1 hover:text-blue-600 transition-colors rounded-full justify-center items-center gap-[8px] border-2 hover:border-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary)] transition-colors  hover:cursor-pointer"
+              className="flex gap-1 hover:text-blue-600 transition-colors hover:shadow-[0px_1px_1px_0px] p-[4px] rounded-[8px] justify-center items-center gap-[8px] border-2 hover:border-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary)] transition-colors hover:cursor-pointer"
               onClick={() => updateText(changes.linkedin)}
             >
               <Linkedin size={24} /> Linkedin
             </button>
-            <button className="flex gap-1 hover:text-blue-600 transition-colors rounded-full justify-center items-center gap-[8px] border-2 hover:border-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary)] transition-colors hover:cursor-pointer"
+            <button className="flex gap-1 hover:text-blue-600 transition-colors hover:shadow-[0px_1px_1px_0px] p-[4px] rounded-[8px] justify-center items-center gap-[8px] border-2 hover:border-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary)] transition-colors hover:cursor-pointer"
               onClick={() => updateText(changes.resume)}
             >
               <Download size={24} /> Resume
@@ -128,8 +128,8 @@ export const IntroPage: React.FC = () => {
       <main className="container mx-auto px-4 py-8">
         <div className="mx-auto p-[24px]">
           <CardContent />
-          <BaseCard className="flex w-[150px] h-[50px] justify-center items-center bg-[var(--about-card-background)]  border border-transparent hover:border-[var(--ifm-color-primary)] hover:cursor-pointer">
-            <div className="flex justify-center items-center w-full h-full">
+          <BaseCard className="flex w-[150px] h-[50px] justify-center items-center bg-[var(--about-card-background)] border border-transparent hover:border-[var(--ifm-color-primary)] shadow-[0px_0.5px_1px_0px] hover:shadow-[0px_0.5px_1px_0px] hover:cursor-pointer">
+            <div className="flex justify-center items-center w-full h-full" onClick={() => window.history.back()}>
               <ChevronLeft size={24} />
               Return
             </div>
