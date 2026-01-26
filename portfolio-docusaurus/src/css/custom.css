@@ -16,6 +16,7 @@
   --ifm-code-font-size: 95%;
   --about-card-background: rgba(155, 155, 155, 0.1); 
   --about-card-background-hover: rgba(185, 185, 185, 0.1); 
+  --philosophy-card-background: rgba(150, 150, 150, 0.1);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
@@ -30,5 +31,6 @@
   --ifm-color-primary-lightest: #4fddbf;
   --about-card-background: rgba(222, 222, 222, 0.1); 
   --about-card-background-hover: rgba(0, 0, 0, 0.1); 
+  --philosophy-card-background: rgba(150, 150, 150, 0.1);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }

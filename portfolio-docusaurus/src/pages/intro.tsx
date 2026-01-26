@@ -3,33 +3,19 @@ import Layout from '@theme/Layout';
 import { Download, Linkedin, Github, Twitter } from 'lucide-react';
 import { BaseCard } from '../components/cardsV2';
 import { ChevronLeft } from 'lucide-react';
+import { PhilosophyList } from './components/philosophy';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+/**
+ 
 const links = {
   GIT: "https://github.com/TuringProblem",
   TWITTER: "https://twitter.com/TuringProblem",
   LINKEDIN: "https://www.linkedin.com/in/andrew-wellington-37a665246/",
 }
-
-/**
-const LinkByName: React.FC<{ data: string }> = ({ data }) => {
-  return (
-    <div className="flex gap-1 hover:text-blue-600 transition-colors">
-      {data.map((item, index) => (
-        <button
-          key={index}
-          className="flex gap-1 hover:text-blue-600 transition-colors"
-          onClick={() => redirect(item)}
-        >
-          <Linkedin size={24} /> {item}
-        </button>
-      ))}
-    </div>
-  );
-}
 **/
 
-const redirect = (url: string) => window.location.href = url;
+// const redirect = (url: string) => window.location.href = url;
 
 
 
@@ -38,6 +24,7 @@ const getChanges = (resumeImageUrl: string) => ({
   default: (
     <>
       <p>I'm Andrew, a Computer Science student at Northeastern University. Academically, I'm interested in Compilers, Programming Languages, Mathematics, and Philosophy. With respect to leisurely activities - I enjoy programming, <a href="#" className="text - blue - 600 hover:underline">music</a>, and sports.</p>
+      <PhilosophyList />
     </>
   ),
   github: (
@@ -129,7 +116,7 @@ export const IntroPage: React.FC = () => {
         <div className="mx-auto p-[24px]">
           <CardContent />
           <BaseCard className="flex w-[150px] h-[50px] justify-center items-center bg-[var(--about-card-background)] border border-transparent hover:border-[var(--ifm-color-primary)] shadow-[0px_0.5px_1px_0px] hover:shadow-[0px_0.5px_1px_0px] hover:cursor-pointer">
-            <div className="flex justify-center items-center w-full h-full" onClick={() => window.history.back()}>
+            <div className="flex justify-center items-center w-full h-full" onClick={() => window.history.back()} aria-role="button" tabIndex={0}>
               <ChevronLeft size={24} />
               Return
             </div>
