@@ -65,14 +65,14 @@ function FeatureSection({ title, Svg, description, index }: FeatureItem & { inde
         className={styles.environmentBackground}
         style={{ transform: backgroundTransform }}
       />
-      
+
       {/* Shadow Logo - Completely separate */}
       <div
         className={clsx(styles.shadowLogoContainer, isLeft ? styles.shadowRight : styles.shadowLeft)}
       >
         <Svg className={styles.shadowLogo} role="img" aria-hidden="true" />
       </div>
-      
+
       {/* Content Card - Independent positioning */}
       <div className="container">
         <div className={clsx(styles.featureContent, isLeft ? styles.contentLeft : styles.contentRight)}>

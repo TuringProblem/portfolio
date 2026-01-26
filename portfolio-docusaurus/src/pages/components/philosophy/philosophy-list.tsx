@@ -32,7 +32,7 @@ export const PhilosophyList = () => {
 
   return (
     <div className="flex gap-[24px]">
-      <div className="flex-col overflow-auto w-[650px]">
+      <div className="flex-col overflow-auto w-[50%]">
         <h1>Favorite Philosophers</h1>
         <PhilosophyListAbstract values={values} onClick={(e) => setPhilosopher(e)} />
       </div>
