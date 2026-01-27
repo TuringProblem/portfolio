@@ -1,16 +1,21 @@
 import { philosophyListProps } from "./philosophy.interface";
+import { Header } from '../../../components/cardsV2/header';
 
 
 
 
 export const defaultSideText = () => (
   <>
-    <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
+    <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px] overflow-auto">
       <p className="pt-[14px]">These are the philosophers I've been reading about.</p>
       To understand this page, here is a little overview on what to do :)
-      <div className="flex justify-start">
-        Hello
-        <img src={require('/Users/andrewwellington/Documents/portfolio/portfolio-docusaurus/static/img/example.png').default} alt="example" className="w-[50%] h-[50%]" />
+      <div className="flex justify-start gap-[24px] px-[24px] pt-[24px]">
+        <img src={require('/Users/andrewwellington/Documents/portfolio/portfolio-docusaurus/static/img/example.png').default} alt="example" className="w-[350px] h-[350px]" />
+        <code className="p-[24px] bg-transparent border-none">
+          Click on the name to see Wikipedia
+          <br />
+          Click on the Card to see my reason of interest
+        </code>
       </div>
     </div>
   </>
@@ -25,7 +30,7 @@ export const values: philosophyListProps[] = [
     description: (
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
-          <p>Ludwig Wittgenstein</p>
+          <Header title="Ludwig Wittgenstein" />
         </div>
       </>
     )
@@ -38,7 +43,7 @@ export const values: philosophyListProps[] = [
     description: (
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
-          <p>René Descartes</p>
+          <Header title="René Descartes" />
         </div>
       </>
     )
@@ -51,7 +56,7 @@ export const values: philosophyListProps[] = [
     description: (
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
-          <p>Friedrich Nietzsche</p>
+          <Header title="Friedrich Nietzsche" />
         </div>
       </>
     )
@@ -64,7 +69,7 @@ export const values: philosophyListProps[] = [
     description: (
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
-          <p>Plato</p>
+          <Header title="Plato" />
         </div>
       </>
     )
@@ -77,7 +82,7 @@ export const values: philosophyListProps[] = [
     description: (
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
-          <p>Immanuel Kant</p>
+          <Header title="Immanuel Kant" />
         </div>
       </>
     )
@@ -90,7 +95,7 @@ export const values: philosophyListProps[] = [
     description: (
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
-          <p>Epictetus</p>
+          <Header title="Epictetus" />
         </div>
       </>
     )
@@ -103,10 +108,12 @@ export const values: philosophyListProps[] = [
     description: (
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
-          <p>Alan Turing</p>
+          <Header title="Alan Turing" />
+          <div className="">
+            One of my biggest inspirations and influences in Computer Science is Alan Turing. Before I knew anything about the Computer Science field, I had watched <strong><i><a href="https://en.wikipedia.org/wiki/The_Imitation_Game">The Immatation Game</a></i></strong> and I was astonished.
+          </div>
         </div>
       </>
-
     )
   },
   {
@@ -117,7 +124,7 @@ export const values: philosophyListProps[] = [
     description: (
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
-          <p>Kurt Gödel</p>
+          <Header title="Kurt Gödel" />
         </div>
       </>
     )

@@ -1,12 +1,16 @@
 import React from 'react';
 
+type HeaderTypes = { title: string; }
 
-export const Header: React.FC = () => (
-  <div className="p-4">
-    <h1 className="text-2xl font-bold text-[var(--legend-text)]">
-      Header
-    </h1>
-  </div>
+
+export const Header: React.FC<HeaderTypes> = ({ title }) => (
+  <>
+    <div className="p-[24px]">
+      <div className="text-[32px] font-bold text-[var(--legend-text)]">
+        {title}
+      </div>
+    </div>
+  </>
 );
 
 

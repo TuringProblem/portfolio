@@ -1,12 +1,12 @@
 import React, { ReactNode } from 'react';
 import { PhilosophyList } from './components/philosophy';
 
+
 export const getChanges = (resumeImageUrl: string): { [key: string]: ReactNode } => ({
   default: (
     <>
       <p>I'm Andrew, a Computer Science student at Northeastern University. Academically, I'm interested in Compilers, Programming Languages, Mathematics, and Philosophy.With respect to leisurely activities - I enjoy programming, <a href="#" className="text - blue - 600 hover:underline" > music < /a>, and sports.</p >
       <PhilosophyList />
-      foo
     </>
   ),
   github: (
