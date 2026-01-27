@@ -112,6 +112,30 @@ export const values: philosophyListProps[] = [
           <div className="">
             One of my biggest inspirations and influences in Computer Science is Alan Turing. Before I knew anything about the Computer Science field, I had watched <strong><i><a href="https://en.wikipedia.org/wiki/The_Imitation_Game">The Immatation Game</a></i></strong> and I was astonished.
           </div>
+          <div className="flex justify-between px-[16px]">
+            <div className="flex-col">
+              <Header title="Turing Machines" />
+              <code className="text-left p-[16px] bg-transparent border-none">
+                Definition: TM = (Q, Σ, Γ, δ, q0, β, F)
+                <br />
+                Q: Set of states
+                <br />
+                Σ: Set of symbols
+                <br />
+                Γ: Set of input symbols
+                <br />
+                δ: Transition function
+                <br />
+                q0: Start state
+                <br />
+                β: Accepting states
+                <br />
+                F: Set of final states
+                <br />
+              </code>
+            </div>
+            <Header title="Turing Machines" />
+          </div>
         </div>
       </>
     )
@@ -125,6 +149,7 @@ export const values: philosophyListProps[] = [
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
           <Header title="Kurt Gödel" />
+          shit
         </div>
       </>
     )
