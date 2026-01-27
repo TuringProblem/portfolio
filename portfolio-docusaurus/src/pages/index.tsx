@@ -65,7 +65,7 @@ function HomepageHeader() {
             <div className={styles.buttons}>
               <Link
                 className={clsx('button button--secondary button--lg', styles.parallaxButton)}
-                to="/docs/projects/intro">
+                to="/docs/projects/atoms">
                 View My Projects 🚀
               </Link>
               <Link
