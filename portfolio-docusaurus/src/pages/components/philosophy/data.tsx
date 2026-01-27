@@ -1,9 +1,17 @@
 import { philosophyListProps } from "./philosophy.interface";
 
+
+
+
 export const defaultSideText = () => (
   <>
     <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
       <p className="pt-[14px]">These are the philosophers I've been reading about.</p>
+      To understand this page, here is a little overview on what to do :)
+      <div className="flex justify-start">
+        Hello
+        <img src={require('/Users/andrewwellington/Documents/portfolio/portfolio-docusaurus/static/img/example.png').default} alt="example" className="w-[50%] h-[50%]" />
+      </div>
     </div>
   </>
 );
