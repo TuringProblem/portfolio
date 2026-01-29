@@ -43,3 +43,7 @@ export const PhilosophyList = () => {
   );
 }
 
+export default function PhilosophyListPage() {
+  return React.createElement('div', null, 'This is not a page - just a philosophy list component');
+}
+

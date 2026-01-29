@@ -47,4 +47,8 @@ export const getChanges = (resumeImageUrl: string): { [key: string]: ReactNode }
   ),
 });
 
+export default function DataPage() {
+  return React.createElement('div', null, 'This is not a page - just data functions');
+}
+
 

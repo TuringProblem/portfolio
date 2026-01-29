@@ -96,7 +96,7 @@ sidebar_position: 3
 
 ## Quick Start
 
-1. **Install the plugin** using your preferred package manager (see [Installation Guide](INSTALL.md))
+1. **Install the plugin** using your preferred package manager (see [Installation Guide](./INSTALL.md))
 2. **Configure Shifty** in your Neovim config
 3. **Open a file** with code blocks (like `test_installation.md`)
 4. **Use `:ShiftyToggle`** or your configured keymap to open the REPL window
@@ -104,7 +104,7 @@ sidebar_position: 3
 
 ## Installation
 
-For detailed installation instructions, see the [Installation Guide](INSTALL.md).
+For detailed installation instructions, see the [Installation Guide](./INSTALL.md).
 
 ### Quick Installation Examples
 

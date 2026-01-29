@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 
 export interface philosophyListProps {
   philosopher: string;
@@ -11,4 +11,8 @@ export interface philosophyListProps {
 export interface ListProps {
   values: philosophyListProps[];
   onClick?: (e: React.ReactNode) => void;
+}
+
+export default function PhilosophyInterfacePage() {
+  return React.createElement('div', null, 'This is not a page - just TypeScript interfaces');
 }
