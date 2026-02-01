@@ -1,0 +1,27 @@
+{
+  "id": "projects/Shifty",
+  "title": "Shifty",
+  "description": "Static Badge",
+  "source": "@site/docs/projects/Shifty.md",
+  "sourceDirName": "projects",
+  "slug": "/projects/Shifty",
+  "permalink": "/portfolio/docs/projects/Shifty",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/projects/Shifty.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Deej",
+    "permalink": "/portfolio/docs/projects/Deej"
+  },
+  "next": {
+    "title": "Installation Guide",
+    "permalink": "/portfolio/docs/projects/INSTALL"
+  }
+}

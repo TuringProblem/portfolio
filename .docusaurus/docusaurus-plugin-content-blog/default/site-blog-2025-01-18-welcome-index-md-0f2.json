@@ -1,0 +1,60 @@
+{
+  "permalink": "/portfolio/blog/welcome",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2025-01-18-welcome/index.md",
+  "source": "@site/blog/2025-01-18-welcome/index.md",
+  "title": "Welcome to my Portfolio Blog",
+  "description": "Welcome to my new portfolio blog! 🎉",
+  "date": "2025-01-18T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": false,
+      "label": "Introduction",
+      "permalink": "/portfolio/blog/tags/introduction",
+      "description": "Introduction and welcome posts"
+    },
+    {
+      "inline": false,
+      "label": "Portfolio",
+      "permalink": "/portfolio/blog/tags/portfolio",
+      "description": "Posts about portfolio development and updates"
+    },
+    {
+      "inline": false,
+      "label": "Docusaurus",
+      "permalink": "/portfolio/blog/tags/docusaurus",
+      "description": "Posts about Docusaurus development"
+    }
+  ],
+  "readingTime": 0.69,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Andrew ( @Override )",
+      "title": "Computer Science Student @ Northeastern University",
+      "url": "https://github.com/TuringProblem",
+      "page": {
+        "permalink": "/portfolio/blog/authors/andrew"
+      },
+      "socials": {
+        "x": "https://x.com/TuringProblem",
+        "linkedin": "https://www.linkedin.com/in/andrew-wellington-37a665246/",
+        "github": "https://github.com/TuringProblem"
+      },
+      "imageURL": "https://github.com/TuringProblem.png",
+      "key": "andrew"
+    }
+  ],
+  "frontMatter": {
+    "slug": "welcome",
+    "title": "Welcome to my Portfolio Blog",
+    "authors": [
+      "andrew"
+    ],
+    "tags": [
+      "introduction",
+      "portfolio",
+      "docusaurus"
+    ]
+  },
+  "unlisted": false
+}

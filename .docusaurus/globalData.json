@@ -1,0 +1,53 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/portfolio/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/portfolio/docs",
+          "mainDocId": "projects/Atoms",
+          "docs": [
+            {
+              "id": "projects/Atoms",
+              "path": "/portfolio/docs/projects/Atoms",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "projects/Deej",
+              "path": "/portfolio/docs/projects/Deej",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "projects/INSTALL",
+              "path": "/portfolio/docs/projects/INSTALL",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "projects/intro",
+              "path": "/portfolio/docs/projects/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "projects/Shifty",
+              "path": "/portfolio/docs/projects/Shifty",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/portfolio/docs/projects/Atoms",
+                "label": "projects/Atoms"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

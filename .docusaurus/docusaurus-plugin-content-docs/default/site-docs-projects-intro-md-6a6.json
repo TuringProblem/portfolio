@@ -1,0 +1,20 @@
+{
+  "id": "projects/intro",
+  "title": "Projects",
+  "description": "Welcome to my projects showcase! Here you'll find a collection of software projects I've worked on, ranging from desktop applications to web tools.",
+  "source": "@site/docs/projects/intro.md",
+  "sourceDirName": "projects",
+  "slug": "/projects/intro",
+  "permalink": "/portfolio/docs/projects/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/projects/intro.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation Guide",
+    "permalink": "/portfolio/docs/projects/INSTALL"
+  }
+}

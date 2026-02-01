@@ -1,0 +1,27 @@
+{
+  "id": "projects/Deej",
+  "title": "Deej",
+  "description": "Author: @Override",
+  "source": "@site/docs/projects/Deej.md",
+  "sourceDirName": "projects",
+  "slug": "/projects/Deej",
+  "permalink": "/portfolio/docs/projects/Deej",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/projects/Deej.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Atoms",
+    "permalink": "/portfolio/docs/projects/Atoms"
+  },
+  "next": {
+    "title": "Shifty",
+    "permalink": "/portfolio/docs/projects/Shifty"
+  }
+}
