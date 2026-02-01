@@ -154,7 +154,7 @@ export const values: philosophyListProps[] = [
     description: (
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
-          <PhilosophyCard philosopherHeader={PhilosophersEnum.KurtGoedel} />
+          <PhilosophyCard philosopherHeader={PhilosophersEnum.KurtGoedel} subHeader="I love you" />
         </div>
       </>
     )

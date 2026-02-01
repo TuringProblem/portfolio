@@ -7,7 +7,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Andrew Portfolio',
   tagline: 'Software Engineer & Developer',
-  favicon: 'img/favicon.ico',
+  // favicon represents the icon that appears on the tab of your browser
+  favicon: 'https://freesvg.org/img/Anonymous-lambda.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -78,7 +79,7 @@ const config: Config = {
       title: 'Andrew',
       logo: {
         alt: 'Portfolio Logo',
-        src: 'img/logo.svg',
+        src: 'https://freesvg.org/img/Anonymous-lambda.png',
       },
       items: [
         {
@@ -143,7 +144,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Andrew. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Andrew.`,
     },
     prism: {
       theme: prismThemes.github,

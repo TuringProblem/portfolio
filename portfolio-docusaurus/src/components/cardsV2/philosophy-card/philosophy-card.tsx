@@ -14,7 +14,7 @@ export const PhilosophyCard: React.FC<PhilosophyCardProps> = ({ philosopherHeade
     <>
       <Header title={philosopherHeader} />
       <div>
-        yoo
+        {subHeader}
       </div>
     </>
   );
