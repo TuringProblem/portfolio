@@ -21,6 +21,7 @@ const PhilosophyListAbstract: React.FC<ListProps> = ({ values, onClick }) => {
   );
 }
 
+
 export const PhilosophyList = () => {
   const [philosopher, setPhilosopher] = useState<ReactNode | null>(defaultSideText);
   const updateText = (e: string) => setPhilosopher(e);
@@ -29,13 +30,15 @@ export const PhilosophyList = () => {
 
   return (
     <div className="flex gap-[24px]">
-      <div className="flex-col overflow-auto w-[50%]">
+      <div className="flex-col overflow-auto overscroll-contain w-[50%]">
+
         <div className="flex-col justify-center align-center items-center gap-[8px]">
-          <div className="w-[100px] bg-[var(--philosophy-card-background)] mr-[8px] rounded-[8px] overflow-auto text-[var(--ifm-color-primary)] hover:cursor-pointer" onClick={() => updateText(defaultSideText)}>
+          <div className="w-[100px] bg-[var(--philosophy-card-background)] mr-[8px] rounded-[8px] overflow-auto text-[var(--ifm-color-primary)] hover:cursor-pointer border border-transparent hover:border-[var(--ifm-color-primary)] hover:shadow-md" onClick={() => updateText(defaultSideText)}>
             help
           </div>
           <Header title="Favorite Philosophers" />
         </div>
+
         <PhilosophyListAbstract values={values} onClick={(e: string) => updateText(e)} />
       </div >
       {philosopher}

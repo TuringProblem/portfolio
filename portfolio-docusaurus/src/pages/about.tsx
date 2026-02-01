@@ -34,7 +34,7 @@ const CardContent: React.FC = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 items-center gap-10 justify-items-center">
       <div className="flex gap-[48px] items-center justify-center min-h-[100%] p-[0px_40px_40px_40px]">
-        <BaseCard className={clsx("flex-col shadow-xs justify-center items-center p-[24px] min-w-[1200px] max-h-[850px] bg-[var(--about-card-background)]  border border-transparent hover:border-[var(--ifm-color-primary)] shadow-[0px_0.5px_1px_0px] hover:shadow-[0px_0.5px_1px_0px]", isPng ? "overflow-auto" : "")}>
+        <BaseCard className={clsx("flex-col shadow-xs justify-center items-center p-[24px] min-w-[1200px] max-h-[850px] bg-[var(--about-card-background)]  border border-transparent hover:border-[var(--ifm-color-primary)] shadow-[0px_0.5px_1px_0px] hover:shadow-[0px_0.5px_1px_0px]", isPng ? "overflow-auto overscroll-contain" : "")}>
           <div className="flex justify-center items-center mb-[24px] gap-[16px]">
             {/* TODO: Clean this up, and do funcitonal map approach -> map.((key, index) => something...))*/}
             <div onClick={() => setIsPng(false)}>

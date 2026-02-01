@@ -89,7 +89,7 @@ const config: Config = {
           label: 'Projects',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
-        { to: '/intro', label: 'About', position: 'left' },
+        { to: '/about', label: 'About', position: 'left' },
         {
           href: 'https://github.com/TuringProblem/portfolio',
           label: 'GitHub',
