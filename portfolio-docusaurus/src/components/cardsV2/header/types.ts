@@ -1,3 +1,9 @@
+/**
+ * @author { @Override }
+ * @since 02012026
+ * @see <a href="https://github.com/TuringProblem">Github Profile</a>
+ **/
+
 type Sizes =
   | 'sm'
   | 'md'
@@ -6,25 +12,57 @@ type Sizes =
   | '2xl'
   | '3xl';
 
-type HeaderTypes = { title: string; size?: Sizes }
+type Positions =
+  | 'left'
+  | 'right'
+  | 'center'
 
-const grabTextAndPaddingSizes = (size: Sizes | undefined): string[] => {
+type HeaderTypes = {
+  title: string;
+  size?: Sizes
+  position?: Positions | string;
+}
+
+const grabTextAndPaddingSizes = (size: Sizes | undefined, position: Positions | string | undefined): string[] => {
+  const values: string[] = [];
   switch (size) {
     case 'sm':
-      return ['text-[16px]', 'p-[0px_24px_24px_24px]'];
+      values.push('text-[16px]', 'p-[0px_24px_24px_24px]');
+      break;
     case 'md':
-      return ['text-[24px]', 'p-[0px_8px_8px_8px]'];
+      values.push('text-[24px]', 'p-[0px_8px_8px_8px]');
+      break;
     case 'lg':
-      return ['text-[32px]', 'p-[0px_24px_24px_24px]'];
+      values.push('text-[32px]', 'p-[0px_24px_24px_24px]');
+      break;
     case 'xl':
-      return ['text-[48px]', 'p-[0px_24px_24px_24px]'];
+      values.push('text-[48px]', 'p-[0px_24px_24px_24px]');
+      break;
     case '2xl':
-      return ['text-[64px]', 'p-[0px_24px_24px_24px]'];
+      values.push('text-[64px]', 'p-[0px_24px_24px_24px]');
+      break;
     case '3xl':
-      return ['text-[96px]', 'p-[0px_24px_24px_24px]'];
+      values.push('text-[96px]', 'p-[0px_24px_24px_24px]');
+      break;
     default:
-      return ['text-[32px]', 'p-[0px_24px_24px_24px]'];
+      values.push('text-[32px]', 'p-[0p);24px_24px_24px]');
+      break;
   }
+
+  switch (position) {
+    case 'left':
+      values.push('justify-start');
+    case 'right':
+      values.push('justify-end');
+    case 'center':
+      values.push('justify-center');
+    default:
+      values.push('justify-center');
+  }
+
+  console.log(values);
+
+  return values;
 }
 
 export { HeaderTypes, grabTextAndPaddingSizes };

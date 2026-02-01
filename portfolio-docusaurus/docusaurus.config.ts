@@ -108,7 +108,7 @@ const config: Config = {
             },
             {
               label: 'About',
-              to: '/intro',
+              to: '/about',
             },
           ],
         },

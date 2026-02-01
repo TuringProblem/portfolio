@@ -35,7 +35,7 @@ export const getChanges = (resumeImageUrl: string): { [key: string]: ReactNode }
     <>
       { /* TODO: Create  Cards for this to display the data */}
       <div>
-        <TextFieldCard />
+        <TextFieldCard position="left" />
         Here is some of my work history:
         <div>
 
