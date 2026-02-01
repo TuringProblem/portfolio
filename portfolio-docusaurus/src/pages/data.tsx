@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import { PhilosophyList } from './components/philosophy';
+import { TextFieldCard } from '../components/cardsV2/text-field-card';
 
 
 export const getChanges = (resumeImageUrl: string): { [key: string]: ReactNode } => ({
@@ -25,14 +26,16 @@ export const getChanges = (resumeImageUrl: string): { [key: string]: ReactNode }
       </p>
     </>
   ),
-  twitter: (
+  education: (
     <>
       <p>I'm on Twitter as <a href="https://twitter.com/TuringProblem" className="text - blue - 600 hover:underline">@TuringProblem</a>. I tweet about programming, math, and computer science.</p>
     </>
   ),
-  linkedin: (
+  contact: (
     <>
+      { /* TODO: Create  Cards for this to display the data */}
       <div>
+        <TextFieldCard />
         Here is some of my work history:
         <div>
 

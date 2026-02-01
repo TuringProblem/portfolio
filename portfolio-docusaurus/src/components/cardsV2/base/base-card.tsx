@@ -1,12 +1,7 @@
 import React from 'react';
+import { baseCardProps } from './types';
 
 import './style.css';
-
-interface baseCardProps {
-  variant?: string;
-  children?: React.ReactNode;
-  className?: string;
-}
 
 export const BaseCard: React.FC<baseCardProps> = ({ children, className }) => {
   return (

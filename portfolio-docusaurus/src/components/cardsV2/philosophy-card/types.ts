@@ -1,4 +1,6 @@
-export type Philosophers = 'Ludwig Wittgenstein'
+import { ReactNode } from 'react';
+
+type Philosophers = 'Ludwig Wittgenstein'
   | 'René Descartes'
   | 'Friedrich Nietzsche'
   | 'Plato'
@@ -7,7 +9,7 @@ export type Philosophers = 'Ludwig Wittgenstein'
   | 'Alan Turing'
   | 'Kurt Gödel';
 
-export enum PhilosophersEnum {
+enum PhilosophersEnum {
   LudwigWittgenstein = 'Ludwig Wittgenstein',
   ReneDescartes = 'René Descartes',
   FriedrichNietzsche = 'Friedrich Nietzsche',
@@ -17,3 +19,12 @@ export enum PhilosophersEnum {
   AlanTuring = 'Alan Turing',
   KurtGoedel = 'Kurt Gödel'
 }
+
+interface PhilosophyCardProps {
+  philosopherHeader: Philosophers;
+  subHeader?: string;
+  mainContent?: ReactNode;
+  footer?: ReactNode;
+}
+
+export { PhilosophersEnum, Philosophers, PhilosophyCardProps };

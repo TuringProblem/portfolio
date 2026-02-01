@@ -1,6 +1,6 @@
 import React, { useState, ReactNode } from 'react';
 import Layout from '@theme/Layout';
-import { Download, Linkedin, Github, Twitter, User } from 'lucide-react';
+import { Download, MailWarning, Github, GraduationCap, User } from 'lucide-react';
 import { BaseCard } from '../components/cardsV2';
 import { ChevronLeft } from 'lucide-react';
 import { getChanges } from './data';
@@ -59,17 +59,17 @@ const CardContent: React.FC = () => {
             <div onClick={() => setIsPng(false)}>
               <button
                 className="flex transition-colors hover:shadow-[0px_1px_1px_0px] p-[4px] rounded-[8px] justify-center items-center gap-[8px] border-2 hover:border-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary)] transition-colors hover:cursor-pointer"
-                onClick={() => updateText(changes.twitter)}
+                onClick={() => updateText(changes.education)}
               >
-                <Twitter size={24} /> (𝕏)* Account
+                <GraduationCap size={24} /> Education
               </button>
             </div>
             <div onClick={() => setIsPng(false)}>
               <button
                 className="flex gap-1 hover:text-blue-600 transition-colors hover:shadow-[0px_1px_1px_0px] p-[4px] rounded-[8px] justify-center items-center gap-[8px] border-2 hover:border-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary)] transition-colors hover:cursor-pointer"
-                onClick={() => updateText(changes.linkedin)}
+                onClick={() => updateText(changes.contact)}
               >
-                <Linkedin size={24} /> Linkedin
+                <MailWarning size={24} /> Contact
               </button>
             </div>
             <div onClick={() => setIsPng(true)}>

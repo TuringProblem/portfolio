@@ -6,16 +6,20 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: rgba(61, 237, 151, 1);
+  --ifm-color-primary: rgba(4, 112, 85, 1);
+
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: rgba(61, 237, 151, 0.8);
-  --ifm-color-primary-lighter: rgba(61, 237, 151, 0.6);
-  --ifm-color-primary-lightest: rgba(61, 237, 151, 0.3);
+
+  --ifm-color-primary-light: rgba(4, 112, 85, 0.8);
+  --ifm-color-primary-lighter: rgba(4, 112, 85, 0.6);
+  --ifm-color-primary-lightest: rgba(4, 112, 85, 0.3);
   --ifm-code-font-size: 95%;
+
   --about-card-background: rgba(155, 155, 155, 0.1); 
   --about-card-background-hover: rgba(185, 185, 185, 0.1); 
+
   --philosophy-card-background: rgba(150, 150, 150, 0.1);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
@@ -30,8 +34,8 @@
   --ifm-color-primary-light: rgba(61, 237, 151, 0.8);
   --ifm-color-primary-lighter: rgba(61, 237, 151, 0.6);
   --ifm-color-primary-lightest: rgba(61, 237, 151, 0.3);  
-  --about-card-background: rgba(222, 222, 222, 0.1); 
 
+  --about-card-background: rgba(222, 222, 222, 0.1); 
   --about-card-background-hover: rgba(0, 0, 0, 0.1); 
   --philosophy-card-background: rgba(150, 150, 150, 0.1);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
