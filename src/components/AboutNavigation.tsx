@@ -2,6 +2,8 @@ import { FC, ReactNode } from 'react';
 import { Download, MailWarning, Github, GraduationCap, User } from 'lucide-react';
 import { useHistory } from '@docusaurus/router';
 
+import './styles.css';
+
 interface AboutNavigationProps {
   activeRoute?: string;
 }
@@ -22,7 +24,7 @@ export const AboutNavigation: FC<AboutNavigationProps> = ({ activeRoute, }) => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center mb-[24px] gap-[8px]">
+    <div className="navigationItems">
       {buttonConfigs.map((config, index) => {
         const IconComponent = config.icon;
         const isActive = activeRoute === config.route;

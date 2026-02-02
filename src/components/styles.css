@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navigationItems {
+
+  @apply flex flex-col justify-center items-center mb-[24px] gap-[8px];
+}
+
+
+@media screen and (max-width: 996px) {
+  .navigationItems {
+    @apply flex flex-row justify-center items-center mb-[24px] gap-[8px];
+  }
+}
