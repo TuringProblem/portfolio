@@ -4,6 +4,8 @@ import { useHistory } from '@docusaurus/router';
 
 import './styles.css';
 
+import { clsx } from 'clsx';
+
 interface AboutNavigationProps {
   activeRoute?: string;
 }
@@ -32,10 +34,10 @@ export const AboutNavigation: FC<AboutNavigationProps> = ({ activeRoute, }) => {
         return (
           <div key={index}>
             <button
-              className={`flex gap-1 hover:shadow-[0px_1px_1px_0px] p-[4px] rounded-[8px] justify-center items-center gap-[8px] border-2 transition-colors hover:cursor-pointer ${isActive
-                ? 'border-[var(--ifm-color-primary)] text-[var(--ifm-color-primary)] bg-[var(--ifm-color-primary-light)]'
-                : 'hover:border-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary)] w-full hover:cursor-pointer'
-                }`}
+              className={clsx(
+                'navigationContainer',
+                isActive ? 'isActive' : 'isNotActive'
+              )}
               onClick={() => navigateToSection(config.route)}
             >
               <IconComponent size={24} /> {config.label}

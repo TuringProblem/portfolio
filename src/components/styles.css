@@ -3,13 +3,32 @@
 @tailwind utilities;
 
 .navigationItems {
-
-  @apply flex flex-col justify-center items-center mb-[24px] gap-[8px];
+  @apply flex flex-col justify-center items-center gap-[8px];
 }
 
+.navigationContainer {
+  @apply flex hover:shadow-[0px_1px_1px_0px] p-[4px] rounded-[8px] justify-center items-center gap-[8px] border-2 transition-colors hover:cursor-pointer;
+}
+
+.isActive {
+  @apply border-[var(--ifm-color-primary)] text-[var(--ifm-color-primary)] bg-[var(--ifm-color-primary-light)];
+}
+
+.isNotActive {
+  @apply hover:border-[var(--ifm-color-primary)] hover:text-[var(--ifm-color-primary)] w-full hover:cursor-pointer;
+}
 
 @media screen and (max-width: 996px) {
   .navigationItems {
-    @apply flex flex-row justify-center items-center mb-[24px] gap-[8px];
+    @apply flex flex-row justify-center items-center gap-[8px];
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .navigationItems{
+    @apply flex flex-col;
+  }
+  .navigationContainer {
+    @apply flex text-[10px];
   }
 }
