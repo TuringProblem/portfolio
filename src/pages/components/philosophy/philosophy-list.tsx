@@ -38,7 +38,6 @@ export const PhilosophyList = () => {
           </div>
           <Header title="Favorite Philosophers" />
         </div>
-
         <PhilosophyListAbstract values={values} onClick={(e: string) => updateText(e)} />
       </div >
       {philosopher}

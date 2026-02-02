@@ -6,7 +6,8 @@ import { getChanges } from '../data';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { NavigationCard } from '../../components/cardsV2/navigation-card';
 
-import './styles.css';
+
+import '../about.css';
 
 const EducationPage = () => {
   const resumeImageUrl = useBaseUrl('/img/resume.png');
@@ -16,22 +17,20 @@ const EducationPage = () => {
     <Layout
       title="Education"
       description="Andrew's Education">
-      <main className="w-full">
-        <div className="mainContainer">
-          <NavigationCard activeRoute="education">
-            <div className="flex justify-center items-center w-full h-full" onClick={() => window.location.href = '/portfolio/about'} aria-role="button" tabIndex={0}>
-              <Home size={24} />
-              About
-            </div>
-          </NavigationCard>
+      <main className="containedItems">
+        <NavigationCard activeRoute="education">
+          <div className="flex justify-center items-center w-full h-full" onClick={() => window.location.href = '/portfolio/about'} aria-role="button" tabIndex={0}>
+            <Home size={24} />
+            About
+          </div>
+        </NavigationCard>
 
 
-          <BaseCard className="flex-col shadow-xs justify-center items-center p-[24px] min-w-[1200px] max-h-[850px] bg-[var(--about-card-background)] border border-transparent hover:border-[var(--ifm-color-primary)] shadow-[0px_0.5px_1px_0px] hover:shadow-[0px_0.5px_1px_0px]">
-            <div className="text-center min-h-[700px] overflow-auto">
-              {changes.education}
-            </div>
-          </BaseCard>
-        </div>
+        <BaseCard className="flex-col shadow-xs justify-center items-center p-[24px] max-h-[850px] bg-[var(--about-card-background)] border border-transparent hover:border-[var(--ifm-color-primary)] shadow-[0px_0.5px_1px_0px] hover:shadow-[0px_0.5px_1px_0px] w-full">
+          <div className="text-center min-h-[700px] overflow-auto">
+            {changes.education}
+          </div>
+        </BaseCard>
       </main>
     </Layout>
   );

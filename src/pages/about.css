@@ -5,10 +5,10 @@
 
 
 .containedItems {
-  @apply mx-auto p-[24px] w-full flex justify-between;
+  @apply mx-auto gap-[48px] p-[24px] w-full flex justify-between;
 }
 @media screen and (max-width: 996px) {
   .containedItems {
-    @apply flex-col;
+    @apply flex-col gap-[48px];
   }
 }

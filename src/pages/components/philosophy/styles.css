@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.philosophyList {
+  @apply mx-auto p-[24px] w-full flex justify-between;
+}
+
+@media screen and (max-width: 996px) {
+  .philosophyList {
+    @apply flex-col gap-[24px];
+  }
+}
