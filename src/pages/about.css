@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.containedItems {
+  @apply mx-auto p-[24px] w-full flex justify-between;
+}
+@media screen and (max-width: 996px) {
+  .containedItems {
+    @apply flex-col;
+  }
+}
