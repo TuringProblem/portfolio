@@ -5,11 +5,12 @@ import { getChanges } from '../data';
 import { NavigationCard } from '../../components/cardsV2/navigation-card';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { AboutPageProps } from './_data';
-import { ShowHomeNavigationComponent } from './util/show-home-navigation';
+import { ShowHomeNavigationComponent } from '../../components/about/show-home-navigation';
 import type { GetHeight } from '../types/_types';
-import { HasDownloadButton } from './util/has-download-button';
+import { HasDownloadButton } from '../../components/about/has-download-button';
 
 import '../about.css';
+
 /**
  * @author { @Override }
  * @since 20260203
@@ -28,7 +29,13 @@ export const AboutSection: FC<AboutPageProps> = ({ sectionData }) => {
       description={sectionData.layoutDescription}>
       <main className="containedItems">
         <NavigationCard activeRoute={sectionData.navigationActiveRoute}>
-          <ShowHomeNavigationComponent sectionData={sectionData} />
+          {sectionData.hasQrCode ?
+            <ShowHomeNavigationComponent sectionData={sectionData} />
+
+            :
+            <ShowHomeNavigationComponent sectionData={sectionData} />
+
+          }
         </NavigationCard>
 
         <BaseCard className={`flex-col shadow-xs justify-center items-center p-[24px] bg-[var(--about-card-background)] border border-transparent hover:border-[var(--ifm-color-primary)] shadow-[0px_0.5px_1px_0px] hover:shadow-[0px_0.5px_1px_0px] overflow-auto overscroll-contain w-full ${sectionData.useDynamicHeight ? height : 'max-h-[850px]'}`}>

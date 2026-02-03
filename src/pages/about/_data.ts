@@ -8,6 +8,8 @@ interface AboutPage {
   hasDownloadButton: boolean;
   contentKey: string;
   useDynamicHeight: boolean;
+  hasQrCode?: boolean
+  qrLink?: string
 }
 
 interface AboutPageData {
@@ -43,6 +45,8 @@ const aboutData: AboutPageData = {
       hasDownloadButton: false,
       contentKey: 'github',
       useDynamicHeight: true,
+      hasQrCode: true,
+      qrLink: 'https://github.com/TuringProblem'
     },
     {
       resumeUrl: '/img/resume.png',

@@ -1,4 +1,4 @@
-import type { AboutPageProps } from '../_data';
+import type { AboutPageProps } from '../../pages/about/_data';
 import { Home } from 'lucide-react';
 
 
@@ -8,7 +8,7 @@ export const ShowHomeNavigationComponent: FC<AboutPageProps> = ({ sectionData })
     <>
       {sectionData.showNavigationHome && (
         <div
-          className="flex justify-center items-center w-full h-full"
+          className="flex justify-center items-center w-full h-full hover:cursor-pointer hover:text-[var(--ifm-color-primary)]"
           onClick={() => typeof window !== 'undefined' && (window.location.href = '/portfolio/about')}
           aria-role="button"
           tabIndex={0}

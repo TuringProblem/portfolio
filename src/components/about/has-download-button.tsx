@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import type { AboutPageProps } from '../_data';
+import type { AboutPageProps } from '../../pages/about/_data';
 import { Download } from 'lucide-react';
-import { downloadResume } from '../../../utils/downloadResume';
+import { downloadResume } from '../../utils/downloadResume';
 
 export const HasDownloadButton: FC<AboutPageProps> = ({ sectionData, resumeImageUrl }) => {
 
@@ -9,7 +9,7 @@ export const HasDownloadButton: FC<AboutPageProps> = ({ sectionData, resumeImage
     <>
       {sectionData.hasDownloadButton && (
         <div
-          className="flex justify-center mb-[16px]"
+          className="flex justify-center mb-[16px] hover:cursor-pointer hover:text-[var(--ifm-color-primary)]"
           onClick={() => downloadResume(resumeImageUrl)}
           aria-role="button"
           tabIndex={0}

@@ -5,11 +5,9 @@
 .philosophyList {
   @apply mx-auto p-[24px] w-full flex justify-between;
 }
-
 .heightImage {
   @apply h-[450px];
 }
-
 .cardContainer {
  @apply flex-col grid grid-cols-2 gap-[24px] max-h-[560px];
 }
@@ -17,6 +15,12 @@
   @apply w-full bg-[var(--philosophy-card-background)] gap-[8px] rounded-[8px] hover:cursor-pointer border-2 border-transparent hover:border-[var(--ifm-color-primary)];
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
+
+.rightSideContainer {
+ @apply flex justify-center gap-[24px] px-[24px] pt-[24px];
+}
+
+
 
 @media screen and (max-width: 1500px) {
   .cardContainer {
@@ -30,12 +34,10 @@
   }
 }
 
-
 @media screen and (max-width: 1380px) {
-  .heightImage {
-
+  .rightSideContainer {
+    @apply flex grid grid-cols-1 gap-[24px] px-[24px] pt-[24px] justify-center place-items-center overflow-auto overscroll-contain;
   }
-
 }
 
 @media screen and (max-width: 996px) {

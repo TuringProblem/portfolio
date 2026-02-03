@@ -12,7 +12,7 @@ export const defaultSideText = () => (
     <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px] overflow-auto">
       <p className="pt-[14px]">These are the philosophers I've been reading about.</p>
       To understand this page, here is a little overview on what to do :)
-      <div className="flex justify-start gap-[24px] px-[24px] pt-[24px]">
+      <div className="rightSideContainer">
         <img src={require('/static/img/example.png').default} alt="example" className="w-[350px] h-[350px]" />
         <code className="p-[24px] bg-transparent border-none">
           Click on the name to see Wikipedia

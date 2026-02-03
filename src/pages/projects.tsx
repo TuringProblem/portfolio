@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import { ProjectShowcase } from '@site/src/components/ProjectShowcase';
 
-export default function ProjectsPage(): JSX.Element {
+export default function ProjectsPage(): React.JSX.Element {
   return (
     <Layout
       title="Projects"

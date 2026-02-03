@@ -1,6 +1,13 @@
 import React from 'react';
 import { HeaderCard } from '../header-card';
-import { Colors, ColorMap } from '../../../pages';
+
+// Temporary types for legacy component
+type Colors = 'primary' | 'secondary' | 'tertiary';
+const ColorMap: Record<Colors, string> = {
+  primary: 'var(--ifm-color-primary)',
+  secondary: 'var(--ifm-color-secondary)', 
+  tertiary: 'var(--ifm-color-tertiary)'
+};
 
 interface MainCardProps {
   children?: React.ReactNode;

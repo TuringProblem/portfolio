@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Sun, Moon } from 'lucide-react';
-import { useTheme } from '../contexts/ThemeContext';
+import { useTheme } from './ThemeContext';
 import './ThemeToggle.css';
 
 export const ThemeToggle: React.FC = () => {
