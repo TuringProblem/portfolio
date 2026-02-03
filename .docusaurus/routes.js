@@ -48,28 +48,38 @@ export default [
     exact: true
   },
   {
-    path: '/portfolio/about/contact',
-    component: ComponentCreator('/portfolio/about/contact', '459'),
+    path: '/portfolio/about/contact/',
+    component: ComponentCreator('/portfolio/about/contact/', 'f83'),
     exact: true
   },
   {
-    path: '/portfolio/about/education',
-    component: ComponentCreator('/portfolio/about/education', '77d'),
+    path: '/portfolio/about/education/',
+    component: ComponentCreator('/portfolio/about/education/', '098'),
     exact: true
   },
   {
-    path: '/portfolio/about/github',
-    component: ComponentCreator('/portfolio/about/github', '12a'),
+    path: '/portfolio/about/github/',
+    component: ComponentCreator('/portfolio/about/github/', '1dc'),
     exact: true
   },
   {
-    path: '/portfolio/about/profile',
-    component: ComponentCreator('/portfolio/about/profile', '52c'),
+    path: '/portfolio/about/profile/',
+    component: ComponentCreator('/portfolio/about/profile/', 'd10'),
     exact: true
   },
   {
-    path: '/portfolio/about/resume',
-    component: ComponentCreator('/portfolio/about/resume', 'eb0'),
+    path: '/portfolio/about/resume/',
+    component: ComponentCreator('/portfolio/about/resume/', 'd6b'),
+    exact: true
+  },
+  {
+    path: '/portfolio/about/util/has-download-button',
+    component: ComponentCreator('/portfolio/about/util/has-download-button', '97c'),
+    exact: true
+  },
+  {
+    path: '/portfolio/about/util/show-home-navigation',
+    component: ComponentCreator('/portfolio/about/util/show-home-navigation', '35b'),
     exact: true
   },
   {

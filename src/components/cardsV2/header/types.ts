@@ -60,7 +60,6 @@ const grabTextAndPaddingSizes = (size: Sizes | undefined, position: Positions | 
       values.push('justify-center');
   }
 
-  console.log(values);
 
   return values;
 }

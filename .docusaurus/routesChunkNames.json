@@ -56,36 +56,50 @@
     },
     "config": "config---portfolio-about-5-e-9-b4a"
   },
-  "/portfolio/about/contact-459": {
-    "__comp": "__comp---site-src-pages-about-contact-tsx-459-c53",
+  "/portfolio/about/contact/-f83": {
+    "__comp": "__comp---site-src-pages-about-contact-index-tsxeaa-e83",
     "__context": {
       "plugin": "plugin---portfolio-abouta-74-c30"
     },
     "config": "config---portfolio-about-5-e-9-b4a"
   },
-  "/portfolio/about/education-77d": {
-    "__comp": "__comp---site-src-pages-about-education-tsx-5-e-9-39e",
+  "/portfolio/about/education/-098": {
+    "__comp": "__comp---site-src-pages-about-education-index-tsx-930-a3e",
     "__context": {
       "plugin": "plugin---portfolio-abouta-74-c30"
     },
     "config": "config---portfolio-about-5-e-9-b4a"
   },
-  "/portfolio/about/github-12a": {
-    "__comp": "__comp---site-src-pages-about-github-tsx-8-f-8-1d7",
+  "/portfolio/about/github/-1dc": {
+    "__comp": "__comp---site-src-pages-about-github-index-tsx-1-ed-09b",
     "__context": {
       "plugin": "plugin---portfolio-abouta-74-c30"
     },
     "config": "config---portfolio-about-5-e-9-b4a"
   },
-  "/portfolio/about/profile-52c": {
-    "__comp": "__comp---site-src-pages-about-profile-tsxa-23-3f1",
+  "/portfolio/about/profile/-d10": {
+    "__comp": "__comp---site-src-pages-about-profile-index-tsx-9-cc-592",
     "__context": {
       "plugin": "plugin---portfolio-abouta-74-c30"
     },
     "config": "config---portfolio-about-5-e-9-b4a"
   },
-  "/portfolio/about/resume-eb0": {
-    "__comp": "__comp---site-src-pages-about-resume-tsxb-48-5ec",
+  "/portfolio/about/resume/-d6b": {
+    "__comp": "__comp---site-src-pages-about-resume-index-tsx-15-a-39d",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
+  "/portfolio/about/util/has-download-button-97c": {
+    "__comp": "__comp---site-src-pages-about-util-has-download-button-tsxe-99-3af",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
+  "/portfolio/about/util/show-home-navigation-35b": {
+    "__comp": "__comp---site-src-pages-about-util-show-home-navigation-tsx-293-a3e",
     "__context": {
       "plugin": "plugin---portfolio-abouta-74-c30"
     },

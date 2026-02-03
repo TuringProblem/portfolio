@@ -1,0 +1,8 @@
+{
+  "type": "mdx",
+  "permalink": "/portfolio/notes",
+  "source": "@site/src/pages/notes.md",
+  "description": "every file has",
+  "frontMatter": {},
+  "unlisted": false
+}
