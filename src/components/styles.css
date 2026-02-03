@@ -7,7 +7,7 @@
 }
 
 .navigationContainer {
-  @apply flex hover:shadow-[0px_1px_1px_0px] p-[4px] rounded-[8px] justify-center items-center gap-[8px] border-2 transition-colors hover:cursor-pointer;
+  @apply flex hover:shadow-[0px_1px_1px_0px] p-[4px] rounded-[8px] justify-center items-center gap-[8px] border-2 transition-colors hover:cursor-pointer w-full;
 }
 
 .isActive {
@@ -20,7 +20,10 @@
 
 @media screen and (max-width: 996px) {
   .navigationItems {
-    @apply flex flex-row justify-center items-center gap-[8px];
+    @apply flex flex-row justify-center text-[10px] items-center gap-[8px] w-full;
+  }
+  .navigationContainer {
+    @apply flex text-[10px] justify-center items-center gap-[8px] border-2 transition-colors hover:cursor-pointer w-full;
   }
 }
 

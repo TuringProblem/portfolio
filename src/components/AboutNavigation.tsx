@@ -32,7 +32,7 @@ export const AboutNavigation: FC<AboutNavigationProps> = ({ activeRoute, }) => {
         const isActive = activeRoute === config.route;
 
         return (
-          <div key={index}>
+          <div key={index} className="w-full">
             <button
               className={clsx(
                 'navigationContainer',
