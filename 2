@@ -11,7 +11,7 @@
 }
 
 .cardContainer {
- @apply flex-col grid grid-cols-2 gap-[24px] max-h-[560px];
+ @apply flex-col grid grid-cols-2 grid-cols-[repeat(auto-fit,minmax(200px,1ft))] gap-[24px] max-h-[560px];
 }
 .abstractCard {
   @apply w-full bg-[var(--philosophy-card-background)] gap-[8px] rounded-[8px] hover:cursor-pointer border-2 border-transparent hover:border-[var(--ifm-color-primary)];
@@ -19,9 +19,6 @@
 }
 
 @media screen and (max-width: 1500px) {
-  .cardContainer {
-    @apply grid grid-cols-1;
-  }
   .abstractCard {
     @apply flex flex-col;
   }

@@ -36,3 +36,9 @@ for doing mobile view
 
 
 ```
+
+
+
+
+
+need to cleanup the dynamics of the philosophy list  

@@ -3,21 +3,25 @@ import { ListProps } from './philosophy.interface';
 import { Header } from '../../../components/cardsV2/header';
 import { values, defaultSideText } from './data';
 
+import './styles.css';
+
 const PhilosophyListAbstract: React.FC<ListProps> = ({ values, onClick }) => {
   return (
-    <div className="flex-col grid grid-cols-2 grid-cols-[repeat(auto-fit,minmax(200px,1ft))] gap-[24px] max-h-[560px]">
-      {values.map((item, index) => (
-        <div key={index} className="w-full shadow-xs bg-[var(--philosophy-card-background)] gap-[8px] rounded-[8px] hover:cursor-pointer border-2 border-transparent hover:border-[var(--ifm-color-primary)]" onClick={() => onClick(item.description)} >
-          <div className="p-[24px_24px_0px_24px]">
-            <img src={item.imageLink} alt="image" height={450} />
-            <div className="text-[14px]">
-              <i>{item.quote}</i>
+    < div className="cardContainer" >
+      {
+        values.map((item, index) => (
+          <div key={index} className="abstractCard" onClick={() => onClick(item.description)} >
+            <div className="p-[24px_24px_0px_24px]">
+              <img src={item.imageLink} alt="image" className="heightImage" />
+              <div className="text-[14px]">
+                <i>{item.quote}</i>
+              </div>
             </div>
+            <a href={item.link} className="text-blue-600 hover:underline">{item.philosopher}</a>
           </div>
-          <a href={item.link} className="text-blue-600 hover:underline">{item.philosopher}</a>
-        </div>
-      ))}
-    </div>
+        ))
+      }
+    </div >
   );
 }
 
