@@ -113,12 +113,12 @@ export const values: philosophyListProps[] = [
     quote: '"It is the people who no one imagined anything of who do the things no one can imagine"',
     description: (
       <>
-        <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
+        <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px] overflow-auto overscroll-contain">
           <PhilosophyCard philosopherHeader={PhilosophersEnum.AlanTuring} />
           <div className="">
             One of my biggest inspirations and influences in Computer Science is Alan Turing. Before I knew anything about the Computer Science field, I had watched <strong><i><a href="https://en.wikipedia.org/wiki/The_Imitation_Game">The Immatation Game</a></i></strong> and I was astonished.
           </div>
-          <div className="flex justify-between px-[16px]">
+          <div className="rightSideContainer">
             <div className="flex-col">
               <Header title="Turing Machines" />
               <code className="text-left p-[16px] bg-transparent border-none">
@@ -140,7 +140,11 @@ export const values: philosophyListProps[] = [
                 <br />
               </code>
             </div>
-            <Header title="Turing Machines" />
+            <div>
+              <Header title="Turing Machines" />
+              yoooo
+            </div>
+
           </div>
         </div>
       </>

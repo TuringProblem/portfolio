@@ -1,252 +1,295 @@
 {
-  "/portfolio/about-4af": {
-    "__comp": "61809400",
+  "/portfolio/__docusaurus/debug-040": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---portfolio-docusaurus-debugb-38-91d"
+    }
+  },
+  "/portfolio/__docusaurus/debug/config-9ca": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---portfolio-docusaurus-debugb-38-91d"
+    }
+  },
+  "/portfolio/__docusaurus/debug/content-da5": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---portfolio-docusaurus-debugb-38-91d"
     },
-    "config": "5e9f5e1a"
+    "__props": "__props---portfolio-docusaurus-debug-content-01-e-b86"
+  },
+  "/portfolio/__docusaurus/debug/globalData-46a": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---portfolio-docusaurus-debugb-38-91d"
+    }
+  },
+  "/portfolio/__docusaurus/debug/metadata-138": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---portfolio-docusaurus-debugb-38-91d"
+    }
+  },
+  "/portfolio/__docusaurus/debug/registry-3df": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---portfolio-docusaurus-debugb-38-91d"
+    }
+  },
+  "/portfolio/__docusaurus/debug/routes-dd6": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---portfolio-docusaurus-debugb-38-91d"
+    }
+  },
+  "/portfolio/about-4af": {
+    "__comp": "__comp---site-src-pages-about-tsx-618-aa9",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
   },
   "/portfolio/about/-92e": {
-    "__comp": "5681cdc9",
+    "__comp": "__comp---site-src-pages-about-index-ts-568-cc4",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---portfolio-abouta-74-c30"
     },
-    "config": "5e9f5e1a"
+    "config": "config---portfolio-about-5-e-9-b4a"
   },
   "/portfolio/about/contact/-f83": {
-    "__comp": "eaab6f9c",
+    "__comp": "__comp---site-src-pages-about-contact-index-tsxeaa-e83",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---portfolio-abouta-74-c30"
     },
-    "config": "5e9f5e1a"
+    "config": "config---portfolio-about-5-e-9-b4a"
   },
   "/portfolio/about/education/-098": {
-    "__comp": "9306a6a4",
+    "__comp": "__comp---site-src-pages-about-education-index-tsx-930-a3e",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---portfolio-abouta-74-c30"
     },
-    "config": "5e9f5e1a"
+    "config": "config---portfolio-about-5-e-9-b4a"
   },
   "/portfolio/about/github/-1dc": {
-    "__comp": "1ed00873",
+    "__comp": "__comp---site-src-pages-about-github-index-tsx-1-ed-09b",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---portfolio-abouta-74-c30"
     },
-    "config": "5e9f5e1a"
+    "config": "config---portfolio-about-5-e-9-b4a"
   },
   "/portfolio/about/profile/-d10": {
-    "__comp": "9cc26210",
+    "__comp": "__comp---site-src-pages-about-profile-index-tsx-9-cc-592",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---portfolio-abouta-74-c30"
     },
-    "config": "5e9f5e1a"
+    "config": "config---portfolio-about-5-e-9-b4a"
   },
   "/portfolio/about/resume/-d6b": {
-    "__comp": "15ac0ec9",
+    "__comp": "__comp---site-src-pages-about-resume-index-tsx-15-a-39d",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---portfolio-abouta-74-c30"
     },
-    "config": "5e9f5e1a"
+    "config": "config---portfolio-about-5-e-9-b4a"
   },
   "/portfolio/blog-394": {
-    "__comp": "a6aa9e1f",
+    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
-      "plugin": "36994c47"
+      "plugin": "plugin---portfolio-blog-369-566"
     },
-    "sidebar": "814f3328",
+    "sidebar": "sidebar---portfolio-blog-814-da6",
     "items": [
       {
-        "content": "0fa1853e"
+        "content": "content---portfolio-blog-0-fa-015"
       }
     ],
-    "__props": "72001c94"
+    "__props": "__props---portfolio-blog-720-1e0"
   },
   "/portfolio/blog/archive-5f2": {
-    "__comp": "9e4087bc",
+    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
     "__context": {
-      "plugin": "36994c47"
+      "plugin": "plugin---portfolio-blog-369-566"
     },
-    "__props": "f7b078df"
+    "__props": "__props---portfolio-blog-archivef-7-b-74d"
   },
   "/portfolio/blog/authors-569": {
-    "__comp": "621db11d",
+    "__comp": "__comp---theme-blog-pages-blog-authors-list-page-621-70c",
     "__context": {
       "data": {
-        "blogMetadata": "acecf23e"
+        "blogMetadata": "blogMetadata---portfolio-blog-authorsace-023"
       },
-      "plugin": "36994c47"
+      "plugin": "plugin---portfolio-blog-369-566"
     },
-    "sidebar": "814f3328",
-    "__props": "7a0e5b83"
+    "sidebar": "sidebar---portfolio-blog-814-da6",
+    "__props": "__props---portfolio-blog-authors-7-a-0-df2"
   },
   "/portfolio/blog/authors/andrew-e73": {
-    "__comp": "33fc5bb8",
+    "__comp": "__comp---theme-blog-pages-blog-authors-posts-page-33-f-bd5",
     "__context": {
       "data": {
-        "blogMetadata": "acecf23e"
+        "blogMetadata": "blogMetadata---portfolio-blog-authorsace-023"
       },
-      "plugin": "36994c47"
+      "plugin": "plugin---portfolio-blog-369-566"
     },
     "items": [
       {
-        "content": "0fa1853e"
+        "content": "content---portfolio-blog-0-fa-015"
       }
     ],
-    "sidebar": "814f3328",
-    "__props": "ad15b9dc"
+    "sidebar": "sidebar---portfolio-blog-814-da6",
+    "__props": "__props---portfolio-blog-authors-andrewad-1-6e4"
   },
   "/portfolio/blog/tags-921": {
-    "__comp": "01a85c17",
+    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
     "__context": {
-      "plugin": "36994c47"
+      "plugin": "plugin---portfolio-blog-369-566"
     },
-    "sidebar": "814f3328",
-    "__props": "fe576a67"
+    "sidebar": "sidebar---portfolio-blog-814-da6",
+    "__props": "__props---portfolio-blog-tagsfe-5-1d6"
   },
   "/portfolio/blog/tags/docusaurus-ebe": {
-    "__comp": "6875c492",
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "36994c47"
+      "plugin": "plugin---portfolio-blog-369-566"
     },
-    "sidebar": "814f3328",
+    "sidebar": "sidebar---portfolio-blog-814-da6",
     "items": [
       {
-        "content": "0fa1853e"
+        "content": "content---portfolio-blog-0-fa-015"
       }
     ],
-    "__props": "1c17ec0b"
+    "__props": "__props---portfolio-blog-tags-docusaurus-1-c-1-4b3"
   },
   "/portfolio/blog/tags/introduction-bcf": {
-    "__comp": "6875c492",
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "36994c47"
+      "plugin": "plugin---portfolio-blog-369-566"
     },
-    "sidebar": "814f3328",
+    "sidebar": "sidebar---portfolio-blog-814-da6",
     "items": [
       {
-        "content": "0fa1853e"
+        "content": "content---portfolio-blog-0-fa-015"
       }
     ],
-    "__props": "063e8a5d"
+    "__props": "__props---portfolio-blog-tags-introduction-063-f7f"
   },
   "/portfolio/blog/tags/portfolio-754": {
-    "__comp": "6875c492",
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "36994c47"
+      "plugin": "plugin---portfolio-blog-369-566"
     },
-    "sidebar": "814f3328",
+    "sidebar": "sidebar---portfolio-blog-814-da6",
     "items": [
       {
-        "content": "0fa1853e"
+        "content": "content---portfolio-blog-0-fa-015"
       }
     ],
-    "__props": "3e1a5329"
+    "__props": "__props---portfolio-blog-tags-portfolio-3-e-1-7cd"
   },
   "/portfolio/blog/welcome-50d": {
-    "__comp": "ccc49370",
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "acecf23e"
+        "blogMetadata": "blogMetadata---portfolio-blog-authorsace-023"
       },
-      "plugin": "36994c47"
+      "plugin": "plugin---portfolio-blog-369-566"
     },
-    "sidebar": "814f3328",
-    "content": "0f26e943"
+    "sidebar": "sidebar---portfolio-blog-814-da6",
+    "content": "content---portfolio-blog-welcome-0-f-2-85c"
   },
   "/portfolio/components/-a8d": {
-    "__comp": "01845f35",
+    "__comp": "__comp---site-src-pages-components-index-ts-018-083",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---portfolio-abouta-74-c30"
     },
-    "config": "5e9f5e1a"
+    "config": "config---portfolio-about-5-e-9-b4a"
   },
   "/portfolio/components/philosophy/-340": {
-    "__comp": "7f6dc41c",
+    "__comp": "__comp---site-src-pages-components-philosophy-index-ts-7-f-6-eae",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---portfolio-abouta-74-c30"
     },
-    "config": "5e9f5e1a"
+    "config": "config---portfolio-about-5-e-9-b4a"
   },
   "/portfolio/components/philosophy/data-791": {
-    "__comp": "7f943913",
+    "__comp": "__comp---site-src-pages-components-philosophy-data-tsx-7-f-9-16a",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---portfolio-abouta-74-c30"
     },
-    "config": "5e9f5e1a"
+    "config": "config---portfolio-about-5-e-9-b4a"
   },
   "/portfolio/components/philosophy/philosophy-list-98f": {
-    "__comp": "e4e78dce",
+    "__comp": "__comp---site-src-pages-components-philosophy-philosophy-list-tsxe-4-e-6ee",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---portfolio-abouta-74-c30"
     },
-    "config": "5e9f5e1a"
+    "config": "config---portfolio-about-5-e-9-b4a"
   },
   "/portfolio/components/philosophy/philosophy.interface-b52": {
-    "__comp": "f851d8cf",
+    "__comp": "__comp---site-src-pages-components-philosophy-philosophy-interface-tsf-85-fa6",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---portfolio-abouta-74-c30"
     },
-    "config": "5e9f5e1a"
+    "config": "config---portfolio-about-5-e-9-b4a"
   },
   "/portfolio/data-d95": {
-    "__comp": "afb18646",
+    "__comp": "__comp---site-src-pages-data-tsxafb-fca",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---portfolio-abouta-74-c30"
     },
-    "config": "5e9f5e1a"
+    "config": "config---portfolio-about-5-e-9-b4a"
   },
   "/portfolio/markdown-page-64b": {
-    "__comp": "1f391b9e",
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---portfolio-abouta-74-c30"
     },
-    "content": "393be207"
+    "content": "content---portfolio-markdown-page-393-99e"
   },
   "/portfolio/projects-e73": {
-    "__comp": "a8f03678",
+    "__comp": "__comp---site-src-pages-projects-tsxa-8-f-73b",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---portfolio-abouta-74-c30"
     },
-    "config": "5e9f5e1a"
+    "config": "config---portfolio-about-5-e-9-b4a"
   },
   "/portfolio/docs-4d7": {
-    "__comp": "5e95c892",
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
-      "plugin": "aba21aa0"
+      "plugin": "plugin---portfolio-docsaba-85b"
     }
   },
   "/portfolio/docs-536": {
-    "__comp": "a7bd4aaa",
-    "__props": "0629a91f"
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---portfolio-docs-062-775"
   },
   "/portfolio/docs-6f3": {
-    "__comp": "a94703ab"
+    "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/portfolio/docs/projects/Atoms-589": {
-    "__comp": "17896441",
-    "content": "bcad9ecf"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---portfolio-docs-projects-atomsbca-849"
   },
   "/portfolio/docs/projects/Deej-2a0": {
-    "__comp": "17896441",
-    "content": "1a032fd8"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---portfolio-docs-projects-deej-1-a-0-ad0"
   },
   "/portfolio/docs/projects/INSTALL-be4": {
-    "__comp": "17896441",
-    "content": "c0d5c2d6"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---portfolio-docs-projects-instal-lc-0-d-a49"
   },
   "/portfolio/docs/projects/intro-077": {
-    "__comp": "17896441",
-    "content": "6a670c2a"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---portfolio-docs-projects-intro-6-a-6-d27"
   },
   "/portfolio/docs/projects/Shifty-332": {
-    "__comp": "17896441",
-    "content": "f2aecfab"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---portfolio-docs-projects-shiftyf-2-a-f31"
   },
   "/portfolio/-467": {
-    "__comp": "1df93b7f",
+    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
     "__context": {
-      "plugin": "a7456010"
+      "plugin": "plugin---portfolio-abouta-74-c30"
     },
-    "config": "5e9f5e1a"
+    "config": "config---portfolio-about-5-e-9-b4a"
   }
 }

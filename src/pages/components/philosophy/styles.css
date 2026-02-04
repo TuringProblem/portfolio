@@ -17,7 +17,7 @@
 }
 
 .rightSideContainer {
- @apply flex justify-center gap-[24px] px-[24px] pt-[24px];
+ @apply flex justify-center gap-[24px] px-[24px] pt-[24px] overflow-auto overscroll-contain;
 }
 
 
@@ -46,5 +46,8 @@
   }
   .abstractCard {
     @apply flex flex-col gap-[8px];
+  }
+  .rightSideContainer {
+    @apply overflow-auto overscroll-contain;
   }
 }
