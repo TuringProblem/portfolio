@@ -28,7 +28,7 @@ const PhilosophyListAbstract: React.FC<ListProps> = ({ values, onClick }) => {
 
 export const PhilosophyList = () => {
   const [philosopher, setPhilosopher] = useState<ReactNode | null>(defaultSideText());
-  const updateText = (e: ReactNode) => setPhilosopher(e);
+  const updateText = (e: ReactNode): void => setPhilosopher(e);
 
 
 

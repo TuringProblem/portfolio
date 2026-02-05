@@ -91,13 +91,16 @@
     },
     "config": "config---portfolio-about-5-e-9-b4a"
   },
-  "/portfolio/blog-394": {
+  "/portfolio/blog-2c4": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
       "plugin": "plugin---portfolio-blog-369-566"
     },
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "items": [
+      {
+        "content": "content---portfolio-blogdd-0-d05"
+      },
       {
         "content": "content---portfolio-blog-0-fa-015"
       }
@@ -122,7 +125,7 @@
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "__props": "__props---portfolio-blog-authors-7-a-0-df2"
   },
-  "/portfolio/blog/authors/andrew-e73": {
+  "/portfolio/blog/authors/andrew-087": {
     "__comp": "__comp---theme-blog-pages-blog-authors-posts-page-33-f-bd5",
     "__context": {
       "data": {
@@ -131,6 +134,9 @@
       "plugin": "plugin---portfolio-blog-369-566"
     },
     "items": [
+      {
+        "content": "content---portfolio-blogdd-0-d05"
+      },
       {
         "content": "content---portfolio-blog-0-fa-015"
       }
@@ -146,7 +152,7 @@
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "__props": "__props---portfolio-blog-tagsfe-5-1d6"
   },
-  "/portfolio/blog/tags/docusaurus-ebe": {
+  "/portfolio/blog/tags/about-679": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---portfolio-blog-369-566"
@@ -154,25 +160,31 @@
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "items": [
       {
+        "content": "content---portfolio-blogdd-0-d05"
+      },
+      {
         "content": "content---portfolio-blog-0-fa-015"
       }
     ],
-    "__props": "__props---portfolio-blog-tags-docusaurus-1-c-1-4b3"
+    "__props": "__props---portfolio-blog-tags-aboutd-58-f92"
   },
-  "/portfolio/blog/tags/introduction-bcf": {
+  "/portfolio/blog/tags/introduction-185": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---portfolio-blog-369-566"
     },
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "items": [
+      {
+        "content": "content---portfolio-blogdd-0-d05"
+      },
       {
         "content": "content---portfolio-blog-0-fa-015"
       }
     ],
     "__props": "__props---portfolio-blog-tags-introduction-063-f7f"
   },
-  "/portfolio/blog/tags/portfolio-754": {
+  "/portfolio/blog/tags/portfolio-47a": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---portfolio-blog-369-566"
@@ -180,10 +192,24 @@
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "items": [
       {
+        "content": "content---portfolio-blogdd-0-d05"
+      },
+      {
         "content": "content---portfolio-blog-0-fa-015"
       }
     ],
     "__props": "__props---portfolio-blog-tags-portfolio-3-e-1-7cd"
+  },
+  "/portfolio/blog/Thoughts on Docusaurus-104": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---portfolio-blog-authorsace-023"
+      },
+      "plugin": "plugin---portfolio-blog-369-566"
+    },
+    "sidebar": "sidebar---portfolio-blog-814-da6",
+    "content": "content---portfolio-blog-thoughts-on-docusaurusdb-7-65c"
   },
   "/portfolio/blog/welcome-50d": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",

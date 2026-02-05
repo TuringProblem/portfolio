@@ -74,7 +74,7 @@ export default [
   },
   {
     path: '/portfolio/blog',
-    component: ComponentCreator('/portfolio/blog', '394'),
+    component: ComponentCreator('/portfolio/blog', '2c4'),
     exact: true
   },
   {
@@ -89,7 +89,7 @@ export default [
   },
   {
     path: '/portfolio/blog/authors/andrew',
-    component: ComponentCreator('/portfolio/blog/authors/andrew', 'e73'),
+    component: ComponentCreator('/portfolio/blog/authors/andrew', '087'),
     exact: true
   },
   {
@@ -98,18 +98,23 @@ export default [
     exact: true
   },
   {
-    path: '/portfolio/blog/tags/docusaurus',
-    component: ComponentCreator('/portfolio/blog/tags/docusaurus', 'ebe'),
+    path: '/portfolio/blog/tags/about',
+    component: ComponentCreator('/portfolio/blog/tags/about', '679'),
     exact: true
   },
   {
     path: '/portfolio/blog/tags/introduction',
-    component: ComponentCreator('/portfolio/blog/tags/introduction', 'bcf'),
+    component: ComponentCreator('/portfolio/blog/tags/introduction', '185'),
     exact: true
   },
   {
     path: '/portfolio/blog/tags/portfolio',
-    component: ComponentCreator('/portfolio/blog/tags/portfolio', '754'),
+    component: ComponentCreator('/portfolio/blog/tags/portfolio', '47a'),
+    exact: true
+  },
+  {
+    path: '/portfolio/blog/Thoughts on Docusaurus',
+    component: ComponentCreator('/portfolio/blog/Thoughts on Docusaurus', '104'),
     exact: true
   },
   {

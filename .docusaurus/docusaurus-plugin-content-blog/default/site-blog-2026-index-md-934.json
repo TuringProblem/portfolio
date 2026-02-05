@@ -1,10 +1,10 @@
 {
-  "permalink": "/portfolio/blog/welcome",
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2025-01-18-welcome/index.md",
-  "source": "@site/blog/2025-01-18-welcome/index.md",
-  "title": "Welcome to my Portfolio Blog",
-  "description": "Welcome to my new portfolio blog! 🎉",
-  "date": "2025-01-18T00:00:00.000Z",
+  "permalink": "/portfolio/blog/Thoughts on Docusaurus",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2026/index.md",
+  "source": "@site/blog/2026/index.md",
+  "title": "Thoughts on Docusaurus",
+  "description": "So far, I think that the Docusaurus platform has been nice... I'm still trying to understand the",
+  "date": "2026-02-04T03:24:46.752Z",
   "tags": [
     {
       "inline": false,
@@ -24,8 +24,8 @@
       "permalink": "/portfolio/blog/tags/about"
     }
   ],
-  "readingTime": 0.79,
-  "hasTruncateMarker": true,
+  "readingTime": 0.57,
+  "hasTruncateMarker": false,
   "authors": [
     {
       "name": "Andrew ( @Override )",
@@ -44,8 +44,8 @@
     }
   ],
   "frontMatter": {
-    "slug": "welcome",
-    "title": "Welcome to my Portfolio Blog",
+    "slug": "Thoughts on Docusaurus",
+    "title": "Thoughts on Docusaurus",
     "authors": [
       "andrew"
     ],
@@ -56,8 +56,8 @@
     ]
   },
   "unlisted": false,
-  "prevItem": {
-    "title": "Thoughts on Docusaurus",
-    "permalink": "/portfolio/blog/Thoughts on Docusaurus"
+  "nextItem": {
+    "title": "Welcome to my Portfolio Blog",
+    "permalink": "/portfolio/blog/welcome"
   }
 }

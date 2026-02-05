@@ -1,5 +1,6 @@
 import React from 'react';
-import { HeaderTypes, grabTextAndPaddingSizes } from './types';
+import { HeaderTypes } from './types';
+import { grabTextAndPaddingSizes } from '../../../utils';
 
 /**
  * @author { @Override }

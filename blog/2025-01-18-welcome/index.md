@@ -2,7 +2,7 @@
 slug: welcome
 title: Welcome to my Portfolio Blog
 authors: [andrew]
-tags: [introduction, portfolio, docusaurus]
+tags: [introduction, portfolio, about]
 ---
 
 Welcome to my new portfolio blog! 🎉
@@ -30,3 +30,28 @@ I'll be using this blog to share:
 - Academic journey at Northeastern University
 
 Stay tuned for more content! 🚀
+
+
+:::info
+
+This is a note
+
+:::
+
+:::caution
+
+This is a caution
+
+:::
+
+:::warning
+
+This is a warning
+
+:::
+
+:::danger
+
+This is a danger
+
+:::

@@ -8,6 +8,9 @@ export const PhilosophyCard: React.FC<PhilosophyCardProps> = ({ philosopherHeade
       <div>
         {subHeader}
       </div>
+      <div>
+        {mainContent}
+      </div>
     </>
   );
 }

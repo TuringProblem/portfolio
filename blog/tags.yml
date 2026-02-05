@@ -9,9 +9,9 @@ portfolio:
   description: Posts about portfolio development and updates
 
 docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Posts about Docusaurus development
+  label: about 
+  permalink: /about
+  description: Goes to about page
 
 programming:
   label: Programming
