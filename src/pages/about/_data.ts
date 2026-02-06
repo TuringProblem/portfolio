@@ -3,14 +3,20 @@ interface AboutPage {
   layoutTitle: string;
   layoutDescription: string;
   navigationActiveRoute: string;
-  locationRef: string;
+  locationRef: LocationRef;
   showNavigationHome: boolean;
   hasDownloadButton: boolean;
   contentKey: string;
   useDynamicHeight: boolean;
-  hasQrCode?: boolean
   qrLink?: string
 }
+
+type LocationRef =
+  | 'profile'
+  | 'github'
+  | 'education'
+  | 'contact'
+  | 'resume'
 
 interface AboutPageData {
   data: AboutPage[];
@@ -20,6 +26,8 @@ interface AboutPageProps {
   sectionData: AboutPage;
   resumeImageUrl?: string;
 }
+
+type QRProps = { ref: LocationRef, qrLink: string };
 
 
 const aboutData: AboutPageData = {
@@ -45,7 +53,6 @@ const aboutData: AboutPageData = {
       hasDownloadButton: false,
       contentKey: 'github',
       useDynamicHeight: true,
-      hasQrCode: true,
       qrLink: 'https://github.com/TuringProblem'
     },
     {
@@ -86,6 +93,6 @@ const aboutData: AboutPageData = {
 
 
 
-export { aboutData, AboutPage, AboutPageData, AboutPageProps };
+export { aboutData, AboutPage, AboutPageData, AboutPageProps, QRProps };
 
 

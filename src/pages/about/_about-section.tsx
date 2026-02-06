@@ -8,6 +8,9 @@ import { AboutPageProps } from './_data';
 import { ShowHomeNavigationComponent } from '../../components/about/show-home-navigation';
 import type { GetHeight } from '../types/_types';
 import { HasDownloadButton } from '../../components/about/has-download-button';
+import { QRCodeSVG } from 'qrcode.react';
+
+import { PrintQRCodeData } from '../../utils/shared-utils';
 
 import '../about.css';
 
@@ -28,16 +31,14 @@ export const AboutSection: FC<AboutPageProps> = ({ sectionData }) => {
       title={sectionData.layoutTitle}
       description={sectionData.layoutDescription}>
       <main className="containedItems">
-        <NavigationCard activeRoute={sectionData.navigationActiveRoute}>
-          {sectionData.hasQrCode ?
-            <ShowHomeNavigationComponent sectionData={sectionData} />
-
-            :
-            <ShowHomeNavigationComponent sectionData={sectionData} />
-
-          }
-        </NavigationCard>
-
+        <div>
+          <div className="flex flex-col gap-[48px]">
+            <NavigationCard activeRoute={sectionData.navigationActiveRoute}>
+              <ShowHomeNavigationComponent sectionData={sectionData} />
+            </NavigationCard>
+            <PrintQRCodeData ref={sectionData.locationRef} qrLink={sectionData.qrLink} />
+          </div>
+        </div>
         <BaseCard className={`flex-col shadow-xs justify-center items-center p-[24px] bg-[var(--about-card-background)] border border-transparent hover:border-[var(--ifm-color-primary)] shadow-[0px_0.5px_1px_0px] hover:shadow-[0px_0.5px_1px_0px] overflow-auto overscroll-contain w-full ${sectionData.useDynamicHeight ? height : 'max-h-[850px]'}`}>
           <HasDownloadButton sectionData={sectionData} resumeImageUrl={resumeImageUrl} />
           <div className="text-center min-h-[700px] overflow-auto">
@@ -45,6 +46,6 @@ export const AboutSection: FC<AboutPageProps> = ({ sectionData }) => {
           </div>
         </BaseCard>
       </main>
-    </Layout>
+    </Layout >
   );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import { BaseCard } from '../components/cardsV2';
 import { NavigationCard } from '../components/cardsV2/navigation-card';
+import { QRCodeSVG } from 'qrcode.react';
 import { aboutData } from './about/_data';
 
 import './about.css';
@@ -40,7 +41,10 @@ export const IntroPage: React.FC = () => {
       title="Me"
       description="Introduction to Andrew">
       <main className="containedItems">
-        <NavigationCard />
+        <div className="flex flex-col gap-[48px]">
+          <NavigationCard />
+          <QRCodeSVG value="https://github.com/TuringProblem" size={256} />
+        </div>
         <CardContent />
       </main>
     </Layout>

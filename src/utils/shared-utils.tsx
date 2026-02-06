@@ -1,4 +1,7 @@
+import { FC } from 'react';
 import { Sizes, Positions } from '../components/cardsV2/header/types';
+import { QRCodeSVG } from 'qrcode.react';
+import { QRProps } from '../pages/about/_data';
 
 const grabTextAndPaddingSizes = (size: Sizes | undefined, position: Positions | string | undefined): string[] => {
   const values: string[] = [];
@@ -41,5 +44,17 @@ const grabTextAndPaddingSizes = (size: Sizes | undefined, position: Positions | 
   return values;
 }
 
-export { grabTextAndPaddingSizes };
+
+const PrintQRCodeData: FC<QRProps> = ({ ref, qrLink }) => {
+  if (ref === 'github') {
+    return (
+      <div>
+        <QRCodeSVG value={qrLink} size={256} />
+      </div>
+
+    );
+  }
+}
+
+export { grabTextAndPaddingSizes, PrintQRCodeData };
 
