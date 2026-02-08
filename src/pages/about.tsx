@@ -43,7 +43,6 @@ export const IntroPage: React.FC = () => {
       <main className="containedItems">
         <div className="flex flex-col gap-[48px]">
           <NavigationCard />
-          <QRCodeSVG value="https://github.com/TuringProblem" size={256} />
         </div>
         <CardContent />
       </main>

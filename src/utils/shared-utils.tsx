@@ -48,10 +48,10 @@ const grabTextAndPaddingSizes = (size: Sizes | undefined, position: Positions | 
 const PrintQRCodeData: FC<QRProps> = ({ ref, qrLink }) => {
   if (ref === 'github') {
     return (
-      <div>
-        <QRCodeSVG value={qrLink} size={256} />
+      <div className="flex flex-col gap-[8px] items-center align-center text-center text-[14px]">
+        <QRCodeSVG value={qrLink} size={200} />
+        <p>Scan to checkout my GitHub profile!</p>
       </div>
-
     );
   }
 }
