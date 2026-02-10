@@ -2,7 +2,7 @@ import React from 'react';
 import { philosophyListProps } from "./philosophy.interface";
 import { Header } from '../../../components/cardsV2/header';
 import { PhilosophyCard } from '../../../components/cardsV2/philosophy-card';
-import { PhilosophersEnum, Philosophers } from '../../../components/cardsV2/philosophy-card/types';
+import { PhilosophersEnum, Philosophers, philosophersMainContent } from '../../../components/cardsV2/philosophy-card/types';
 
 
 
@@ -33,10 +33,7 @@ export const values: philosophyListProps[] = [
     description: (
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
-          <PhilosophyCard philosopherHeader={PhilosophersEnum.LudwigWittgenstein} />
-          <div>
-            Ludwig Wittgenstein's work has been an interest of mine for a while. As someone who is interested in formal languages and logic, Ludwigs' idea that Languages define our capabilities as an individual
-          </div>
+          <PhilosophyCard philosopherHeader={PhilosophersEnum.LudwigWittgenstein} mainContent={philosophersMainContent[PhilosophersEnum.LudwigWittgenstein]} />
         </div>
       </>
     )
@@ -49,7 +46,7 @@ export const values: philosophyListProps[] = [
     description: (
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
-          <PhilosophyCard philosopherHeader={PhilosophersEnum.ReneDescartes} />
+          <PhilosophyCard philosopherHeader={PhilosophersEnum.ReneDescartes} mainContent={philosophersMainContent[PhilosophersEnum.ReneDescartes]} />
         </div>
       </>
     )
@@ -62,7 +59,7 @@ export const values: philosophyListProps[] = [
     description: (
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
-          <PhilosophyCard philosopherHeader={PhilosophersEnum.FriedrichNietzsche} />
+          <PhilosophyCard philosopherHeader={PhilosophersEnum.FriedrichNietzsche} mainContent={philosophersMainContent[PhilosophersEnum.FriedrichNietzsche]} />
         </div>
       </>
     )
@@ -75,7 +72,7 @@ export const values: philosophyListProps[] = [
     description: (
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
-          <PhilosophyCard philosopherHeader={PhilosophersEnum.Plato} />
+          <PhilosophyCard philosopherHeader={PhilosophersEnum.Plato} mainContent={philosophersMainContent[PhilosophersEnum.Plato]} />
         </div>
       </>
     )
@@ -88,7 +85,7 @@ export const values: philosophyListProps[] = [
     description: (
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
-          <PhilosophyCard philosopherHeader={PhilosophersEnum.ImmanuelKant} />
+          <PhilosophyCard philosopherHeader={PhilosophersEnum.ImmanuelKant} mainContent={philosophersMainContent[PhilosophersEnum.ImmanuelKant]} />
         </div>
       </>
     )
@@ -101,7 +98,7 @@ export const values: philosophyListProps[] = [
     description: (
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
-          <PhilosophyCard philosopherHeader={PhilosophersEnum.Epictetus} />
+          <PhilosophyCard philosopherHeader={PhilosophersEnum.Epictetus} mainContent={philosophersMainContent[PhilosophersEnum.Epictetus]} />
         </div>
       </>
     )
@@ -114,38 +111,7 @@ export const values: philosophyListProps[] = [
     description: (
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px] overflow-auto overscroll-contain">
-          <PhilosophyCard philosopherHeader={PhilosophersEnum.AlanTuring} />
-          <div className="">
-            One of my biggest inspirations and influences in Computer Science is Alan Turing. Before I knew anything about the Computer Science field, I had watched <strong><i><a href="https://en.wikipedia.org/wiki/The_Imitation_Game">The Immatation Game</a></i></strong> and I was astonished.
-          </div>
-          <div className="rightSideContainer">
-            <div className="flex-col">
-              <Header title="Turing Machines" />
-              <code className="text-left p-[16px] bg-transparent border-none">
-                Definition: TM = (Q, Σ, Γ, δ, q0, β, F)
-                <br />
-                Q: Set of states
-                <br />
-                Σ: Set of symbols
-                <br />
-                Γ: Set of input symbols
-                <br />
-                δ: Transition function
-                <br />
-                q0: Start state
-                <br />
-                β: Accepting states
-                <br />
-                F: Set of final states
-                <br />
-              </code>
-            </div>
-            <div>
-              <Header title="Turing Machines" />
-              yoooo
-            </div>
-
-          </div>
+          <PhilosophyCard philosopherHeader={PhilosophersEnum.AlanTuring} mainContent={philosophersMainContent[PhilosophersEnum.AlanTuring]} />
         </div>
       </>
     )
@@ -158,7 +124,7 @@ export const values: philosophyListProps[] = [
     description: (
       <>
         <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px]">
-          <PhilosophyCard philosopherHeader={PhilosophersEnum.KurtGoedel} subHeader="this is a sub header" />
+          <PhilosophyCard philosopherHeader={PhilosophersEnum.KurtGoedel} subHeader="this is a sub header" mainContent={philosophersMainContent[PhilosophersEnum.KurtGoedel]} />
         </div>
       </>
     )
