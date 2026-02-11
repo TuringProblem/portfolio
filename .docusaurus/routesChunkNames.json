@@ -91,13 +91,16 @@
     },
     "config": "config---portfolio-about-5-e-9-b4a"
   },
-  "/portfolio/blog-2c4": {
+  "/portfolio/blog-c7c": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
       "plugin": "plugin---portfolio-blog-369-566"
     },
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "items": [
+      {
+        "content": "content---portfolio-blog-980-451"
+      },
       {
         "content": "content---portfolio-blogdd-0-d05"
       },
@@ -125,7 +128,7 @@
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "__props": "__props---portfolio-blog-authors-7-a-0-df2"
   },
-  "/portfolio/blog/authors/andrew-087": {
+  "/portfolio/blog/authors/andrew-ca9": {
     "__comp": "__comp---theme-blog-pages-blog-authors-posts-page-33-f-bd5",
     "__context": {
       "data": {
@@ -134,6 +137,9 @@
       "plugin": "plugin---portfolio-blog-369-566"
     },
     "items": [
+      {
+        "content": "content---portfolio-blog-980-451"
+      },
       {
         "content": "content---portfolio-blogdd-0-d05"
       },
@@ -144,6 +150,17 @@
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "__props": "__props---portfolio-blog-authors-andrewad-1-6e4"
   },
+  "/portfolio/blog/Game-32e": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---portfolio-blog-authorsace-023"
+      },
+      "plugin": "plugin---portfolio-blog-369-566"
+    },
+    "sidebar": "sidebar---portfolio-blog-814-da6",
+    "content": "content---portfolio-blog-game-423-8e6"
+  },
   "/portfolio/blog/tags-921": {
     "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
     "__context": {
@@ -152,13 +169,16 @@
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "__props": "__props---portfolio-blog-tagsfe-5-1d6"
   },
-  "/portfolio/blog/tags/about-679": {
+  "/portfolio/blog/tags/about-fb1": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---portfolio-blog-369-566"
     },
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "items": [
+      {
+        "content": "content---portfolio-blog-980-451"
+      },
       {
         "content": "content---portfolio-blogdd-0-d05"
       },
@@ -168,13 +188,16 @@
     ],
     "__props": "__props---portfolio-blog-tags-aboutd-58-f92"
   },
-  "/portfolio/blog/tags/introduction-185": {
+  "/portfolio/blog/tags/introduction-a02": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---portfolio-blog-369-566"
     },
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "items": [
+      {
+        "content": "content---portfolio-blog-980-451"
+      },
       {
         "content": "content---portfolio-blogdd-0-d05"
       },
@@ -184,13 +207,16 @@
     ],
     "__props": "__props---portfolio-blog-tags-introduction-063-f7f"
   },
-  "/portfolio/blog/tags/portfolio-47a": {
+  "/portfolio/blog/tags/portfolio-b73": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---portfolio-blog-369-566"
     },
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "items": [
+      {
+        "content": "content---portfolio-blog-980-451"
+      },
       {
         "content": "content---portfolio-blogdd-0-d05"
       },

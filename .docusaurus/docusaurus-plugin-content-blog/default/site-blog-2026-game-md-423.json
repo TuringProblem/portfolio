@@ -1,10 +1,10 @@
 {
-  "permalink": "/portfolio/blog/Thoughts on Docusaurus",
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2026/thoughts.md",
-  "source": "@site/blog/2026/thoughts.md",
-  "title": "Thoughts on Docusaurus",
-  "description": "So far, I think that the Docusaurus platform has been nice... I'm still trying to understand the",
-  "date": "2026-02-05T16:21:08.000Z",
+  "permalink": "/portfolio/blog/Game",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2026/game.md",
+  "source": "@site/blog/2026/game.md",
+  "title": "Building a Game",
+  "description": "Logistics",
+  "date": "2026-02-11T16:35:32.273Z",
   "tags": [
     {
       "inline": false,
@@ -24,7 +24,7 @@
       "permalink": "/portfolio/blog/tags/about"
     }
   ],
-  "readingTime": 0.57,
+  "readingTime": 0.47,
   "hasTruncateMarker": false,
   "authors": [
     {
@@ -44,8 +44,8 @@
     }
   ],
   "frontMatter": {
-    "slug": "Thoughts on Docusaurus",
-    "title": "Thoughts on Docusaurus",
+    "slug": "Game",
+    "title": "Building a Game",
     "authors": [
       "andrew"
     ],
@@ -56,12 +56,8 @@
     ]
   },
   "unlisted": false,
-  "prevItem": {
-    "title": "Building a Game",
-    "permalink": "/portfolio/blog/Game"
-  },
   "nextItem": {
-    "title": "Welcome to my Portfolio Blog",
-    "permalink": "/portfolio/blog/welcome"
+    "title": "Thoughts on Docusaurus",
+    "permalink": "/portfolio/blog/Thoughts on Docusaurus"
   }
 }

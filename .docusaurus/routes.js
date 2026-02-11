@@ -74,7 +74,7 @@ export default [
   },
   {
     path: '/portfolio/blog',
-    component: ComponentCreator('/portfolio/blog', '2c4'),
+    component: ComponentCreator('/portfolio/blog', 'c7c'),
     exact: true
   },
   {
@@ -89,7 +89,12 @@ export default [
   },
   {
     path: '/portfolio/blog/authors/andrew',
-    component: ComponentCreator('/portfolio/blog/authors/andrew', '087'),
+    component: ComponentCreator('/portfolio/blog/authors/andrew', 'ca9'),
+    exact: true
+  },
+  {
+    path: '/portfolio/blog/Game',
+    component: ComponentCreator('/portfolio/blog/Game', '32e'),
     exact: true
   },
   {
@@ -99,17 +104,17 @@ export default [
   },
   {
     path: '/portfolio/blog/tags/about',
-    component: ComponentCreator('/portfolio/blog/tags/about', '679'),
+    component: ComponentCreator('/portfolio/blog/tags/about', 'fb1'),
     exact: true
   },
   {
     path: '/portfolio/blog/tags/introduction',
-    component: ComponentCreator('/portfolio/blog/tags/introduction', '185'),
+    component: ComponentCreator('/portfolio/blog/tags/introduction', 'a02'),
     exact: true
   },
   {
     path: '/portfolio/blog/tags/portfolio',
-    component: ComponentCreator('/portfolio/blog/tags/portfolio', '47a'),
+    component: ComponentCreator('/portfolio/blog/tags/portfolio', 'b73'),
     exact: true
   },
   {

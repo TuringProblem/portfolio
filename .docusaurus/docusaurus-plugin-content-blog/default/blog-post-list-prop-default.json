@@ -2,6 +2,12 @@
   "title": "Recent posts",
   "items": [
     {
+      "title": "Building a Game",
+      "permalink": "/portfolio/blog/Game",
+      "unlisted": false,
+      "date": "2026-02-11T16:35:32.273Z"
+    },
+    {
       "title": "Thoughts on Docusaurus",
       "permalink": "/portfolio/blog/Thoughts on Docusaurus",
       "unlisted": false,

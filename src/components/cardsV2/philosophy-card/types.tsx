@@ -41,12 +41,14 @@ export const philosophersMainContent: Record<Philosophers, ReactNode> = {
     </p>
   ),
   [PhilosophersEnum.FriedrichNietzsche]: (
-    <p>
-      Friedrich Nietzsche (born Friedrich Wilhelm Nietzsche; 1844 – 1900) was
-      a German philosopher, poet, and philologist. He is widely regarded as one
-      of the most important figures in the history of philosophy. He is known for
-      his work in the fields of existentialism, nihilism, and the will to power.
-    </p>
+    <>
+      <p>
+        Friedrich Nietzsche (born Friedrich Wilhelm Nietzsche; 1844 – 1900) was
+        a German philosopher, poet, and philologist. He is widely regarded as one
+        of the most important figures in the history of philosophy. He is known for
+        his work in the fields of existentialism, nihilism, and the will to power.
+      </p>
+    </>
   ),
   [PhilosophersEnum.Plato]: (
     <p>
