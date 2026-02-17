@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import { PhilosophyList } from '@site/src/pages/components/philosophy';
 import { TextFieldCard } from '@site/src/components/cardsV2/text-field-card';
 import { EducationCard } from '@site/src/components/cardsV2/education-card';
+import { educationData } from '@site/src/components/cardsV2/education-card/data';
 
 
 export const getChanges = (resumeImageUrl: string): { [key: string]: ReactNode } => ({
@@ -29,7 +30,7 @@ export const getChanges = (resumeImageUrl: string): { [key: string]: ReactNode }
   education: (
     <>
       <p>I'm on Twitter as <a href="https://twitter.com/TuringProblem" className="text-blue-600 hover:underline">@TuringProblem</a>. I tweet about programming, math, and computer science.</p>
-      <EducationCard />
+      <EducationCard itemXS={educationData} />
     </>
   ),
   contact: (
