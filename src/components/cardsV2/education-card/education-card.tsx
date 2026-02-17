@@ -1,13 +1,13 @@
-import { FC, useState } from 'react';
+import { FC, useState, ReactNode } from 'react';
 import './education-card-styles.css';
 
 export interface EducationData {
-  icon: React.ReactNode;
+  icon: ReactNode;
   title: string;
   subtitle: string;
   id: string;
   color: string;
-  lowerText?: string;
+  lowerText?: ReactNode;
 }
 
 interface EducationCardProps {

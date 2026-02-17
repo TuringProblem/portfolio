@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.baseCard {
+  background-color: var(--avatar-card);
+  width: calc(100% - 32px);
+
+  @apply flex flex-col border-2 border-[var(--avatar-card-border)]; 
+}

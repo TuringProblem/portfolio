@@ -22,6 +22,9 @@
 
   --philosophy-card-background: rgba(150, 150, 150, 0.1);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --avatar-card: rgba(234, 170, 0, 0.7);
+  --avatar-card-border: rgba(0, 32, 91, 0.8);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -39,4 +42,7 @@
   --about-card-background-hover: rgba(0, 0, 0, 0.1); 
   --philosophy-card-background: rgba(150, 150, 150, 0.1);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --avatar-card: rgba(234, 170, 0, 0.7);
+  --avatar-card-border: rgba(0, 32, 91, 0.8);
 }

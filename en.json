@@ -1,0 +1,13 @@
+{
+  "welcome.message": "Welcome to my portfolio",
+  "navigation.about": "About", 
+  "navigation.projects": "Projects",
+  "navigation.blog": "Blog",
+
+  "cards": {
+    "education": {
+      "massasoitLowerText": "",
+      "northeasterLowerText": "Northeastern University (2025 - current) - I currently attend ",
+    }
+  }
+}

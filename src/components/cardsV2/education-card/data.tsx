@@ -1,5 +1,10 @@
-import { GraduationCap, Award, BookOpen, Calendar, Flame, Star } from 'lucide-react';
+import { GraduationCap, Award, Calendar, Flame, Star } from 'lucide-react';
 import { EducationData } from './education-card';
+import { MassasoitLower } from './components/massasoit';
+import { NortheasternLower } from './components/northeastern';
+
+
+
 export const educationData: EducationData[] = [
   {
     id: 'degree',
@@ -7,21 +12,22 @@ export const educationData: EducationData[] = [
     title: 'Massasoit CC',
     subtitle: 'Associate Degree',
     color: '#EAAA00',
-    lowerText: '(2021 - 2023)'
+    lowerText: <MassasoitLower />
   },
   {
     id: 'certification',
-    icon: <Award size={20} />,
+    icon: <GraduationCap size={20} />,
     title: 'Northeastern University',
     subtitle: 'Bachelor Degree',
-    color: '#C8102E'
+    color: '#C8102E',
+    lowerText: <NortheasternLower />
   },
   {
     id: 'courses',
-    icon: <BookOpen size={20} />,
+    icon: <Award size={20} />,
     title: 'Online Learning',
     subtitle: 'Skill Development',
-    color: '#FFCE54'
+    color: '#000fff'
   },
   {
     id: 'projects',
