@@ -1,0 +1,32 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  gap: 16px;
+}
+
+@media (min-width: 576px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 996px) {
+
+  .wrapper {
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+

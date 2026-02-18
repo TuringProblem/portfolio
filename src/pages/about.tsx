@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import { BaseCard } from '../components/cardsV2';
 import { NavigationCard } from '../components/cardsV2/navigation-card';
-import { QRCodeSVG } from 'qrcode.react';
 import { aboutData } from './about/_data';
 
 import './about.css';

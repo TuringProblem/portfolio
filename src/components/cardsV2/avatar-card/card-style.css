@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 .baseCard {
-  background-color: var(--avatar-card);
-  width: calc(100% - 32px);
-
-  @apply flex flex-col border-2 border-[var(--avatar-card-border)]; 
+  width: 100%; 
+  height: 100%;
+  max-width: 300px;
+  padding: 32px;
+  @apply flex flex-col border-2 border-[var(--avatar-card-border)];
+  align-items: center;
 }

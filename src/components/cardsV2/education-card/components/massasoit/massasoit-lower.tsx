@@ -1,19 +1,27 @@
 import { FC } from 'react';
 import { AvatarCard } from '../../../avatar-card';
+import { ProfessorNames } from '../shared';
 
-enum ProfessorNames {
-  ALOUSSI = 'Dr. Sarhmaad Al Aloussi',
-  ALOUSSI_IMG = 'https://www.cs.mass.edu/~jbs/images/jbs.jpg',
-  BROWN = 'Janet Brown-Sederberg',
-  BROWN_IMG = 'https://www.cs.mass.edu/~jbs/images/jbs.jpg'
-}
+import '../shared/shared-styles.css';
+
+const brownLessons = [
+  'Introduction to Java',
+  'Introduction to Python'
+]
+const aloussiLessons = [
+  'Advanced Java',
+  'System Design',
+  'Data Structures and Algorithms'
+]
 
 export const MassasoitLower: FC = () => (
   <>
-    Massasoit CC (2023- 2025) - I studied Computer Science underneath Dr. Sarhmaad Al Aloussi, and Janet Brown-Sederberg
-    <div className="flex flex-row gap-[16px]">
-      <AvatarCard img={ProfessorNames.BROWN_IMG} title={ProfessorNames.BROWN} />
-      <AvatarCard img={ProfessorNames.ALOUSSI_IMG} title={ProfessorNames.ALOUSSI} />
+    <p>
+      Massasoit CC (2023 - 2025) - I studied Computer Science underneath:
+    </p>
+    <div className="wrapper">
+      <AvatarCard img={ProfessorNames.BROWN_IMG} title={ProfessorNames.BROWN} lessons={brownLessons} bg="massasoit" />
+      <AvatarCard img={ProfessorNames.ALOUSSI_IMG} title={ProfessorNames.ALOUSSI} lessons={aloussiLessons} bg="massasoit" />
     </div>
   </>
 );
