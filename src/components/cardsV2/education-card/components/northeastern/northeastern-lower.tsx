@@ -15,12 +15,10 @@ const BELL_LESSONS = [
 
 export const NortheasternLower: FC = () => (
   <>
-    <div>
-      Northeastern University (2025 - current) - I currently attend where I'm studying <strong>Theoretical Computer Science</strong>
-    </div>
-    <div>
+    <p>
+      Northeastern University (2025 - current) - I currently attend where I'm studying <strong>Theoretical Computer Science</strong> <br />
       Here I found my passion for <strong>Mathematics</strong>, <strong>Complexity Theory</strong>, and <strong>Programming Languages</strong>
-    </div>
+    </p>
     <div className="wrapper">
       <AvatarCard img={ProfessorNames.ZHENGZHONG_IMG} title={ProfessorNames.ZHENGZHONG} lessons={JIN_LESSONS} bg="northeastern" />
       <AvatarCard img={ProfessorNames.BELL_IMG} lessons={BELL_LESSONS} title={ProfessorNames.BELL} bg="northeastern" />

@@ -12,27 +12,20 @@ interface AvatarCardProps {
   bg: Background;
 }
 
+const backgroundMap: Record<Background, string[]> = {
+  massasoit: ['bg-[var(--avatar-card-massasoit)]', 'border-[var(--avatar-card-border-massasoit)]', 'flex-grid grid-cols-2'],
+  northeastern: ['bg-[var(--avatar-card-northeastern)]', 'border-[var(--avatar-card-border-northeastern)]', 'flex-grid grid-cols-3'],
+
+}
+
 const handleBg = (bg: Background): string[] => {
-  const values: string[] = [];
-  switch (bg) {
-    case 'massasoit':
-      values.push('bg-[var(--avatar-card-massasoit)]');
-      values.push('border-[var(--avatar-card-border-massasoit)]');
-      break;
-    case 'northeastern':
-      values.push('bg-[var(--avatar-card-northeastern)]');
-      values.push('border-[var(--avatar-card-border-northeastern)]');
-      break;
-    default:
-      values.push('bg-[var(--ifm-color-primary)]');
-      break;
-  }
-  return values;
+  const values = backgroundMap[bg];
+  return [...values];
 }
 
 
 export const AvatarCard: FC<AvatarCardProps> = ({ img, title, lessons, bg, }) => {
-  const [bgClass, borderClass] = handleBg(bg);
+  const [bgClass, borderClass, gridSize] = handleBg(bg);
 
   return (
     <>
