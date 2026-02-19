@@ -1,27 +1,30 @@
 import { FC } from 'react';
 import { AvatarCard } from '../../../avatar-card';
 import { ProfessorNames } from '../shared';
+import { BROWN_LESSONS, ALOUSSI_LESSONS } from '../shared/shared.types';
+import { AvatarCardProps } from '../../../avatar-card';
 
-import '../shared/shared-styles.css';
 
-const brownLessons = [
-  'Introduction to Java',
-  'Introduction to Python'
-]
-const aloussiLessons = [
-  'Advanced Java',
-  'System Design',
-  'Data Structures and Algorithms'
-]
+const data: AvatarCardProps[] = [
+  {
+    img: ProfessorNames.BROWN_IMG,
+    title: ProfessorNames.BROWN,
+    lessons: BROWN_LESSONS,
+    bg: 'massasoit'
+  },
+  {
+    img: ProfessorNames.ALOUSSI_IMG,
+    title: ProfessorNames.ALOUSSI,
+    lessons: ALOUSSI_LESSONS,
+    bg: 'massasoit'
+  }
+];
 
 export const MassasoitLower: FC = () => (
   <>
     <p>
       Massasoit CC (2023 - 2025) - I studied Computer Science underneath:
     </p>
-    <div className="wrapper">
-      <AvatarCard img={ProfessorNames.BROWN_IMG} title={ProfessorNames.BROWN} lessons={brownLessons} bg="massasoit" />
-      <AvatarCard img={ProfessorNames.ALOUSSI_IMG} title={ProfessorNames.ALOUSSI} lessons={aloussiLessons} bg="massasoit" />
-    </div>
+    <AvatarCard data={data} />
   </>
 );

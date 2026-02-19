@@ -10,3 +10,10 @@
   @apply flex flex-col border-2 border-[var(--avatar-card-border)];
   align-items: center;
 }
+
+
+.wrapper {
+  display: grid;
+  justify-items: center;
+  gap: 16px;
+}
