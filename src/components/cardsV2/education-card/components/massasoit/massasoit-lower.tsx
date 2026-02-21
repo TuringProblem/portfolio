@@ -10,21 +10,21 @@ const data: AvatarCardProps[] = [
     img: ProfessorNames.BROWN_IMG,
     title: ProfessorNames.BROWN,
     lessons: BROWN_LESSONS,
-    bg: 'massasoit'
   },
   {
     img: ProfessorNames.ALOUSSI_IMG,
     title: ProfessorNames.ALOUSSI,
     lessons: ALOUSSI_LESSONS,
-    bg: 'massasoit'
   }
 ];
+
+
 
 export const MassasoitLower: FC = () => (
   <>
     <p>
       Massasoit CC (2023 - 2025) - I studied Computer Science underneath:
     </p>
-    <AvatarCard data={data} />
+    <AvatarCard data={data} bg='massasoit' />
   </>
 );

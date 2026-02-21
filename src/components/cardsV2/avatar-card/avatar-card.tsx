@@ -8,11 +8,12 @@ export interface AvatarCardProps {
   img?: string;
   title: string;
   lessons?: string[];
-  bg: Background;
+  img_ref?: string;
 }
 
 interface AvatarData {
   data: AvatarCardProps[];
+  bg: Background;
 }
 
 const backgroundMap: Record<Background, string[]> = {
@@ -25,15 +26,15 @@ const handleBg = (bg: Background): string[] => {
   return [...values];
 }
 
-export const AvatarCard: FC<AvatarData> = ({ data }) => {
-  const [bgClass, borderClass, gridSize] = handleBg(data[0].bg);
+export const AvatarCard: FC<AvatarData> = ({ data, bg }) => {
+  const [bgClass, borderClass, gridSize] = handleBg(bg);
 
   return (
     <div className={`wrapper ${gridSize}`}>
       {data.map((item: AvatarCardProps, index: number) => (
         <BaseCard className={`baseCard ${bgClass} ${borderClass}`} key={index}>
           <img src={item.img || ''} alt={item.title} className="w-[100px] h-[100px] rounded-full" />
-          {item.title}
+          <a href={item.img_ref}>{item.title}</a>
           {item.lessons && item.lessons.map((lesson, index) => (
             <li key={index} className="text-[12px] justify-start">{lesson}</li>
           ))}
