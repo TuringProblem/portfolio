@@ -8,22 +8,25 @@ export interface EducationData {
   id: string;
   color: string;
   lowerText?: ReactNode;
+  img?: string;
 }
 
 interface EducationCardProps {
-  onClick?: () => void;
   itemXS: EducationData[];
+  hasVideo?: boolean;
 }
 
-export const EducationCard: FC<EducationCardProps> = ({ onClick, itemXS }) => {
+export const EducationCard: FC<EducationCardProps> = ({ itemXS, hasVideo }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [activeText, setActiveText] = useState<EducationData['lowerText']>(itemXS[0].lowerText || '');
 
   const handleOptionClick = (index: number) => {
     setActiveIndex(index);
     setActiveText(itemXS[index].lowerText || '');
-    onClick?.();
+
+    console.log("this is the index ", index);
   };
+
 
   return (
     <div className="education-card-wrapper">
@@ -61,10 +64,11 @@ export const EducationCard: FC<EducationCardProps> = ({ onClick, itemXS }) => {
 
             </div>
           </div>
-        ))}
-      </div>
+        ))
+        }
+      </div >
       {activeText}
-    </div>
+    </div >
 
   );
 }

@@ -27,6 +27,9 @@
   --avatar-card-northeastern: #C8102E;
   --avatar-card-border: rgba(0, 32, 91, 0.6);
   --avatar-card-border-northeastern: rgba(0, 32, 91, 0.6);
+
+  --northeastern-text: rgba(255, 225, 225, 1);
+  --massasoit-text: rgba(40, 91, 77, 1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -49,4 +52,7 @@
   --avatar-card-northeastern: #C8102E;
   --avatar-card-border: rgba(0, 32, 91, 0.6);
   --avatar-card-border-northeastern: rgba(255, 255, 255, 0.6);
+
+  --northeastern-text: rgba(0, 0, 0, 0.8);
+  --massasoit-text: rgba(0, 32, 91, 1);
 }
