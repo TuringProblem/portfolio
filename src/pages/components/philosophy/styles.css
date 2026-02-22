@@ -6,7 +6,7 @@
   @apply mx-auto p-[24px] w-full flex justify-between;
 }
 .heightImage {
-  @apply h-[450px];
+  @apply h-[400px];
 }
 .cardContainer {
  @apply flex-col grid grid-cols-2 gap-[24px] max-h-[560px];
