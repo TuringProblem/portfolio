@@ -1,5 +1,4 @@
-type GetHeight = () => number;
+export type GetHeight = () => number;
 
 
 
-export { GetHeight };

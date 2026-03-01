@@ -20,6 +20,19 @@ import '../about.css';
  * @see <a href="https://github.com/TuringProblem">GitHub Profile</a>
  **/
 
+
+const LeftNav: FC<AboutPageProps> = ({ sectionData }) => (
+  <div>
+    <div className="flex flex-col gap-[48px]">
+      <NavigationCard activeRoute={sectionData.navigationActiveRoute}>
+        <ShowHomeNavigationComponent sectionData={sectionData} />
+      </NavigationCard>
+      <PrintQRCodeData ref={sectionData.locationRef} qrLink={sectionData.qrLink} />
+    </div>
+  </div>
+);
+
+
 export const AboutSection: FC<AboutPageProps> = ({ sectionData }) => {
   const resumeImageUrl = useBaseUrl(sectionData.resumeUrl);
   const getHeight: GetHeight = () => typeof window !== 'undefined' ? window.innerHeight : 800;
@@ -31,20 +44,15 @@ export const AboutSection: FC<AboutPageProps> = ({ sectionData }) => {
       title={sectionData.layoutTitle}
       description={sectionData.layoutDescription}>
       <main className="containedItems">
-        <div>
-          <div className="flex flex-col gap-[48px]">
-            <NavigationCard activeRoute={sectionData.navigationActiveRoute}>
-              <ShowHomeNavigationComponent sectionData={sectionData} />
-            </NavigationCard>
-            <PrintQRCodeData ref={sectionData.locationRef} qrLink={sectionData.qrLink} />
-          </div>
-        </div>
-        <BaseCard className={`flex-col shadow-xs justify-center items-center p-[24px] bg-[var(--about-card-background)] border border-transparent hover:border-[var(--ifm-color-primary)] shadow-[0px_0.5px_1px_0px] hover:shadow-[0px_0.5px_1px_0px] overflow-auto overscroll-contain w-full ${sectionData.useDynamicHeight ? height : 'max-h-[850px]'}`}>
+        <LeftNav sectionData={sectionData} />
+
+        <BaseCard className={`flex-col shadow-xs justify-center items-center p-[24px] bg-[var(--about-card-background)] border border-transparent hover:border-[var(--ifm-color-primary)] shadow-[0px_0.5px_1px_0px] hover:shadow-[0px_0.5px_1px_0px] overflow-auto overscroll-contain w-full ${sectionData.isStatic ? height : 'max-h-[850px]'}`}>
           <HasDownloadButton sectionData={sectionData} resumeImageUrl={resumeImageUrl} />
           <div className="text-center min-h-[700px] overflow-auto">
             {changes[sectionData.contentKey] || changes.default}
           </div>
         </BaseCard>
+
       </main>
     </Layout >
   );

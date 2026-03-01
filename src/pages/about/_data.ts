@@ -7,7 +7,7 @@ interface AboutPage {
   showNavigationHome: boolean;
   hasDownloadButton: boolean;
   contentKey: string;
-  useDynamicHeight: boolean;
+  isStatic: boolean;
   qrLink?: string
 }
 
@@ -30,6 +30,7 @@ interface AboutPageProps {
 type QRProps = { ref: LocationRef, qrLink: string };
 
 
+// BUG: useDynamicHeight logic is reversed, fix the name - make it isStatic 
 const aboutData: AboutPageData = {
   data: [
     {
@@ -41,7 +42,7 @@ const aboutData: AboutPageData = {
       showNavigationHome: true,
       hasDownloadButton: false,
       contentKey: 'default',
-      useDynamicHeight: true,
+      isStatic: true,
     },
     {
       resumeUrl: '/img/resume.png',
@@ -52,7 +53,7 @@ const aboutData: AboutPageData = {
       showNavigationHome: true,
       hasDownloadButton: false,
       contentKey: 'github',
-      useDynamicHeight: true,
+      isStatic: true,
       qrLink: 'https://github.com/TuringProblem'
     },
     {
@@ -64,7 +65,7 @@ const aboutData: AboutPageData = {
       showNavigationHome: true,
       hasDownloadButton: false,
       contentKey: 'education',
-      useDynamicHeight: true,
+      isStatic: true,
     },
     {
       resumeUrl: '/img/resume.png',
@@ -75,7 +76,7 @@ const aboutData: AboutPageData = {
       showNavigationHome: true,
       hasDownloadButton: false,
       contentKey: 'contact',
-      useDynamicHeight: true,
+      isStatic: true,
     },
     {
       resumeUrl: '/img/resume.png',
@@ -86,7 +87,7 @@ const aboutData: AboutPageData = {
       showNavigationHome: true,
       hasDownloadButton: true,
       contentKey: 'resume',
-      useDynamicHeight: true,
+      isStatic: false,
     },
   ]
 } satisfies AboutPageData;

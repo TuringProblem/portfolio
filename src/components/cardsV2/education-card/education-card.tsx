@@ -1,4 +1,5 @@
 import { FC, useState, ReactNode } from 'react';
+import { Header } from '../header';
 import './education-card-styles.css';
 
 export interface EducationData {
@@ -30,9 +31,7 @@ export const EducationCard: FC<EducationCardProps> = ({ itemXS, hasVideo }) => {
 
   return (
     <div className="education-card-wrapper">
-      <h3 className="education-card-title">
-        Education & Learning
-      </h3>
+      <Header title="Education & Learning" size="lg" position="center" />
 
       <div className="mainContainer">
         {itemXS.map((item, index) => (
@@ -46,7 +45,7 @@ export const EducationCard: FC<EducationCardProps> = ({ itemXS, hasVideo }) => {
               <div className="education-item-inner">
                 <div className="education-icon-wrapper">
                   <div className="education-icon">
-                    {item.icon}
+                    {item.icon} {/*Using Lucide icon*/}
                   </div>
                 </div>
 

@@ -5,7 +5,7 @@
 
 
 .containedItems {
-  @apply mx-auto gap-[48px] p-[24px] w-full flex justify-between;
+  @apply mx-auto gap-[48px] p-[24px] w-full flex justify-between h-[875px];
 }
 @media screen and (max-width: 996px) {
   .containedItems {
