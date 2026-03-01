@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { AvatarCard } from '../../../avatar-card';
 import { ProfessorNames } from '../shared';
-import { JIN_LESSONS, BELL_LESSONS } from '../shared/shared.types';
+import { JIN_LESSONS, BELL_LESSONS, HOLTZEN_LESSONS } from '../shared/shared.types';
 import { AvatarCardProps } from '../../../avatar-card';
 
 
@@ -20,6 +20,7 @@ const data: AvatarCardProps[] = [
   },
   {
     img: ProfessorNames.HOLTZEN_IMG,
+    lessons: HOLTZEN_LESSONS,
     title: ProfessorNames.HOLTZEN,
     img_ref: ProfessorNames.HOLTZEN_REF,
   }

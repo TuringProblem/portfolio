@@ -15,6 +15,7 @@ const data: AvatarCardProps[] = [
     img: ProfessorNames.ALOUSSI_IMG,
     title: ProfessorNames.ALOUSSI,
     lessons: ALOUSSI_LESSONS,
+    noImage: true,
   }
 ];
 

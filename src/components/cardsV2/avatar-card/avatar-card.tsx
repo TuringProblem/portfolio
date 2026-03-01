@@ -9,6 +9,7 @@ export interface AvatarCardProps {
   title: string;
   lessons?: string[];
   img_ref?: string;
+  noImage?: boolean;
 }
 
 interface AvatarData {
@@ -29,11 +30,12 @@ const handleBg = (bg: Background): string[] => {
 export const AvatarCard: FC<AvatarData> = ({ data, bg }) => {
   const [bgClass, borderClass, gridSize, textColor] = handleBg(bg);
 
+
   return (
     <div className={`wrapper ${gridSize}`}>
       {data.map((item: AvatarCardProps, index: number) => (
         <BaseCard className={`baseCard ${bgClass} ${borderClass}`} key={index}>
-          <img src={item.img || ''} alt={item.title} className="w-[100px] h-[100px] rounded-full" />
+          {!item.noImage && <img src={item.img || ''} alt={item.title} className="w-[100px] h-[100px] rounded-full" />}
           <a href={item.img_ref} className={`${textColor}`}>{item.title}</a>
           {item.lessons && item.lessons.map((lesson, index) => (
             <li key={index} className="text-[12px] justify-start">{lesson}</li>

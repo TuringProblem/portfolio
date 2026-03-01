@@ -27,7 +27,7 @@ export const educationData: EducationData[] = [
     icon: <SquareCode size={20} />,
     title: 'Compilers & Languages',
     subtitle: 'Skill Development',
-    color: '#000000'
+    color: '#000000',
   },
   // add more data in the future if needed
 ];

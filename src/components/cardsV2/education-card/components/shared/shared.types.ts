@@ -25,6 +25,10 @@ export const BELL_LESSONS = [
 ];
 
 
+export const HOLTZEN_LESSONS = [
+  'CS 4400 - Programming Languages',
+];
+
 export const BROWN_LESSONS = [
   'Introduction to Java',
   'Introduction to Python'
