@@ -8,7 +8,7 @@ export const PhilosophyCard: React.FC<PhilosophyCardProps> = ({ philosopherHeade
       <div>
         {subHeader}
       </div>
-      <div>
+      <div className="p-[16px]">
         {mainContent}
       </div>
     </>

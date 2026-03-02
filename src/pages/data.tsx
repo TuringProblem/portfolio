@@ -60,13 +60,17 @@ export const getChanges = (resumeImageUrl: string): { [key: string]: ReactNode }
   ),
   education: (
     <>
-      <p>I'm on Twitter as <a href="https://twitter.com/TuringProblem" className="text-blue-600 hover:underline">@TuringProblem</a>. I tweet about programming, math, and computer science.</p>
       <EducationCard itemXS={educationData} />
     </>
   ),
   contact: (
     <>
-      <ContactContent data={contentData} />
+      <div>
+        <ContactContent data={contentData} />
+        <div className="flex justify-start p-[16px]">
+          <a href="" >link</a>
+        </div>
+      </div>
     </>
   ),
   resume: (

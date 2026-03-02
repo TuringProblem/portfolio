@@ -1,6 +1,5 @@
 import React from 'react';
 import { philosophyListProps } from "./philosophy.interface";
-import { Header } from '../../../components/cardsV2/header';
 import { PhilosophyCard } from '../../../components/cardsV2/philosophy-card';
 import { PhilosophersEnum, Philosophers, philosophersMainContent } from '../../../components/cardsV2/philosophy-card/types';
 
@@ -14,10 +13,10 @@ export const defaultSideText = () => (
       To understand this page, here is a little overview on what to do :)
       <div className="rightSideContainer">
         <img src={require('/static/img/example.png').default} alt="example" className="w-[350px] h-[350px]" />
-        <code className="p-[24px] bg-transparent border-none">
+        <code className="flex justify-center items-center p-[24px] bg-transparent border-none">
           Click on the name to see Wikipedia
           <br />
-          Click on the Card to see my reason of interest
+          Click on the Card to see my reason of interest in the philosopher
         </code>
       </div>
     </div>

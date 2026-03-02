@@ -106,7 +106,11 @@ export const philosophersMainContent: Record<Philosophers, ReactNode> = {
         </div>
         <div>
           <Header title="Turing Machines" />
-          yoooo
+          This is is an example that I want to extend
+          <p>yoooo</p>
+          <p>yoooo</p>
+          <p>yoooo</p>
+          <p>yoooo</p>
         </div>
 
       </div>
