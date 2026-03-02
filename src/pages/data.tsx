@@ -1,9 +1,44 @@
-import React, { ReactNode } from 'react';
+import React, { FC, ReactNode } from 'react';
 import { PhilosophyList } from '@site/src/pages/components/philosophy';
-import { TextFieldCard } from '@site/src/components/cardsV2/text-field-card';
 import { EducationCard } from '@site/src/components/cardsV2/education-card';
 import { educationData } from '@site/src/components/cardsV2/education-card/data';
+import { TextFieldCardProps, TextFieldCard } from '@site/src/components/cardsV2';
 
+
+
+const contentData: TextFieldCardProps[] = [
+  {
+    position: 'left',
+    size: 'md',
+    title: 'Email',
+  },
+  {
+    position: 'left',
+    size: 'md',
+    title: 'Password',
+  },
+  {
+    position: 'center',
+    size: 'md',
+    title: 'Message',
+  },
+];
+
+
+interface ContactContentProps {
+  data: TextFieldCardProps[];
+}
+
+
+export const ContactContent: FC<ContactContentProps> = ({ data }) => {
+  return (
+    <div className="flex flex-col gap-[16px]">
+      {data.map((item, index) => (
+        <TextFieldCard key={index} position={item.position} title={item.title} />
+      ))}
+    </div>
+  );
+};
 
 export const getChanges = (resumeImageUrl: string): { [key: string]: ReactNode } => ({
   default: (
@@ -35,14 +70,10 @@ export const getChanges = (resumeImageUrl: string): { [key: string]: ReactNode }
   ),
   contact: (
     <>
-      { /* TODO: Create  Cards for this to display the data */}
       <div>
-        <TextFieldCard position="left" />
-        Here is some of my work history:
-        <div>
-
-        </div>
+        <ContactContent data={contentData} />
       </div>
+      <button> test </button>
     </>
   ),
   resume: (

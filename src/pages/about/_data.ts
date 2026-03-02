@@ -30,7 +30,6 @@ interface AboutPageProps {
 type QRProps = { ref: LocationRef, qrLink: string };
 
 
-// BUG: useDynamicHeight logic is reversed, fix the name - make it isStatic 
 const aboutData: AboutPageData = {
   data: [
     {
