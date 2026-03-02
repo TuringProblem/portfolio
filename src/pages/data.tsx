@@ -3,6 +3,7 @@ import { PhilosophyList } from '@site/src/pages/components/philosophy';
 import { EducationCard } from '@site/src/components/cardsV2/education-card';
 import { educationData } from '@site/src/components/cardsV2/education-card/data';
 import { TextFieldCardProps, TextFieldCard } from '@site/src/components/cardsV2';
+import { Mail } from 'lucide-react';
 
 
 
@@ -10,12 +11,7 @@ const contentData: TextFieldCardProps[] = [
   {
     position: 'left',
     size: 'md',
-    title: 'Email',
-  },
-  {
-    position: 'left',
-    size: 'md',
-    title: 'Password',
+    title: 'Subject',
   },
   {
     position: 'center',
@@ -70,10 +66,7 @@ export const getChanges = (resumeImageUrl: string): { [key: string]: ReactNode }
   ),
   contact: (
     <>
-      <div>
-        <ContactContent data={contentData} />
-      </div>
-      <button> test </button>
+      <ContactContent data={contentData} />
     </>
   ),
   resume: (
