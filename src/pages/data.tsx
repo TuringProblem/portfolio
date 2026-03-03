@@ -3,7 +3,7 @@ import { PhilosophyList } from '@site/src/pages/components/philosophy';
 import { EducationCard } from '@site/src/components/cardsV2/education-card';
 import { educationData } from '@site/src/components/cardsV2/education-card/data';
 import { TextFieldCardProps, TextFieldCard } from '@site/src/components/cardsV2';
-import { Mail } from 'lucide-react';
+import githubImage from '@site/static/img/github.png';
 
 
 
@@ -45,17 +45,12 @@ export const getChanges = (resumeImageUrl: string): { [key: string]: ReactNode }
   ),
   github: (
     <>
-      <p>I make contributions to open source projects on GitHub. I'm also a maintainer of the <a href="https://github.com/TuringProblem/" className="text-blue-600 hover:underline">portfolio</a> project, which is a static site generator built with Docusaurus. I'm excited to continue improving the project and contributing to the open source community.</p>
-      <div className="background-color: #1A1A1A; color: white; padding: 20px;">
-        <h1>👋 𝙷𝚒, 𝙸'𝚖 𝙰𝚗𝚍𝚛𝚎𝚠</h1>
-        <h3>𝚂𝚘𝚏𝚝𝚠𝚊𝚛𝚎 𝙴𝚗𝚐𝚒𝚗𝚎𝚎𝚛 𝚏𝚛𝚘𝚖 Boston</h3>
-      </div>
       <div>
-        I'm Famous!
+        <div className="flex flex-col gap-[16px] items-center">
+          <img src="https://komarev.com/ghpvc/?username=turingproblem&label=Profile%20views&color=0e75b6&style=flat" alt="turingproblem" className="w-[100px] object-contain" />
+          <img src={githubImage} onClick={() => window.open("https://github.com/TuringProblem/")} alt="Github Profile" className="hover:cursor-pointer relative" />
+        </div>
       </div>
-      <p>
-        <img src="https://komarev.com/ghpvc/?username=turingproblem&label=Profile%20views&color=0e75b6&style=flat" alt="turingproblem" />
-      </p>
     </>
   ),
   education: (
@@ -79,6 +74,7 @@ export const getChanges = (resumeImageUrl: string): { [key: string]: ReactNode }
     </>
   ),
 });
+
 
 export default function DataPage() {
   return React.createElement('div', null, 'This is not a page - just data functions');
