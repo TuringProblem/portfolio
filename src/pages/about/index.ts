@@ -1,1 +1,1 @@
-export * from './_data';
+export * from './data';

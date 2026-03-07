@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Sizes, Positions } from '../components/cardsV2/header/types';
 import { QRCodeSVG } from 'qrcode.react';
-import { QRProps } from '../pages/about/_data';
+import { QRProps } from '../pages/about/data';
 
 const grabTextAndPaddingSizes = (size: Sizes | undefined, position: Positions | string | undefined): string[] => {
   const values: string[] = [];
