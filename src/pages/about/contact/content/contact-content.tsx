@@ -5,7 +5,6 @@ import { TextFieldCard } from '@site/src/components/cardsV2';
 /**
  * Author/{ @Override }: Since -> 20260307 | @13:50
  **/
-
 export const MessageComponent: FC<ContactContentProps> = ({ data }): ReactNode => {
   return (
     <div className="flex flex-col gap-[16px]">

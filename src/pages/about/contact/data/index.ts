@@ -1,10 +1,15 @@
 import { BASE } from "../../shared/base";
 import { TRUE, STUpper } from "../../shared/utils.const";
-import { TextFieldCardProps, TextFieldCard } from '@site/src/components/cardsV2';
+import { TextFieldCardProps } from '@site/src/components/cardsV2';
 
 /**
  * Author/{ @Override }: Since -> 20260306 | @19:05
  **/
+
+export interface ContactContentProps {
+  data: TextFieldCardProps[];
+}
+
 export const contentData: TextFieldCardProps[] = [
   {
     position: 'left',
@@ -12,16 +17,11 @@ export const contentData: TextFieldCardProps[] = [
     title: 'Subject',
   },
   {
-    position: 'center',
+    position: 'left',
     size: 'md',
     title: 'Message',
   },
 ];
-
-
-export interface ContactContentProps {
-  data: TextFieldCardProps[];
-}
 
 const CONTACT = 'contact';
 
