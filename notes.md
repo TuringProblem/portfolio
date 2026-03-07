@@ -1,44 +1,45 @@
-for doing mobile view
+# TODO
 
-```ts
-/* --- Mobile First: Default Styles apply to all devices --- */
-.container {
-  width: 100%;
-  padding: 10px;
-  background-color: lightblue;
-  color: black;
-}
-
-.item {
-  font-size: 16px;
-  float: none; /* Items stack vertically by default */
-}
+- [ ] Clean up `./src/pages/about/` - instead of just having  
 ```
-
-
-```ts
-
-/* --- Desktop Styles: Styles only apply when the viewport is at least 768px wide --- */
-@media only screen and (min-width: 768px) {
-  .container {
-    width: 80%; /* Container takes up less space on desktop */
-    margin: 0 auto; /* Center the container */
-    background-color: lightgreen; /* Visual change for demonstration */
-  }
-
-  .item {
-    font-size: 20px;
-    float: left; /* Items float side-by-side on desktop */
-    width: 50%;
-  }
-}
-
-
-
+-----\
+     |--- github/
+                |--- index.tsx
+     |--- resume/
+                |--- index.tsx
+     |--- profile/
+                |--- index.tsx
+     |--- education/
+                |--- index.tsx
+     |--- contact/
+                |--- index.tsx
 ```
-
-
-
-
-
-need to cleanup the dynamics of the philosophy list  
+> Consider having the module handle the logic as well, so it's more of a ***package***.
+```
+-----\
+     |--- github/
+                | content\
+                        |--- index.tsx
+                | data\
+                        |--- index.tsx
+     |--- resume/
+                | content\
+                        |--- index.tsx
+                | data\
+                        |--- index.tsx
+     |--- profile/
+                | content\
+                        |--- index.tsx
+                | data\
+                        |--- index.tsx
+     |--- education/
+                | content\
+                        |--- index.tsx
+                | data\
+                        |--- index.tsx
+     |--- contact/
+                | content\
+                        |--- index.tsx
+                | data\
+                        |-- index.tsx
+```

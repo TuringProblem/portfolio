@@ -30,6 +30,7 @@ interface AboutPageProps {
 type QRProps = { ref: LocationRef, qrLink: string };
 
 
+// BUG: Deprecated - see new Record<string, AboutPage> in the /data/ section
 const aboutData: AboutPageData = {
   data: [
     {
@@ -45,7 +46,7 @@ const aboutData: AboutPageData = {
     },
     {
       resumeUrl: '/img/resume.png',
-      layoutTitle: 'GitHub Profile',
+      layoutTitle: 'GitHub',
       layoutDescription: 'Andrew\'s GitHub Profile',
       navigationActiveRoute: 'github',
       locationRef: 'github',

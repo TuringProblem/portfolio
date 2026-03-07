@@ -53,8 +53,23 @@ export default [
     exact: true
   },
   {
+    path: '/portfolio/about/contact/data/',
+    component: ComponentCreator('/portfolio/about/contact/data/', 'df8'),
+    exact: true
+  },
+  {
+    path: '/portfolio/about/data/',
+    component: ComponentCreator('/portfolio/about/data/', 'cc6'),
+    exact: true
+  },
+  {
     path: '/portfolio/about/education/',
     component: ComponentCreator('/portfolio/about/education/', '098'),
+    exact: true
+  },
+  {
+    path: '/portfolio/about/education/data/',
+    component: ComponentCreator('/portfolio/about/education/data/', '6d2'),
     exact: true
   },
   {
@@ -63,13 +78,38 @@ export default [
     exact: true
   },
   {
+    path: '/portfolio/about/github/data/',
+    component: ComponentCreator('/portfolio/about/github/data/', 'c9b'),
+    exact: true
+  },
+  {
     path: '/portfolio/about/profile/',
     component: ComponentCreator('/portfolio/about/profile/', 'd10'),
     exact: true
   },
   {
+    path: '/portfolio/about/profile/data/',
+    component: ComponentCreator('/portfolio/about/profile/data/', '8ec'),
+    exact: true
+  },
+  {
     path: '/portfolio/about/resume/',
     component: ComponentCreator('/portfolio/about/resume/', 'd6b'),
+    exact: true
+  },
+  {
+    path: '/portfolio/about/resume/data/',
+    component: ComponentCreator('/portfolio/about/resume/data/', 'f68'),
+    exact: true
+  },
+  {
+    path: '/portfolio/about/shared/base.d',
+    component: ComponentCreator('/portfolio/about/shared/base.d', 'e71'),
+    exact: true
+  },
+  {
+    path: '/portfolio/about/shared/utils.const',
+    component: ComponentCreator('/portfolio/about/shared/utils.const', '7a4'),
     exact: true
   },
   {

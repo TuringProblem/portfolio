@@ -63,8 +63,29 @@
     },
     "config": "config---portfolio-about-5-e-9-b4a"
   },
+  "/portfolio/about/contact/data/-df8": {
+    "__comp": "__comp---site-src-pages-about-contact-data-index-ts-8-b-9-3aa",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
+  "/portfolio/about/data/-cc6": {
+    "__comp": "__comp---site-src-pages-about-data-index-ts-339-f4a",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
   "/portfolio/about/education/-098": {
     "__comp": "__comp---site-src-pages-about-education-index-tsx-930-a3e",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
+  "/portfolio/about/education/data/-6d2": {
+    "__comp": "__comp---site-src-pages-about-education-data-index-tsbd-7-39c",
     "__context": {
       "plugin": "plugin---portfolio-abouta-74-c30"
     },
@@ -77,6 +98,13 @@
     },
     "config": "config---portfolio-about-5-e-9-b4a"
   },
+  "/portfolio/about/github/data/-c9b": {
+    "__comp": "__comp---site-src-pages-about-github-data-index-ts-539-a27",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
   "/portfolio/about/profile/-d10": {
     "__comp": "__comp---site-src-pages-about-profile-index-tsx-9-cc-592",
     "__context": {
@@ -84,8 +112,36 @@
     },
     "config": "config---portfolio-about-5-e-9-b4a"
   },
+  "/portfolio/about/profile/data/-8ec": {
+    "__comp": "__comp---site-src-pages-about-profile-data-index-ts-069-777",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
   "/portfolio/about/resume/-d6b": {
     "__comp": "__comp---site-src-pages-about-resume-index-tsx-15-a-39d",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
+  "/portfolio/about/resume/data/-f68": {
+    "__comp": "__comp---site-src-pages-about-resume-data-index-ts-6-f-6-2ee",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
+  "/portfolio/about/shared/base.d-e71": {
+    "__comp": "__comp---site-src-pages-about-shared-base-d-tsdd-1-20a",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
+  "/portfolio/about/shared/utils.const-7a4": {
+    "__comp": "__comp---site-src-pages-about-shared-utils-const-tsf-83-f8f",
     "__context": {
       "plugin": "plugin---portfolio-abouta-74-c30"
     },
