@@ -1,4 +1,4 @@
-import { AboutPage } from "../_data";
+import { AboutPage } from "../shared/interfaces/page-props.interface";
 import { EDUCATION_DATA } from "../education/data";
 import { GITHUB_DATA } from "../github/data";
 import { PROFILE_DATA } from "../profile/data";

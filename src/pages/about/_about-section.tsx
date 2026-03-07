@@ -4,11 +4,10 @@ import { BaseCard } from '../../components/cardsV2';
 import { getChanges } from '../data';
 import { NavigationCard } from '../../components/cardsV2/navigation-card';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { AboutPageProps } from './_data';
+import { AboutPageProps } from './shared/interfaces/page-props.interface';
 import { ShowHomeNavigationComponent } from '../../components/about/show-home-navigation';
 import type { GetHeight } from '../types/_types';
 import { HasDownloadButton } from '../../components/about/has-download-button';
-import { QRCodeSVG } from 'qrcode.react';
 
 import { PrintQRCodeData } from '../../utils/shared-utils';
 

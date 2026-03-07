@@ -5,8 +5,6 @@ import { educationData } from '@site/src/components/cardsV2/education-card/data'
 import { TextFieldCardProps, TextFieldCard } from '@site/src/components/cardsV2';
 import githubImage from '@site/static/img/github.png';
 
-
-
 const contentData: TextFieldCardProps[] = [
   {
     position: 'left',

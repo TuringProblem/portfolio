@@ -108,6 +108,11 @@ export default [
     exact: true
   },
   {
+    path: '/portfolio/about/shared/interfaces/page-props.interface',
+    component: ComponentCreator('/portfolio/about/shared/interfaces/page-props.interface', 'fe4'),
+    exact: true
+  },
+  {
     path: '/portfolio/about/shared/utils.const',
     component: ComponentCreator('/portfolio/about/shared/utils.const', '7a4'),
     exact: true

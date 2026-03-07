@@ -140,6 +140,13 @@
     },
     "config": "config---portfolio-about-5-e-9-b4a"
   },
+  "/portfolio/about/shared/interfaces/page-props.interface-fe4": {
+    "__comp": "__comp---site-src-pages-about-shared-interfaces-page-props-interface-ts-838-c13",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
   "/portfolio/about/shared/utils.const-7a4": {
     "__comp": "__comp---site-src-pages-about-shared-utils-const-tsf-83-f8f",
     "__context": {

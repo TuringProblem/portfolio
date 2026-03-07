@@ -1,4 +1,4 @@
-import type { AboutPageProps } from '../../pages/about/_data';
+import type { AboutPageProps } from '@site/src/pages/about/shared/interfaces/page-props.interface';
 import { Home } from 'lucide-react';
 
 

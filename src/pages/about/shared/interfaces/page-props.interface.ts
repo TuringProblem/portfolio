@@ -1,5 +1,4 @@
-
-interface AboutPage {
+export interface AboutPage {
   resumeUrl: string;
   layoutTitle: string;
   layoutDescription: string;
@@ -20,18 +19,10 @@ type LocationRef =
   | 'resume'
 
 
-interface AboutPageData {
-  data: AboutPage[];
-}
-
-interface AboutPageProps {
+export interface AboutPageProps {
   sectionData: AboutPage;
   resumeImageUrl?: string;
 }
 
-type QRProps = { ref: LocationRef, qrLink: string };
-
-
-export { AboutPage, AboutPageData, AboutPageProps, QRProps };
-
+export type QRProps = { ref: LocationRef, qrLink: string };
 

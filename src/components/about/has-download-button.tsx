@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import type { AboutPageProps } from '../../pages/about/_data';
+import type { AboutPageProps } from '@site/src/pages/about/shared/interfaces/page-props.interface';
 import { Download } from 'lucide-react';
 import { downloadResume } from '../../utils/downloadResume';
 

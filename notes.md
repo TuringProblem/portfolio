@@ -1,6 +1,6 @@
 # TODO
 
-- [ ] Clean up `./src/pages/about/` - instead of just having  
+- [x] Clean up `./src/pages/about/` - instead of just having  
 ```
 -----\
      |--- github/
