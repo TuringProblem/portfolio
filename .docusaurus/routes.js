@@ -103,8 +103,8 @@ export default [
     exact: true
   },
   {
-    path: '/portfolio/about/shared/base.d',
-    component: ComponentCreator('/portfolio/about/shared/base.d', 'e71'),
+    path: '/portfolio/about/shared/base',
+    component: ComponentCreator('/portfolio/about/shared/base', 'dda'),
     exact: true
   },
   {

@@ -1,54 +1,18 @@
 import { AboutPage } from "../_data";
-
-
-const BASE = {
-  resumeUrl: '/img/resume.png',
-  showNavigationHome: true,
-  hasDownloadButton: false,
-  isStatic: true,
-} as const;
+import { EDUCATION_DATA } from "../education/data";
+import { GITHUB_DATA } from "../github/data";
+import { PROFILE_DATA } from "../profile/data";
+import { RESUME_DATA } from "../resume/data";
+import { CONTACT_DATA } from "../contact/data";
+/**
+ * Author/{ @Override }: Since -> 20260306 | @21:40
+ **/
 
 export const aboutData: Record<string, AboutPage> = {
-  profile: {
-    ...BASE,
-    layoutTitle: 'Profile',
-    layoutDescription: 'Andrew\'s Profile',
-    navigationActiveRoute: 'profile',
-    locationRef: 'profile',
-    contentKey: 'profile',
-  },
-  github: {
-    ...BASE,
-    layoutTitle: 'GitHub Profile',
-    layoutDescription: 'Andrew\'s GitHub Profile',
-    navigationActiveRoute: 'github',
-    locationRef: 'github',
-    contentKey: 'github',
-  },
-  education: {
-    ...BASE,
-    layoutTitle: 'Education',
-    layoutDescription: 'Andrew\'s Education',
-    navigationActiveRoute: 'education',
-    locationRef: 'education',
-    contentKey: 'education',
-  },
-  contact: {
-    ...BASE,
-    layoutTitle: 'Contact',
-    layoutDescription: 'Andrew\'s Contact Information',
-    navigationActiveRoute: 'contact',
-    locationRef: 'contact',
-    contentKey: 'contact',
-  },
-  resume: {
-    ...BASE,
-    layoutTitle: 'Resume',
-    layoutDescription: 'Andrew\'s Resume',
-    navigationActiveRoute: 'resume',
-    locationRef: 'resume',
-    contentKey: 'resume',
-    isStatic: false,
-  },
-};
+  profile: PROFILE_DATA,
+  github: GITHUB_DATA,
+  education: EDUCATION_DATA,
+  contact: CONTACT_DATA,
+  resume: RESUME_DATA
+} as const;
 

@@ -1,15 +1,7 @@
 import React from 'react';
 import { AboutSection } from '../_about-section';
-import { aboutData } from '../_data';
+import { aboutData } from '../data';
 
-const EducationPage = () => {
-  const educationData = aboutData.data.find(item => item.navigationActiveRoute === 'education');
-
-  if (!educationData) {
-    return <div>Education page not found</div>;
-  }
-
-  return <AboutSection sectionData={educationData} />;
-}
+const EducationPage = () => <AboutSection sectionData={aboutData.education} />;
 
 export default EducationPage;

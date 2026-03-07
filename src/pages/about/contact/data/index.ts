@@ -14,4 +14,4 @@ export const CONTACT_DATA = {
   navigationActiveRoute: CONTACT,
   locationRef: CONTACT,
   contentKey: CONTACT,
-}
+} as const;

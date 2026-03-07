@@ -1,15 +1,7 @@
 import React from 'react';
 import { AboutSection } from '../_about-section';
-import { aboutData } from '../_data';
+import { aboutData } from '../data';
 
-const ResumePage = () => {
-  const resumeData = aboutData.data.find(item => item.navigationActiveRoute === 'resume');
-
-  if (!resumeData) {
-    return <div>Resume page not found</div>;
-  }
-
-  return <AboutSection sectionData={resumeData} />;
-}
+const ResumePage = () => <AboutSection sectionData={aboutData.resume} />;
 
 export default ResumePage;

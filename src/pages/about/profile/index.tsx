@@ -1,15 +1,7 @@
 import React from 'react';
 import { AboutSection } from '../_about-section';
-import { aboutData } from '../_data';
+import { aboutData } from '../data';
 
-const ProfilePage = () => {
-  const profileData = aboutData.data.find(item => item.navigationActiveRoute === 'profile');
-
-  if (!profileData) {
-    return <div>Profile not found</div>;
-  }
-
-  return <AboutSection sectionData={profileData} />;
-}
+const ProfilePage = () => <AboutSection sectionData={aboutData.profile} />;
 
 export default ProfilePage;
