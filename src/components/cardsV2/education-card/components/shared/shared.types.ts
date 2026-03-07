@@ -12,7 +12,7 @@ export enum ProfessorNames {
   HOLTZEN_IMG = 'https://prl.khoury.northeastern.edu/img/steven_holtzen.png',
   HOLTZEN_REF = 'https://www.khoury.northeastern.edu/home/sholtzen/',
   ZHENGZHONG = 'Zhengzhong Jin',
-  ZHENGZHONG_IMG = 'https://media.licdn.com/dms/image/v2/D4E03AQHbHtntT8qXIw/profile-displayphoto-shrink_400_400/B4EZW16_dkH0Ag-/0/1742513895758?e=1772668800&v=beta&t=KpQ9pA_ah-FbYLLS8ncOV9C3GFdiTbj_oIdiiUvc2JM',
+  ZHENGZHONG_IMG = 'https://zhengzhongjin.github.io/photo1.jpg',
   ZHENGZHONG_REF = 'https://zhengzhongjin.github.io/',
 }
 export const JIN_LESSONS = [

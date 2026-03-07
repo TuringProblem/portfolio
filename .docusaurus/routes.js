@@ -53,6 +53,16 @@ export default [
     exact: true
   },
   {
+    path: '/portfolio/about/contact/content/',
+    component: ComponentCreator('/portfolio/about/contact/content/', '06a'),
+    exact: true
+  },
+  {
+    path: '/portfolio/about/contact/content/contact-content',
+    component: ComponentCreator('/portfolio/about/contact/content/contact-content', 'cb5'),
+    exact: true
+  },
+  {
     path: '/portfolio/about/contact/data/',
     component: ComponentCreator('/portfolio/about/contact/data/', 'df8'),
     exact: true
@@ -63,8 +73,28 @@ export default [
     exact: true
   },
   {
+    path: '/portfolio/about/default/data/',
+    component: ComponentCreator('/portfolio/about/default/data/', '3db'),
+    exact: true
+  },
+  {
+    path: '/portfolio/about/default/data/default-data',
+    component: ComponentCreator('/portfolio/about/default/data/default-data', '883'),
+    exact: true
+  },
+  {
     path: '/portfolio/about/education/',
     component: ComponentCreator('/portfolio/about/education/', '098'),
+    exact: true
+  },
+  {
+    path: '/portfolio/about/education/content/',
+    component: ComponentCreator('/portfolio/about/education/content/', 'bbe'),
+    exact: true
+  },
+  {
+    path: '/portfolio/about/education/content/education-content',
+    component: ComponentCreator('/portfolio/about/education/content/education-content', '301'),
     exact: true
   },
   {
@@ -78,6 +108,11 @@ export default [
     exact: true
   },
   {
+    path: '/portfolio/about/github/content/github-content',
+    component: ComponentCreator('/portfolio/about/github/content/github-content', '07a'),
+    exact: true
+  },
+  {
     path: '/portfolio/about/github/data/',
     component: ComponentCreator('/portfolio/about/github/data/', 'c9b'),
     exact: true
@@ -85,6 +120,11 @@ export default [
   {
     path: '/portfolio/about/profile/',
     component: ComponentCreator('/portfolio/about/profile/', 'd10'),
+    exact: true
+  },
+  {
+    path: '/portfolio/about/profile/content/profile-content',
+    component: ComponentCreator('/portfolio/about/profile/content/profile-content', '243'),
     exact: true
   },
   {
@@ -98,8 +138,23 @@ export default [
     exact: true
   },
   {
+    path: '/portfolio/about/resume/content/',
+    component: ComponentCreator('/portfolio/about/resume/content/', '7f2'),
+    exact: true
+  },
+  {
+    path: '/portfolio/about/resume/content/resume-content',
+    component: ComponentCreator('/portfolio/about/resume/content/resume-content', 'c3a'),
+    exact: true
+  },
+  {
     path: '/portfolio/about/resume/data/',
     component: ComponentCreator('/portfolio/about/resume/data/', 'f68'),
+    exact: true
+  },
+  {
+    path: '/portfolio/about/resume/data/resume-data',
+    component: ComponentCreator('/portfolio/about/resume/data/resume-data', 'aa8'),
     exact: true
   },
   {

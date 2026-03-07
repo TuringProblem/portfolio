@@ -63,6 +63,20 @@
     },
     "config": "config---portfolio-about-5-e-9-b4a"
   },
+  "/portfolio/about/contact/content/-06a": {
+    "__comp": "__comp---site-src-pages-about-contact-content-index-tse-4-b-5b1",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
+  "/portfolio/about/contact/content/contact-content-cb5": {
+    "__comp": "__comp---site-src-pages-about-contact-content-contact-content-tsxf-5-b-29e",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
   "/portfolio/about/contact/data/-df8": {
     "__comp": "__comp---site-src-pages-about-contact-data-index-ts-8-b-9-3aa",
     "__context": {
@@ -77,8 +91,36 @@
     },
     "config": "config---portfolio-about-5-e-9-b4a"
   },
+  "/portfolio/about/default/data/-3db": {
+    "__comp": "__comp---site-src-pages-about-default-data-index-tsae-8-dae",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
+  "/portfolio/about/default/data/default-data-883": {
+    "__comp": "__comp---site-src-pages-about-default-data-default-data-tsx-0-b-2-2d8",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
   "/portfolio/about/education/-098": {
     "__comp": "__comp---site-src-pages-about-education-index-tsx-930-a3e",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
+  "/portfolio/about/education/content/-bbe": {
+    "__comp": "__comp---site-src-pages-about-education-content-index-tsa-13-239",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
+  "/portfolio/about/education/content/education-content-301": {
+    "__comp": "__comp---site-src-pages-about-education-content-education-content-tsxa-60-703",
     "__context": {
       "plugin": "plugin---portfolio-abouta-74-c30"
     },
@@ -98,6 +140,13 @@
     },
     "config": "config---portfolio-about-5-e-9-b4a"
   },
+  "/portfolio/about/github/content/github-content-07a": {
+    "__comp": "__comp---site-src-pages-about-github-content-github-content-tsxcaf-c38",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
   "/portfolio/about/github/data/-c9b": {
     "__comp": "__comp---site-src-pages-about-github-data-index-ts-539-a27",
     "__context": {
@@ -107,6 +156,13 @@
   },
   "/portfolio/about/profile/-d10": {
     "__comp": "__comp---site-src-pages-about-profile-index-tsx-9-cc-592",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
+  "/portfolio/about/profile/content/profile-content-243": {
+    "__comp": "__comp---site-src-pages-about-profile-content-profile-content-tsx-74-a-60c",
     "__context": {
       "plugin": "plugin---portfolio-abouta-74-c30"
     },
@@ -126,8 +182,29 @@
     },
     "config": "config---portfolio-about-5-e-9-b4a"
   },
+  "/portfolio/about/resume/content/-7f2": {
+    "__comp": "__comp---site-src-pages-about-resume-content-index-tscd-3-b18",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
+  "/portfolio/about/resume/content/resume-content-c3a": {
+    "__comp": "__comp---site-src-pages-about-resume-content-resume-content-tsxc-76-05e",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
   "/portfolio/about/resume/data/-f68": {
     "__comp": "__comp---site-src-pages-about-resume-data-index-ts-6-f-6-2ee",
+    "__context": {
+      "plugin": "plugin---portfolio-abouta-74-c30"
+    },
+    "config": "config---portfolio-about-5-e-9-b4a"
+  },
+  "/portfolio/about/resume/data/resume-data-aa8": {
+    "__comp": "__comp---site-src-pages-about-resume-data-resume-data-ts-939-e30",
     "__context": {
       "plugin": "plugin---portfolio-abouta-74-c30"
     },
