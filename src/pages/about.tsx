@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import { BaseCard } from '../components/cardsV2';
 import { NavigationCard } from '../components/cardsV2/navigation-card';
-import { aboutData } from './about/data';
+import { aboutData } from './about/_data';
 
 import './about.css';
 

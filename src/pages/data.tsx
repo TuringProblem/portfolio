@@ -1,9 +1,9 @@
 import React, { FC, ReactNode } from 'react';
-import { ContactContent } from '@site/src/pages/about/contact/content/contact-content';
-import { DefaultData } from '@site/src/pages/about/default/data/default-data';
-import { GithubContent } from '@site/src/pages/about/github/content/github-content';
-import { EducationContent } from '@site/src/pages/about/education/content/education-content';
-import { ResumeContent } from '@site/src/pages/about/resume/content/resume-content';
+import { ContactContent } from '@site/src/pages/about/contact/_content/contact-content';
+import { DefaultData } from '@site/src/pages/about/default/_data/default-data';
+import { GithubContent } from '@site/src/pages/about/github/_content/github-content';
+import { EducationContent } from '@site/src/pages/about/education/_content/education-content';
+import { ResumeContent } from '@site/src/pages/about/resume/_content/resume-content';
 
 type DataType = 'default' | 'github' | 'education' | 'contact' | 'resume';
 

@@ -1,5 +1,5 @@
-import { BASE } from "../../shared/base";
-import { TRUE, STUpper } from "../../shared/utils.const";
+import { BASE } from "../../_shared/_base";
+import { TRUE, STUpper } from "../../_shared/_utils.const";
 import { TextFieldCardProps } from '@site/src/components/cardsV2';
 
 /**

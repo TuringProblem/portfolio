@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react';
-import { ContactContentProps, contentData } from '@site/src/pages/about/contact/data';
+import { ContactContentProps, contentData } from '@site/src/pages/about/contact/_data';
 import { TextFieldCard } from '@site/src/components/cardsV2';
 
 /**

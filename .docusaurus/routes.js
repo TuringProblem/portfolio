@@ -53,53 +53,8 @@ export default [
     exact: true
   },
   {
-    path: '/portfolio/about/contact/content/',
-    component: ComponentCreator('/portfolio/about/contact/content/', '06a'),
-    exact: true
-  },
-  {
-    path: '/portfolio/about/contact/content/contact-content',
-    component: ComponentCreator('/portfolio/about/contact/content/contact-content', 'cb5'),
-    exact: true
-  },
-  {
-    path: '/portfolio/about/contact/data/',
-    component: ComponentCreator('/portfolio/about/contact/data/', 'df8'),
-    exact: true
-  },
-  {
-    path: '/portfolio/about/data/',
-    component: ComponentCreator('/portfolio/about/data/', 'cc6'),
-    exact: true
-  },
-  {
-    path: '/portfolio/about/default/data/',
-    component: ComponentCreator('/portfolio/about/default/data/', '3db'),
-    exact: true
-  },
-  {
-    path: '/portfolio/about/default/data/default-data',
-    component: ComponentCreator('/portfolio/about/default/data/default-data', '883'),
-    exact: true
-  },
-  {
     path: '/portfolio/about/education/',
     component: ComponentCreator('/portfolio/about/education/', '098'),
-    exact: true
-  },
-  {
-    path: '/portfolio/about/education/content/',
-    component: ComponentCreator('/portfolio/about/education/content/', 'bbe'),
-    exact: true
-  },
-  {
-    path: '/portfolio/about/education/content/education-content',
-    component: ComponentCreator('/portfolio/about/education/content/education-content', '301'),
-    exact: true
-  },
-  {
-    path: '/portfolio/about/education/data/',
-    component: ComponentCreator('/portfolio/about/education/data/', '6d2'),
     exact: true
   },
   {
@@ -108,68 +63,13 @@ export default [
     exact: true
   },
   {
-    path: '/portfolio/about/github/content/github-content',
-    component: ComponentCreator('/portfolio/about/github/content/github-content', '07a'),
-    exact: true
-  },
-  {
-    path: '/portfolio/about/github/data/',
-    component: ComponentCreator('/portfolio/about/github/data/', 'c9b'),
-    exact: true
-  },
-  {
     path: '/portfolio/about/profile/',
     component: ComponentCreator('/portfolio/about/profile/', 'd10'),
     exact: true
   },
   {
-    path: '/portfolio/about/profile/content/profile-content',
-    component: ComponentCreator('/portfolio/about/profile/content/profile-content', '243'),
-    exact: true
-  },
-  {
-    path: '/portfolio/about/profile/data/',
-    component: ComponentCreator('/portfolio/about/profile/data/', '8ec'),
-    exact: true
-  },
-  {
     path: '/portfolio/about/resume/',
     component: ComponentCreator('/portfolio/about/resume/', 'd6b'),
-    exact: true
-  },
-  {
-    path: '/portfolio/about/resume/content/',
-    component: ComponentCreator('/portfolio/about/resume/content/', '7f2'),
-    exact: true
-  },
-  {
-    path: '/portfolio/about/resume/content/resume-content',
-    component: ComponentCreator('/portfolio/about/resume/content/resume-content', 'c3a'),
-    exact: true
-  },
-  {
-    path: '/portfolio/about/resume/data/',
-    component: ComponentCreator('/portfolio/about/resume/data/', 'f68'),
-    exact: true
-  },
-  {
-    path: '/portfolio/about/resume/data/resume-data',
-    component: ComponentCreator('/portfolio/about/resume/data/resume-data', 'aa8'),
-    exact: true
-  },
-  {
-    path: '/portfolio/about/shared/base',
-    component: ComponentCreator('/portfolio/about/shared/base', 'dda'),
-    exact: true
-  },
-  {
-    path: '/portfolio/about/shared/interfaces/page-props.interface',
-    component: ComponentCreator('/portfolio/about/shared/interfaces/page-props.interface', 'fe4'),
-    exact: true
-  },
-  {
-    path: '/portfolio/about/shared/utils.const',
-    component: ComponentCreator('/portfolio/about/shared/utils.const', '7a4'),
     exact: true
   },
   {

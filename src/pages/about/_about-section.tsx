@@ -4,7 +4,7 @@ import { BaseCard } from '../../components/cardsV2';
 import { getChanges } from '../data';
 import { NavigationCard } from '../../components/cardsV2/navigation-card';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { AboutPageProps } from './shared/interfaces/page-props.interface';
+import { AboutPageProps } from './_shared/_interfaces/_page-props.interface';
 import { ShowHomeNavigationComponent } from '../../components/about/show-home-navigation';
 import type { GetHeight } from '../types/_types';
 import { HasDownloadButton } from '../../components/about/has-download-button';
