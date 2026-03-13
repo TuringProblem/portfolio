@@ -6,6 +6,7 @@ import { PhilosophersEnum, Philosophers, philosophersMainContent } from '../../.
 
 
 
+
 export const defaultSideText = () => (
   <>
     <div className="w-[50%] bg-[var(--philosophy-card-background)] rounded-[8px] overflow-auto">

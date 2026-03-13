@@ -1,16 +1,17 @@
 import React, { FC, ReactNode } from 'react';
 import { ContactContent } from '@site/src/pages/about/contact/_content/contact-content';
-import { DefaultData } from '@site/src/pages/about/default/_data/default-data';
+import { ProfileContent } from '@site/src/pages/about/profile/_content/profile-content';
 import { GithubContent } from '@site/src/pages/about/github/_content/github-content';
 import { EducationContent } from '@site/src/pages/about/education/_content/education-content';
 import { ResumeContent } from '@site/src/pages/about/resume/_content/resume-content';
+import { GetChanges } from './types/_types';
 
-type DataType = 'default' | 'github' | 'education' | 'contact' | 'resume';
+export type DataType = 'profile' | 'github' | 'education' | 'contact' | 'resume';
 
 
 // INFO: Just for a heads up - Record<string, ReactNode> is the same as { [key: string]: ReactNode } ... why typescript, why lol
-export const getChanges = (resumeImageUrl: string): Record<DataType, ReactNode> => ({
-  default: <DefaultData />,
+export const getChanges: GetChanges = (resumeImageUrl: string): Record<DataType, ReactNode> => ({
+  profile: <ProfileContent />,
   github: <GithubContent />,
   education: <EducationContent />,
   contact: <ContactContent />,

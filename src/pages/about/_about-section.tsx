@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { ReactNode, FC } from 'react';
 import Layout from '@theme/Layout';
 import { BaseCard } from '../../components/cardsV2';
 import { getChanges } from '../data';
@@ -8,6 +8,8 @@ import { AboutPageProps } from './_shared/_interfaces/_page-props.interface';
 import { ShowHomeNavigationComponent } from '../../components/about/show-home-navigation';
 import type { GetHeight } from '../types/_types';
 import { HasDownloadButton } from '../../components/about/has-download-button';
+import { DataType } from '../data';
+
 
 import { PrintQRCodeData } from '../../utils/shared-utils';
 
@@ -33,10 +35,10 @@ const LeftNav: FC<AboutPageProps> = ({ sectionData }) => (
 
 
 export const AboutSection: FC<AboutPageProps> = ({ sectionData }) => {
-  const resumeImageUrl = useBaseUrl(sectionData.resumeUrl);
+  const resumeImageUrl: string = useBaseUrl(sectionData.resumeUrl);
   const getHeight: GetHeight = () => typeof window !== 'undefined' ? window.innerHeight : 800;
-  const height = `max-h-[${getHeight()}px]`;
-  const changes = getChanges(resumeImageUrl);
+  const height: string = `max-h-[${getHeight()}px]`;
+  const changes: Record<DataType, ReactNode> = getChanges(resumeImageUrl);
 
   return (
     <Layout
@@ -48,7 +50,7 @@ export const AboutSection: FC<AboutPageProps> = ({ sectionData }) => {
         <BaseCard className={`flex-col shadow-xs justify-center items-center p-[24px] bg-[var(--about-card-background)] border border-transparent hover:border-[var(--ifm-color-primary)] shadow-[0px_0.5px_1px_0px] hover:shadow-[0px_0.5px_1px_0px] overflow-auto overscroll-contain w-full ${sectionData.isStatic ? height : 'max-h-[850px]'}`}>
           <HasDownloadButton sectionData={sectionData} resumeImageUrl={resumeImageUrl} />
           <div className="text-center min-h-[700px] overflow-auto">
-            {changes[sectionData.contentKey] || changes.default}
+            {changes[sectionData.contentKey] || changes.profile}
           </div>
         </BaseCard>
 

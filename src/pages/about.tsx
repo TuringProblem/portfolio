@@ -3,11 +3,12 @@ import Layout from '@theme/Layout';
 import { BaseCard } from '../components/cardsV2';
 import { NavigationCard } from '../components/cardsV2/navigation-card';
 import { aboutData } from './about/_data';
+import { ButtonConfig } from '../pages/types/_types';
 
 import './about.css';
 
 const CardContent: React.FC = () => {
-  const buttonConfigs = Object.values(aboutData).map(item => ({
+  const buttonConfigs: ButtonConfig[] = Object.values(aboutData).map(item => ({
     route: item.locationRef,
     label: item.layoutTitle
   }));
