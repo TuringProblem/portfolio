@@ -34,11 +34,5 @@ export const MessageComponent: FC<ContactContentProps> = ({ data }): ReactNode =
 export const ContactContent = () => (
   <>
     <MessageComponent data={contentData} />
-    <div className="flex justify-start p-[16px]">
-      <div className="flex flex-col justify-center items-center align-center gap-[8px] border rounded-[16px] hover:cursor-pointer">
-        <UserRoundPen size={24} />
-        <p>linkedin</p>
-      </div>
-    </div>
   </>
 );
