@@ -2,6 +2,12 @@
   "title": "Recent posts",
   "items": [
     {
+      "title": "Things I'm Learning",
+      "permalink": "/portfolio/blog/Things I'm Learning",
+      "unlisted": false,
+      "date": "2026-03-24T23:21:30.833Z"
+    },
+    {
       "title": "Building a Game",
       "permalink": "/portfolio/blog/Game",
       "unlisted": false,

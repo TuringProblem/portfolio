@@ -21,16 +21,6 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "projects/INSTALL",
-              "path": "/portfolio/docs/projects/INSTALL",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "projects/intro",
-              "path": "/portfolio/docs/projects/intro",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "projects/Shifty",
               "path": "/portfolio/docs/projects/Shifty",
               "sidebar": "tutorialSidebar"

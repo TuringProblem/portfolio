@@ -74,7 +74,7 @@ export default [
   },
   {
     path: '/portfolio/blog',
-    component: ComponentCreator('/portfolio/blog', 'c7c'),
+    component: ComponentCreator('/portfolio/blog', 'c77'),
     exact: true
   },
   {
@@ -89,7 +89,7 @@ export default [
   },
   {
     path: '/portfolio/blog/authors/andrew',
-    component: ComponentCreator('/portfolio/blog/authors/andrew', 'ca9'),
+    component: ComponentCreator('/portfolio/blog/authors/andrew', '093'),
     exact: true
   },
   {
@@ -104,17 +104,22 @@ export default [
   },
   {
     path: '/portfolio/blog/tags/about',
-    component: ComponentCreator('/portfolio/blog/tags/about', 'fb1'),
+    component: ComponentCreator('/portfolio/blog/tags/about', '37c'),
     exact: true
   },
   {
     path: '/portfolio/blog/tags/introduction',
-    component: ComponentCreator('/portfolio/blog/tags/introduction', 'a02'),
+    component: ComponentCreator('/portfolio/blog/tags/introduction', 'd93'),
     exact: true
   },
   {
     path: '/portfolio/blog/tags/portfolio',
-    component: ComponentCreator('/portfolio/blog/tags/portfolio', 'b73'),
+    component: ComponentCreator('/portfolio/blog/tags/portfolio', '23e'),
+    exact: true
+  },
+  {
+    path: '/portfolio/blog/Things I\'m Learning',
+    component: ComponentCreator('/portfolio/blog/Things I\'m Learning', 'b53'),
     exact: true
   },
   {
@@ -174,15 +179,15 @@ export default [
   },
   {
     path: '/portfolio/docs',
-    component: ComponentCreator('/portfolio/docs', '4d7'),
+    component: ComponentCreator('/portfolio/docs', '47c'),
     routes: [
       {
         path: '/portfolio/docs',
-        component: ComponentCreator('/portfolio/docs', '536'),
+        component: ComponentCreator('/portfolio/docs', '70a'),
         routes: [
           {
             path: '/portfolio/docs',
-            component: ComponentCreator('/portfolio/docs', '6f3'),
+            component: ComponentCreator('/portfolio/docs', '541'),
             routes: [
               {
                 path: '/portfolio/docs/projects/Atoms',
@@ -193,18 +198,6 @@ export default [
               {
                 path: '/portfolio/docs/projects/Deej',
                 component: ComponentCreator('/portfolio/docs/projects/Deej', '2a0'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/portfolio/docs/projects/INSTALL',
-                component: ComponentCreator('/portfolio/docs/projects/INSTALL', 'be4'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/portfolio/docs/projects/intro',
-                component: ComponentCreator('/portfolio/docs/projects/intro', '077'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

@@ -45,10 +45,9 @@ export const EducationCard: FC<EducationCardProps> = ({ itemXS, hasVideo }) => {
               <div className="education-item-inner">
                 <div className="education-icon-wrapper">
                   <div className="education-icon">
-                    {item.icon} {/*Using Lucide icon*/}
+                    {item.icon}
                   </div>
                 </div>
-
                 {activeIndex === index && (
                   <div className="education-text">
                     <div className="education-title">
@@ -63,11 +62,9 @@ export const EducationCard: FC<EducationCardProps> = ({ itemXS, hasVideo }) => {
 
             </div>
           </div>
-        ))
-        }
+        ))}
       </div >
       {activeText}
     </div >
-
   );
 }

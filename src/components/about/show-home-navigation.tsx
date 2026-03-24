@@ -8,7 +8,7 @@ export const ShowHomeNavigationComponent: FC<AboutPageProps> = ({ sectionData })
     <>
       {sectionData.showNavigationHome && (
         <div
-          className="flex justify-center items-center w-full h-full hover:cursor-pointer hover:text-[var(--ifm-color-primary)]"
+          className="flex justify-center items-center w-full h-full hover:cursor-pointer hover:text-[var(--ifm-color-primary)] mt-[8px]"
           onClick={() => typeof window !== 'undefined' && (window.location.href = '/portfolio/about')}
           aria-role="button"
           tabIndex={0}

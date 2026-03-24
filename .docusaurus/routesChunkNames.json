@@ -91,13 +91,16 @@
     },
     "config": "config---portfolio-about-5-e-9-b4a"
   },
-  "/portfolio/blog-c7c": {
+  "/portfolio/blog-c77": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
       "plugin": "plugin---portfolio-blog-369-566"
     },
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "items": [
+      {
+        "content": "content---portfolio-blog-3-d-4-10f"
+      },
       {
         "content": "content---portfolio-blog-980-451"
       },
@@ -128,7 +131,7 @@
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "__props": "__props---portfolio-blog-authors-7-a-0-df2"
   },
-  "/portfolio/blog/authors/andrew-ca9": {
+  "/portfolio/blog/authors/andrew-093": {
     "__comp": "__comp---theme-blog-pages-blog-authors-posts-page-33-f-bd5",
     "__context": {
       "data": {
@@ -137,6 +140,9 @@
       "plugin": "plugin---portfolio-blog-369-566"
     },
     "items": [
+      {
+        "content": "content---portfolio-blog-3-d-4-10f"
+      },
       {
         "content": "content---portfolio-blog-980-451"
       },
@@ -169,13 +175,16 @@
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "__props": "__props---portfolio-blog-tagsfe-5-1d6"
   },
-  "/portfolio/blog/tags/about-fb1": {
+  "/portfolio/blog/tags/about-37c": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---portfolio-blog-369-566"
     },
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "items": [
+      {
+        "content": "content---portfolio-blog-3-d-4-10f"
+      },
       {
         "content": "content---portfolio-blog-980-451"
       },
@@ -188,13 +197,16 @@
     ],
     "__props": "__props---portfolio-blog-tags-aboutd-58-f92"
   },
-  "/portfolio/blog/tags/introduction-a02": {
+  "/portfolio/blog/tags/introduction-d93": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---portfolio-blog-369-566"
     },
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "items": [
+      {
+        "content": "content---portfolio-blog-3-d-4-10f"
+      },
       {
         "content": "content---portfolio-blog-980-451"
       },
@@ -207,13 +219,16 @@
     ],
     "__props": "__props---portfolio-blog-tags-introduction-063-f7f"
   },
-  "/portfolio/blog/tags/portfolio-b73": {
+  "/portfolio/blog/tags/portfolio-23e": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---portfolio-blog-369-566"
     },
     "sidebar": "sidebar---portfolio-blog-814-da6",
     "items": [
+      {
+        "content": "content---portfolio-blog-3-d-4-10f"
+      },
       {
         "content": "content---portfolio-blog-980-451"
       },
@@ -225,6 +240,17 @@
       }
     ],
     "__props": "__props---portfolio-blog-tags-portfolio-3-e-1-7cd"
+  },
+  "/portfolio/blog/Things I'm Learning-b53": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "data": {
+        "blogMetadata": "blogMetadata---portfolio-blog-authorsace-023"
+      },
+      "plugin": "plugin---portfolio-blog-369-566"
+    },
+    "sidebar": "sidebar---portfolio-blog-814-da6",
+    "content": "content---portfolio-blog-2026-things-im-buildinge-6-c-64a"
   },
   "/portfolio/blog/Thoughts on Docusaurus-104": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
@@ -311,17 +337,17 @@
     },
     "config": "config---portfolio-about-5-e-9-b4a"
   },
-  "/portfolio/docs-4d7": {
+  "/portfolio/docs-47c": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---portfolio-docsaba-85b"
     }
   },
-  "/portfolio/docs-536": {
+  "/portfolio/docs-70a": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---portfolio-docs-062-775"
   },
-  "/portfolio/docs-6f3": {
+  "/portfolio/docs-541": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/portfolio/docs/projects/Atoms-589": {
@@ -331,14 +357,6 @@
   "/portfolio/docs/projects/Deej-2a0": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---portfolio-docs-projects-deej-1-a-0-ad0"
-  },
-  "/portfolio/docs/projects/INSTALL-be4": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---portfolio-docs-projects-instal-lc-0-d-a49"
-  },
-  "/portfolio/docs/projects/intro-077": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---portfolio-docs-projects-intro-6-a-6-d27"
   },
   "/portfolio/docs/projects/Shifty-332": {
     "__comp": "__comp---theme-doc-item-178-a40",

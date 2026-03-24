@@ -1,10 +1,10 @@
 {
-  "permalink": "/portfolio/blog/Game",
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2026/game.md",
-  "source": "@site/blog/2026/game.md",
-  "title": "Building a Game",
-  "description": "Logistics",
-  "date": "2026-02-11T16:36:29.000Z",
+  "permalink": "/portfolio/blog/Things I'm Learning",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2026/things-im-building.mdx",
+  "source": "@site/blog/2026/things-im-building.mdx",
+  "title": "Things I'm Learning",
+  "description": "Thoughts",
+  "date": "2026-03-24T23:10:58.197Z",
   "tags": [
     {
       "inline": false,
@@ -24,7 +24,7 @@
       "permalink": "/portfolio/blog/tags/about"
     }
   ],
-  "readingTime": 0.47,
+  "readingTime": 0.05,
   "hasTruncateMarker": false,
   "authors": [
     {
@@ -44,8 +44,8 @@
     }
   ],
   "frontMatter": {
-    "slug": "Game",
-    "title": "Building a Game",
+    "slug": "Things I'm Learning",
+    "title": "Things I'm Learning",
     "authors": [
       "andrew"
     ],
@@ -56,12 +56,8 @@
     ]
   },
   "unlisted": false,
-  "prevItem": {
-    "title": "Things I'm Learning",
-    "permalink": "/portfolio/blog/Things I'm Learning"
-  },
   "nextItem": {
-    "title": "Thoughts on Docusaurus",
-    "permalink": "/portfolio/blog/Thoughts on Docusaurus"
+    "title": "Building a Game",
+    "permalink": "/portfolio/blog/Game"
   }
 }
