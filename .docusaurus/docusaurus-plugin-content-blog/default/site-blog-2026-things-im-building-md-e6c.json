@@ -4,7 +4,7 @@
   "source": "@site/blog/2026/things-im-building.md",
   "title": "Things I'm Learning",
   "description": "well overall here are the languages I've been enjoying in 2026",
-  "date": "2026-03-24T23:21:30.833Z",
+  "date": "2026-03-24T23:23:00.000Z",
   "tags": [
     {
       "inline": false,
@@ -57,7 +57,7 @@
   },
   "unlisted": false,
   "nextItem": {
-    "title": "Building a Game",
-    "permalink": "/portfolio/blog/Game"
+    "title": "Thoughts on Docusaurus",
+    "permalink": "/portfolio/blog/Thoughts on Docusaurus"
   }
 }

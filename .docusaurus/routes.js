@@ -3,41 +3,6 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/portfolio/__docusaurus/debug',
-    component: ComponentCreator('/portfolio/__docusaurus/debug', '040'),
-    exact: true
-  },
-  {
-    path: '/portfolio/__docusaurus/debug/config',
-    component: ComponentCreator('/portfolio/__docusaurus/debug/config', '9ca'),
-    exact: true
-  },
-  {
-    path: '/portfolio/__docusaurus/debug/content',
-    component: ComponentCreator('/portfolio/__docusaurus/debug/content', 'da5'),
-    exact: true
-  },
-  {
-    path: '/portfolio/__docusaurus/debug/globalData',
-    component: ComponentCreator('/portfolio/__docusaurus/debug/globalData', '46a'),
-    exact: true
-  },
-  {
-    path: '/portfolio/__docusaurus/debug/metadata',
-    component: ComponentCreator('/portfolio/__docusaurus/debug/metadata', '138'),
-    exact: true
-  },
-  {
-    path: '/portfolio/__docusaurus/debug/registry',
-    component: ComponentCreator('/portfolio/__docusaurus/debug/registry', '3df'),
-    exact: true
-  },
-  {
-    path: '/portfolio/__docusaurus/debug/routes',
-    component: ComponentCreator('/portfolio/__docusaurus/debug/routes', 'dd6'),
-    exact: true
-  },
-  {
     path: '/portfolio/about',
     component: ComponentCreator('/portfolio/about', '4af'),
     exact: true
@@ -74,7 +39,7 @@ export default [
   },
   {
     path: '/portfolio/blog',
-    component: ComponentCreator('/portfolio/blog', 'c77'),
+    component: ComponentCreator('/portfolio/blog', '633'),
     exact: true
   },
   {
@@ -89,12 +54,7 @@ export default [
   },
   {
     path: '/portfolio/blog/authors/andrew',
-    component: ComponentCreator('/portfolio/blog/authors/andrew', '093'),
-    exact: true
-  },
-  {
-    path: '/portfolio/blog/Game',
-    component: ComponentCreator('/portfolio/blog/Game', '32e'),
+    component: ComponentCreator('/portfolio/blog/authors/andrew', '514'),
     exact: true
   },
   {
@@ -104,17 +64,17 @@ export default [
   },
   {
     path: '/portfolio/blog/tags/about',
-    component: ComponentCreator('/portfolio/blog/tags/about', '37c'),
+    component: ComponentCreator('/portfolio/blog/tags/about', 'f66'),
     exact: true
   },
   {
     path: '/portfolio/blog/tags/introduction',
-    component: ComponentCreator('/portfolio/blog/tags/introduction', 'd93'),
+    component: ComponentCreator('/portfolio/blog/tags/introduction', '14b'),
     exact: true
   },
   {
     path: '/portfolio/blog/tags/portfolio',
-    component: ComponentCreator('/portfolio/blog/tags/portfolio', '23e'),
+    component: ComponentCreator('/portfolio/blog/tags/portfolio', '061'),
     exact: true
   },
   {

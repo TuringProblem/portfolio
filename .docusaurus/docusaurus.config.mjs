@@ -117,7 +117,7 @@ export default {
           "items": [
             {
               "label": "Projects",
-              "to": "/docs/projects/intro"
+              "to": "/docs/projects/Atoms"
             },
             {
               "label": "About",

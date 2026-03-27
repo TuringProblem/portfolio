@@ -1,8 +1,11 @@
 import { FC } from 'react';
 import { BaseCard } from '../base';
+import { Image } from 'lucide-react';
 import './card-style.css';
 
 type Background = 'massasoit' | 'northeastern';
+
+
 
 export interface AvatarCardProps {
   img?: string;
@@ -35,8 +38,16 @@ export const AvatarCard: FC<AvatarData> = ({ data, bg }) => {
     <div className={`wrapper ${gridSize}`}>
       {data.map((item: AvatarCardProps, index: number) => (
         <BaseCard className={`baseCard ${bgClass} ${borderClass}`} key={index}>
-          {!item.noImage && <img src={item.img || ''} alt={item.title} className="w-[100px] h-[100px] rounded-full" />}
-          <a href={item.img_ref} className={`${textColor}`}>{item.title}</a>
+          {item.noImage ? (
+            <div className="flex flex-col items-center">
+              <Image className="w-[64px] h-[64px] rounded-[100%]" size={100} color="var(--avatar-card-massasoit)" />
+              <a href={item.img_ref} className={`${textColor}`}>{item.title}</a>
+            </div>
+          ) : (
+            <div>
+              <img src={item.img || ''} alt={item.title} className="w-[100px] h-[100px] rounded-full" />
+            </div>
+          )}
           {item.lessons && item.lessons.map((lesson, index) => (
             <li key={index} className="text-[12px] justify-start">{lesson}</li>
           ))}
