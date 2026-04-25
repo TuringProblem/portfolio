@@ -1,58 +1,56 @@
-module Projects exposing (Project, projects, viewProjects)
+module Projects exposing (viewProjectDetail, viewProjects)
 
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Html.Events exposing (onClick)
+import Types exposing (Project)
+import Projects.Portfolio
+import Projects.Okronos
 
 -- author: { @Override } : Since: 20260725 @1604
-urlLink : String
-urlLink =
-    "https://github.com/TuringProblem"
-
-type alias Project =
-    { 
-      title : String,
-      description : String,
-      url : String,
-      tags : List String
-    }
 
 
-
+-- To add a new project: create src/projects/<name>/<Name>.elm and add it here.
 projects : List Project
 projects =
-    [ { 
-        title = "Project One",
-        description = "A short description of what this project does and why it matters.", 
-        url = urlLink,
-        tags = [ "Elm", "CSS" ]
-      },
-      { 
-        title = "Project Two",
-        description = "A short description of what this project does and why it matters.",
-        url = urlLink,
-        tags = [ "TypeScript", "Node" ]
-      }
+    [ Projects.Portfolio.project
+    , Projects.Okronos.project
     ]
 
 
-viewProjects : Html Never
-viewProjects =
+viewProjects : (Project -> msg) -> Html msg
+viewProjects onSelect =
     section [ class "projects", id "projects" ]
-        [ 
-          h2 [] [ text "Projects" ], 
-          div [ class "project-grid" ] (List.map viewProject projects)
+        [ h2 [] [ text "Projects" ]
+        , div [ class "project-grid" ] (List.map (viewProject onSelect) projects)
         ]
 
 
-viewProject : Project -> Html Never
-viewProject project =
-    a [ class "project-card", href project.url, target "_blank", rel "noopener noreferrer" ]
-        [ 
-          h3 [] [ text project.title ], 
-          p [] [ text project.description ], 
-          div [ class "tags" ] (List.map viewTag project.tags)
+viewProject : (Project -> msg) -> Project -> Html msg
+viewProject onSelect project =
+    div [ class "project-card", onClick (onSelect project) ]
+        [ h3 [] [ text project.title ]
+        , p [] [ text project.description ]
+        , div [ class "tags" ] (List.map viewTag project.tags)
         ]
 
 
-viewTag : String -> Html Never
-viewTag tag = span [ class "tag" ] [ text tag ]
+viewProjectDetail : msg -> Project -> Html msg
+viewProjectDetail onBack project =
+    div [ class "app" ]
+        [ section [ class "project-detail" ]
+            [ button [ class "back-btn", onClick onBack ] [ text "← Back" ]
+            , div [ class "project-detail-header" ]
+                [ h1 [] [ text project.title ]
+                , a [ class "project-link", href project.url, target "_blank", rel "noopener noreferrer" ]
+                    [ text "View on GitHub →" ]
+                ]
+            , p [ class "project-detail-description" ] [ text project.description ]
+            , div [ class "tags" ] (List.map viewTag project.tags)
+            ]
+        ]
+
+
+viewTag : String -> Html msg
+viewTag tag =
+    span [ class "tag" ] [ text tag ]

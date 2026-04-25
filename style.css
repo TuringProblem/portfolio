@@ -23,7 +23,7 @@ body {
 
 .app {
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 1.5rem 1.5rem;
 }
 
 /* Nav */
@@ -35,8 +35,8 @@ body {
   border-bottom: 1px solid var(--border);
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 0.5rem;
+  right: 0.5rem;
   z-index: 10;
 }
 
@@ -158,6 +158,63 @@ body {
 
 .about p {
   color: var(--muted);
+}
+
+/* Project Detail */
+.project-detail {
+  padding: 6rem 0 4rem;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.15s;
+}
+
+.back-btn:hover {
+  color: var(--text);
+}
+
+.project-detail h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.project-detail-description {
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 540px;
+  margin-bottom: 1.5rem;
+}
+
+.project-detail .tags {
+  margin-bottom: 2rem;
+}
+
+.project-link {
+  display: inline-block;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  border: 1px solid rgba(124, 140, 248, 0.3);
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.project-link:hover {
+  background: rgba(124, 140, 248, 0.08);
+  border-color: var(--accent);
 }
 
 /* Footer */

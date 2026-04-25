@@ -11,7 +11,7 @@ type alias NavProp =
   }
 
 
-viewNav : List NavProp -> Html Never
+viewNav : List NavProp -> Html msg
 viewNav navItems =
     nav [ class "nav" ]
         [ div [ class "nav-name", style "background-image" "url(https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/New_England_Patriots_logo.svg/1280px-New_England_Patriots_logo.svg.png)" ] []

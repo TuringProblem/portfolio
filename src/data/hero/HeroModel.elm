@@ -11,7 +11,7 @@ type alias HeroProp =
   }
 
 
-viewHero : List HeroProp -> Html Never
+viewHero : List HeroProp -> Html msg
 viewHero heroItems =
     section [ class "hero" ]
         (List.map (\item -> p [ class item.class ] [ text item.text ]) heroItems)
