@@ -1,41 +1,16 @@
+# index
+- [Website](#website)
+- [Why](#why)
+- [ ] [current tasks](./docs/TASKS.md)
+
 # Website
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+built with elm bitch 
 
-## Installation
 
-```bash
-yarn
-```
+## Why
 
-## Local Development
+> Why am I learning Elm? 
+> 1. Because I'm into PLT. (Programming Language Theory)
+> 2. Because I'm into functional programming. (More so declarative but functional is fun `:)`)
 
-```bash
-yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
