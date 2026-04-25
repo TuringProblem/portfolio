@@ -5198,6 +5198,18 @@ var $elm$html$Html$Attributes$stringProperty = F2(
 	});
 var $elm$html$Html$Attributes$class = $elm$html$Html$Attributes$stringProperty('className');
 var $elm$html$Html$div = _VirtualDom_node('div');
+var $author$project$Main$heroData = _List_fromArray(
+	[
+		{_class: 'hero-title', text: 'Andrew'},
+		{_class: 'hero-subtitle', text: 'Software Engineer'},
+		{_class: 'hero-bio', text: 'I build things for the web.'}
+	]);
+var $author$project$Main$navData = _List_fromArray(
+	[
+		{href: '#projects', text: 'Projects'},
+		{href: '#about', text: 'About'},
+		{href: 'https://github.com/turingProblem', text: 'GitHub'}
+	]);
 var $elm$html$Html$h2 = _VirtualDom_node('h2');
 var $elm$html$Html$Attributes$id = $elm$html$Html$Attributes$stringProperty('id');
 var $elm$html$Html$p = _VirtualDom_node('p');
@@ -5262,127 +5274,80 @@ var $author$project$Main$viewFooter = A2(
 						]))
 				]))
 		]));
-var $elm$html$Html$h1 = _VirtualDom_node('h1');
-var $author$project$Main$viewHero = A2(
-	$elm$html$Html$section,
-	_List_fromArray(
-		[
-			$elm$html$Html$Attributes$class('hero')
-		]),
-	_List_fromArray(
-		[
-			A2(
-			$elm$html$Html$h1,
-			_List_fromArray(
-				[
-					$elm$html$Html$Attributes$class('hero-title')
-				]),
-			_List_fromArray(
-				[
-					$elm$html$Html$text('Andrew  ')
-				])),
-			A2(
-			$elm$html$Html$p,
-			_List_fromArray(
-				[
-					$elm$html$Html$Attributes$class('hero-subtitle')
-				]),
-			_List_fromArray(
-				[
-					$elm$html$Html$text('Software Engineer')
-				])),
-			A2(
-			$elm$html$Html$p,
-			_List_fromArray(
-				[
-					$elm$html$Html$Attributes$class('hero-bio')
-				]),
-			_List_fromArray(
-				[
-					$elm$html$Html$text('I build things for the web.')
-				]))
-		]));
+var $author$project$Main$viewHero = function (heroItem) {
+	return A2(
+		$elm$html$Html$section,
+		_List_fromArray(
+			[
+				$elm$html$Html$Attributes$class('hero')
+			]),
+		A2(
+			$elm$core$List$map,
+			function (item) {
+				return A2(
+					$elm$html$Html$p,
+					_List_fromArray(
+						[
+							$elm$html$Html$Attributes$class(item._class)
+						]),
+					_List_fromArray(
+						[
+							$elm$html$Html$text(item.text)
+						]));
+			},
+			heroItem));
+};
 var $elm$html$Html$li = _VirtualDom_node('li');
 var $elm$html$Html$nav = _VirtualDom_node('nav');
 var $elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
 var $elm$html$Html$Attributes$style = $elm$virtual_dom$VirtualDom$style;
-var $elm$html$Html$Attributes$target = $elm$html$Html$Attributes$stringProperty('target');
 var $elm$html$Html$ul = _VirtualDom_node('ul');
-var $author$project$Main$viewNav = A2(
-	$elm$html$Html$nav,
-	_List_fromArray(
-		[
-			$elm$html$Html$Attributes$class('nav')
-		]),
-	_List_fromArray(
-		[
-			A2(
-			$elm$html$Html$div,
-			_List_fromArray(
-				[
-					$elm$html$Html$Attributes$class('nav-name'),
-					A2($elm$html$Html$Attributes$style, 'background-image', 'url(https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/New_England_Patriots_logo.svg/1280px-New_England_Patriots_logo.svg.png)')
-				]),
-			_List_Nil),
-			A2(
-			$elm$html$Html$ul,
-			_List_fromArray(
-				[
-					$elm$html$Html$Attributes$class('nav-links')
-				]),
-			_List_fromArray(
-				[
-					A2(
-					$elm$html$Html$li,
-					_List_Nil,
-					_List_fromArray(
-						[
-							A2(
-							$elm$html$Html$a,
+var $author$project$Main$viewNav = function (navItem) {
+	return A2(
+		$elm$html$Html$nav,
+		_List_fromArray(
+			[
+				$elm$html$Html$Attributes$class('nav')
+			]),
+		_List_fromArray(
+			[
+				A2(
+				$elm$html$Html$div,
+				_List_fromArray(
+					[
+						$elm$html$Html$Attributes$class('nav-name'),
+						A2($elm$html$Html$Attributes$style, 'background-image', 'url(https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/New_England_Patriots_logo.svg/1280px-New_England_Patriots_logo.svg.png)')
+					]),
+				_List_Nil),
+				A2(
+				$elm$html$Html$ul,
+				_List_fromArray(
+					[
+						$elm$html$Html$Attributes$class('nav-links')
+					]),
+				A2(
+					$elm$core$List$map,
+					function (item) {
+						return A2(
+							$elm$html$Html$li,
+							_List_Nil,
 							_List_fromArray(
 								[
-									$elm$html$Html$Attributes$href('#projects')
-								]),
-							_List_fromArray(
-								[
-									$elm$html$Html$text('Projects')
-								]))
-						])),
-					A2(
-					$elm$html$Html$li,
-					_List_Nil,
-					_List_fromArray(
-						[
-							A2(
-							$elm$html$Html$a,
-							_List_fromArray(
-								[
-									$elm$html$Html$Attributes$href('#about')
-								]),
-							_List_fromArray(
-								[
-									$elm$html$Html$text('About')
-								]))
-						])),
-					A2(
-					$elm$html$Html$li,
-					_List_Nil,
-					_List_fromArray(
-						[
-							A2(
-							$elm$html$Html$a,
-							_List_fromArray(
-								[
-									$elm$html$Html$Attributes$href('https://github.com/turingProblem'),
-									$elm$html$Html$Attributes$target('_blank')
-								]),
-							_List_fromArray(
-								[
-									$elm$html$Html$text('GitHub')
-								]))
-						]))
-				]))
-		]));
+									A2(
+									$elm$html$Html$a,
+									_List_fromArray(
+										[
+											$elm$html$Html$Attributes$href(item.href)
+										]),
+									_List_fromArray(
+										[
+											$elm$html$Html$text(item.text)
+										]))
+								]));
+					},
+					navItem))
+			]));
+};
 var $author$project$Projects$urlLink = 'https://github.com/TuringProblem';
 var $author$project$Projects$projects = _List_fromArray(
 	[
@@ -5403,6 +5368,7 @@ var $author$project$Projects$projects = _List_fromArray(
 	]);
 var $elm$html$Html$h3 = _VirtualDom_node('h3');
 var $elm$html$Html$Attributes$rel = _VirtualDom_attribute('rel');
+var $elm$html$Html$Attributes$target = $elm$html$Html$Attributes$stringProperty('target');
 var $elm$html$Html$span = _VirtualDom_node('span');
 var $author$project$Projects$viewTag = function (tag) {
 	return A2(
@@ -5482,7 +5448,13 @@ var $author$project$Main$view = A2(
 			$elm$html$Html$Attributes$class('app')
 		]),
 	_List_fromArray(
-		[$author$project$Main$viewNav, $author$project$Main$viewHero, $author$project$Projects$viewProjects, $author$project$Main$viewAbout, $author$project$Main$viewFooter]));
+		[
+			$author$project$Main$viewNav($author$project$Main$navData),
+			$author$project$Main$viewHero($author$project$Main$heroData),
+			$author$project$Projects$viewProjects,
+			$author$project$Main$viewAbout,
+			$author$project$Main$viewFooter
+		]));
 var $author$project$Main$main = $elm$browser$Browser$sandbox(
 	{
 		init: _Utils_Tuple0,
