@@ -6,6 +6,10 @@ dist/
 build/
 *.js.map
 
+# Elm compiler output
+elm.js
+elm-stuff/
+
 # Compiled JavaScript files from TypeScript
 # Ignore .js files in src/ directory (compiled from .ts/.tsx)
 src/**/*.js
