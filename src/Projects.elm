@@ -3,6 +3,7 @@ module Projects exposing (Project, projects, viewProjects)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 
+-- author: { @Override } : Since: 20260725 @1604
 urlLink : String
 urlLink =
     "https://github.com/TuringProblem"
