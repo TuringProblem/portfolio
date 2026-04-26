@@ -201,6 +201,22 @@ body {
   margin-bottom: 2rem;
 }
 
+.project-detail-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  justify-content: start;
+}
+
+.project-detail-inner-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .project-link {
   display: inline-block;
   color: var(--accent);

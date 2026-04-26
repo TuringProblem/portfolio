@@ -4,7 +4,7 @@ import Browser
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Projects exposing (viewProjectDetail, viewProjects)
-import Types exposing (Project)
+import Shared.Types exposing (Project)
 import Data.Nav.NavModel exposing (viewNav)
 import Data.Nav.NavData exposing (navData)
 import Data.Hero.HeroModel exposing (viewHero)
@@ -19,13 +19,8 @@ type Page
     = Home
     | ProjectDetail Project
 
-
-type alias Model =
-    { page : Page }
-
-
-type Msg
-    = GoTo Page
+type alias Model = { page : Page }
+type Msg = GoTo Page
 
 
 main : Program () Model Msg
@@ -50,11 +45,8 @@ update msg model =
 view : Model -> Html Msg
 view model =
     case model.page of
-        Home ->
-            viewHome
-
-        ProjectDetail project ->
-            viewProjectDetail (GoTo Home) project
+        Home -> viewHome
+        ProjectDetail project -> viewProjectDetail (GoTo Home) project
 
 
 viewHome : Html Msg

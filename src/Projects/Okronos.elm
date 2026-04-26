@@ -1,6 +1,6 @@
 module Projects.Okronos exposing (project)
 
-import Types exposing (Project)
+import Shared.Types exposing (Project)
 
 -- author: { @Override } : Since: 20260725 @1604
 
