@@ -15,6 +15,7 @@ import Data.Hero.HeroData exposing (heroData)
 
 -- The two possible "pages" in the app.
 -- ProjectDetail carries the full project record so the detail view has all the data it needs.
+-- TODO: find a way to contain the Poject with some extra fiels
 type Page
     = Home
     | ProjectDetail Project

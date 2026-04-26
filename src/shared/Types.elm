@@ -10,4 +10,7 @@ type alias Project =
     , description : String
     , url         : String
     , tags        : List String
+    , additionalText : Maybe String
     }
+
+

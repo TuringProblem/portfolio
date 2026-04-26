@@ -28,11 +28,13 @@ viewProjects onSelect =
 
 viewProject : (Project -> msg) -> Project -> Html msg
 viewProject onSelect project =
-    div [ class "project-card", onClick (onSelect project) ]
+    div [ class "project-card", onClick (onSelect project), style "cursor" "hover"]
         [ h3 [] [ text project.title ]
         , p [] [ text project.description ]
         , div [ class "tags" ] (List.map viewTag project.tags)
         ]
+
+
 
 
 viewProjectDetail : msg -> Project -> Html msg
@@ -41,15 +43,20 @@ viewProjectDetail onBack project =
         [ section [ class "project-detail" ]
             [ button [ class "back-btn", onClick onBack ] [ text "← Back" ]
             , div [ class "project-detail-header" ]
-                [ 
-                  div[class "project-detail-inner-header"] [
-                    h1 [] [ text project.title ],
-                    div [ class "tags" ] (List.map viewTag project.tags)
+                [ div [ class "project-detail-inner-header" ]
+                    [ h1 [] [ text project.title ]
+                    , div [ class "tags" ] (List.map viewTag project.tags)
                     ]
                 , a [ class "project-link", href project.url, target "_blank", rel "noopener noreferrer" ]
                     [ text "View on GitHub →" ]
                 ]
             , p [ class "project-detail-description" ] [ text project.description ]
+            , case project.additionalText of
+                Nothing ->
+                    div [] []
+
+                Just txt ->
+                    p [ class "project-detail-additional-text" ] [ text txt ]
             ]
         ]
 
