@@ -4,8 +4,10 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onClick)
 import Shared.Types exposing (Project)
-import Projects.Portfolio
+import Projects.Atoms
 import Projects.Okronos
+import Projects.Plt
+import Projects.Portfolio
 
 -- author: { @Override } : Since: 20260725 @1604
 
@@ -15,6 +17,8 @@ projects : List Project
 projects =
     [ Projects.Portfolio.project
     , Projects.Okronos.project
+    , Projects.Atoms.project
+    , Projects.Plt.project
     ]
 
 
@@ -36,6 +40,15 @@ viewProject onSelect project =
 
 
 
+displayAdditionalText : Maybe String -> Html msg
+displayAdditionalText additionalText =
+    case additionalText of
+        Nothing ->
+            div [] []
+
+        Just txt ->
+            p [ class "project-detail-additional-text" ] [ text txt ]
+
 
 viewProjectDetail : msg -> Project -> Html msg
 viewProjectDetail onBack project =
@@ -51,12 +64,7 @@ viewProjectDetail onBack project =
                     [ text "View on GitHub →" ]
                 ]
             , p [ class "project-detail-description" ] [ text project.description ]
-            , case project.additionalText of
-                Nothing ->
-                    div [] []
-
-                Just txt ->
-                    p [ class "project-detail-additional-text" ] [ text txt ]
+            , displayAdditionalText project.additionalText
             ]
         ]
 

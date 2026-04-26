@@ -8,5 +8,5 @@ heroData : List HeroProp
 heroData =
   [ { class = "hero-title",    text = "Andrew" }
   , { class = "hero-subtitle", text = "Software Engineer" }
-  , { class = "hero-bio",      text = "I build things for the web." }
+  , { class = "hero-bio",      text = "I'm a Computer Science Major at Northeastern University." }
   ]
