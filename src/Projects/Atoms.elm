@@ -6,7 +6,8 @@ import Shared.Types exposing (Project)
 
 project : Project
 project =
-    { title       = "Atoms"
+    { class       = "atoms"
+    , title       = "Atoms"
     , description = "I really enjoyed Latex, but I found Typst to fit my style more so I'm still working on a ui library for it"
     , url         = "https://github.com/TuringProblem/atoms"
     , tags        = [ "Typst", "Rust" ]

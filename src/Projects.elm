@@ -45,7 +45,6 @@ displayAdditionalText additionalText =
     case additionalText of
         Nothing ->
             div [] []
-
         Just txt ->
             p [ class "project-detail-additional-text" ] [ text txt ]
 

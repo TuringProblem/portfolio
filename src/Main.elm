@@ -64,8 +64,9 @@ viewHome =
 viewAbout : Html msg
 viewAbout =
     section [ class "about", id "about" ]
-        [ h2 [] [ text "About" ]
-        , p [] [ text "Software engineer based in Boston. I like building clean, useful things." ]
+        [ 
+          h2 [] [ text "About" ],
+          p [] [ text "Software engineer based in Boston. I like building clean, useful things." ]
         ]
 
 

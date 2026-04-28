@@ -6,7 +6,8 @@ import Shared.Types exposing (Project)
 
 project : Project
 project =
-    { title       = "PLT"
+    { class       = "plt"
+    , title       = "PLT"
     , description = "This repo contains all of my theoretical research on Compilers/Programming Langauges/any theory topics that I find interesting."
     , url         = "https://github.com/TuringProblem/plt"
     , tags        = [ "TypeScript", "Racket", "Ocaml", "Plait" ]

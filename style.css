@@ -117,6 +117,7 @@ body {
   text-decoration: none;
   color: inherit;
   transition: border-color 0.15s;
+  cursor: pointer;
 }
 
 .project-card:hover {

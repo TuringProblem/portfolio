@@ -6,7 +6,8 @@ module Shared.Types exposing (Project)
 -- Lives here to avoid circular imports between Projects.elm and individual project modules.
 
 type alias Project =
-    { title       : String
+    { class       : String
+    , title       : String
     , description : String
     , url         : String
     , tags        : List String
