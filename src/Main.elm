@@ -7,6 +7,8 @@ import Projects exposing (viewProjectDetail, viewProjects)
 import Shared.Types exposing (Project)
 import Data.Nav.NavModel exposing (viewNav)
 import Data.Nav.NavData exposing (navData)
+import Data.About.AboutModel exposing (viewAbout)
+import Data.About.AboutData exposing (aboutData)
 import Data.Hero.HeroModel exposing (viewHero)
 import Data.Hero.HeroData exposing (heroData)
 
@@ -56,19 +58,9 @@ viewHome =
         [ viewNav navData
         , viewHero heroData
         , viewProjects (\p -> GoTo (ProjectDetail p))
-        , viewAbout
+        , viewAbout aboutData
         , viewFooter
         ]
-
-
-viewAbout : Html msg
-viewAbout =
-    section [ class "about", id "about" ]
-        [ 
-          h2 [] [ text "About" ],
-          p [] [ text "Software engineer based in Boston. I like building clean, useful things." ]
-        ]
-
 
 viewFooter : Html msg
 viewFooter =

@@ -12,7 +12,7 @@ import Projects.Portfolio
 -- author: { @Override } : Since: 20260725 @1604
 
 
--- To add a new project: create src/projects/<name>/<Name>.elm and add it here.
+-- I'm adding comments because I want to knwo wtf is going on in the future lmao... not because I'm using ai
 projects : List Project
 projects =
     [ Projects.Portfolio.project
@@ -22,6 +22,7 @@ projects =
     ]
 
 
+-- This is a function vieWPojects, that takes a onSelect function (i.e., the trigger of clicking on a card) and returns the new html page 
 viewProjects : (Project -> msg) -> Html msg
 viewProjects onSelect =
     section [ class "projects", id "projects" ]
@@ -30,6 +31,7 @@ viewProjects onSelect =
         ]
 
 
+-- for now this should just be the logic for the card, but I'm going to create a component folder and add things in there - similiar to model structure
 viewProject : (Project -> msg) -> Project -> Html msg
 viewProject onSelect project =
     div [ class "project-card", onClick (onSelect project), style "cursor" "hover"]
@@ -40,6 +42,7 @@ viewProject onSelect project =
 
 
 
+-- Simple matching over the optional type inside of type Project
 displayAdditionalText : Maybe String -> Html msg
 displayAdditionalText additionalText =
     case additionalText of

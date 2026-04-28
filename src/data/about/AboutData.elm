@@ -12,6 +12,6 @@ aboutData =
     {
       class = "about",
       headerText = "About",
-      text = ""
+      text = "Software engineer based in Boston. I like building clean, useful things."
     }
   ]
