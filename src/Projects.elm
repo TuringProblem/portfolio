@@ -9,11 +9,11 @@ import Projects.Okronos
 import Projects.Plt
 import Projects.Portfolio
 import Projects.Util.ProjectDisplay exposing (viewProject, viewTag)
+import Components.Carousel.Carousel exposing (viewCarousel)
 
 -- author: { @Override } : Since: 20260725 @1604
 
 
--- I'm adding comments because I want to knwo wtf is going on in the future lmao... not because I'm using ai
 projects : List Project
 projects =
     [ Projects.Portfolio.project
@@ -23,7 +23,6 @@ projects =
     ]
 
 
--- This is a function vieWPojects, that takes a onSelect function (i.e., the trigger of clicking on a card) and returns the new html page 
 viewProjects : (Project -> msg) -> Html msg
 viewProjects onSelect =
     section [ class "projects", id "projects" ]
@@ -32,29 +31,28 @@ viewProjects onSelect =
         ]
 
 
--- Simple matching over the optional type inside of type Project
 displayAdditionalText : Maybe String -> Html msg
 displayAdditionalText additionalText =
     case additionalText of
         Nothing ->
             div [] []
+
         Just txt ->
             p [ class "project-detail-additional-text" ] [ text txt ]
 
 
-displayImageUrl : Maybe (List String) -> Html msg
-displayImageUrl imageUrl =
-    case imageUrl of
+displayImageUrls : msg -> msg -> Int -> Maybe (List String) -> Html msg
+displayImageUrls onPrev onNext carouselIndex imageUrls =
+    case imageUrls of
         Nothing ->
             div [] []
+
         Just urls ->
-            div [ class "project-detail-image-urls" ] (List.map (\url -> img [ src url ] []) urls)
+            viewCarousel onPrev onNext carouselIndex urls
 
 
-
--- TODO: Abstract
-viewProjectDetail : msg -> Project -> Html msg
-viewProjectDetail onBack project =
+viewProjectDetail : msg -> msg -> msg -> Int -> Project -> Html msg
+viewProjectDetail onBack onPrev onNext carouselIndex project =
     div [ class "app" ]
         [ section [ class "project-detail" ]
             [ button [ class "back-btn", onClick onBack ] [ text "← Back" ]
@@ -68,7 +66,6 @@ viewProjectDetail onBack project =
                 ]
             , p [ class "project-detail-description" ] [ text project.description ]
             , displayAdditionalText project.additionalText
-            , displayImageUrl project.imageUrls
+            , displayImageUrls onPrev onNext carouselIndex project.imageUrls
             ]
         ]
-

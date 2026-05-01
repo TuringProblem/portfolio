@@ -12,5 +12,5 @@ project =
     , url         = "https://github.com/TuringProblem/Okronos"
     , tags        = [ "Java", "Kotlin", "Gradle", "Maven" ]
     , additionalText = Just "This game was fire, no cap"
-    , imageUrls    = Just [ "./images/okronos.jpg" ]
+    , imageUrls    = Just [ "./images/okronos.jpg"  ]
     }

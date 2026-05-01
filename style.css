@@ -290,7 +290,8 @@ body {
 
 /* Project Detail */
 .project-detail {
-  padding: 6rem 0 4rem;
+  padding: 0rem 0 4rem;
+  max-width: 100%;
 }
 
 .back-btn {
@@ -365,13 +366,77 @@ body {
 }
 
 
-.project-detail-image-urls {
-  padding: 1rem 1rem;
+/* Carousel */
+.carousel {
+  margin-top: 2rem;
+}
+
+.carousel-track {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel-image {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  max-height: 480px;
+  display: block;
+  animation: carouselFadeIn 0.35s ease;
+}
+
+@keyframes carouselFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.carousel-controls {
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  align-items: center;
   justify-content: center;
-  max-width: 100%;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.carousel-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 0.3rem 0.75rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.carousel-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.carousel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--border);
+  transition: background 0.25s;
+}
+
+.carousel-dot--active {
+  background: var(--accent);
 }
 
 /* Footer */

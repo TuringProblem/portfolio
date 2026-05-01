@@ -11,41 +11,47 @@ import Data.About.AboutModel exposing (viewAbout)
 import Data.About.AboutData exposing (aboutData)
 import Data.Hero.HeroModel exposing (viewHero)
 import Data.Hero.HeroData exposing (heroData)
+import Time
 
 -- author: { @Override } : Since: 20260725 @1604
 
 
--- The two possible "pages" in the app.
--- ProjectDetail carries the full project record so the detail view has all the data it needs.
--- TODO: find a way to contain the Poject with some extra fiels
 type Page
     = Home
     | ProjectDetail Project
 
-type alias Model = { page : Page }
-type Msg = GoTo Page
+type alias Model =
+    { page : Page
+    , carouselIndex : Int
+    }
+
+type Msg
+    = GoTo Page
+    | CarouselPrev
+    | CarouselNext
+    | CarouselTick Time.Posix
 
 
 main : Program () Model Msg
 main =
     Browser.element
-        { init          = \_ -> ( { page = Home }, Cmd.none )
+        { init          = \_ -> ( { page = Home, carouselIndex = 0 }, Cmd.none )
         , update        = update
         , view          = view
-        , subscriptions = \_ -> Sub.none
+        , subscriptions = subscriptions
         }
 
 
 type alias Record =
-  { 
+  {
     class : String
   , mail : String
   , inTouch : String
   , text : String
   }
 
-footerConsts:  Record
-footerConsts = 
+footerConsts : Record
+footerConsts =
   {
     class = "footer",
     mail = "mailto:tazizthegreat@gmail.com",
@@ -54,20 +60,51 @@ footerConsts =
   }
 
 
+subscriptions : Model -> Sub Msg
+subscriptions model =
+    case model.page of
+        ProjectDetail project ->
+            case project.imageUrls of
+                Just (_ :: _) ->
+                    Time.every 3000 CarouselTick
+
+                _ ->
+                    Sub.none
+
+        Home ->
+            Sub.none
+
+
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         GoTo page ->
-            ( { model | page = page }, Cmd.none )
+            let
+                resetIndex =
+                    case page of
+                        ProjectDetail _ -> 0
+                        Home -> model.carouselIndex
+            in
+            ( { model | page = page, carouselIndex = resetIndex }, Cmd.none )
+
+        CarouselPrev ->
+            ( { model | carouselIndex = model.carouselIndex - 1 }, Cmd.none )
+
+        CarouselNext ->
+            ( { model | carouselIndex = model.carouselIndex + 1 }, Cmd.none )
+
+        CarouselTick _ ->
+            ( { model | carouselIndex = model.carouselIndex + 1 }, Cmd.none )
 
 
--- Switches what to render based on the current page.
--- Think of this like: if (page === 'home') return <Home /> else return <ProjectDetail />
 view : Model -> Html Msg
 view model =
     case model.page of
-        Home -> viewHome
-        ProjectDetail project -> viewProjectDetail (GoTo Home) project
+        Home ->
+            viewHome
+
+        ProjectDetail project ->
+            viewProjectDetail (GoTo Home) CarouselPrev CarouselNext model.carouselIndex project
 
 
 viewHome : Html Msg
@@ -83,4 +120,4 @@ viewHome =
 viewFooter : Html msg
 viewFooter =
     footer [ class footerConsts.class ]
-        [ p [] [ text footerConsts.text, a [ href footerConsts.mail] [ text footerConsts.inTouch] ] ]
+        [ p [] [ text footerConsts.text, a [ href footerConsts.mail ] [ text footerConsts.inTouch ] ] ]
