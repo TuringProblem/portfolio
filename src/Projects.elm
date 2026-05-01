@@ -32,9 +32,6 @@ viewProjects onSelect =
         ]
 
 
--- for now this should just be the logic for the card, but I'm going to create a component folder and add things in there - similiar to model structure
-
-
 -- Simple matching over the optional type inside of type Project
 displayAdditionalText : Maybe String -> Html msg
 displayAdditionalText additionalText =
@@ -45,6 +42,17 @@ displayAdditionalText additionalText =
             p [ class "project-detail-additional-text" ] [ text txt ]
 
 
+displayImageUrl : Maybe (List String) -> Html msg
+displayImageUrl imageUrl =
+    case imageUrl of
+        Nothing ->
+            div [] []
+        Just urls ->
+            div [ class "project-detail-image-urls" ] (List.map (\url -> img [ src url ] []) urls)
+
+
+
+-- TODO: Abstract
 viewProjectDetail : msg -> Project -> Html msg
 viewProjectDetail onBack project =
     div [ class "app" ]
@@ -60,6 +68,7 @@ viewProjectDetail onBack project =
                 ]
             , p [ class "project-detail-description" ] [ text project.description ]
             , displayAdditionalText project.additionalText
+            , displayImageUrl project.imageUrls
             ]
         ]
 

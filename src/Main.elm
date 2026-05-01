@@ -36,6 +36,24 @@ main =
         }
 
 
+type alias Record =
+  { 
+    class : String
+  , mail : String
+  , inTouch : String
+  , text : String
+  }
+
+footerConsts:  Record
+footerConsts = 
+  {
+    class = "footer",
+    mail = "mailto:tazizthegreat@gmail.com",
+    inTouch = "Get in touch",
+    text = "Built with Elm · "
+  }
+
+
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
@@ -64,5 +82,5 @@ viewHome =
 
 viewFooter : Html msg
 viewFooter =
-    footer [ class "footer" ]
-        [ p [] [ text "Built with Elm · ", a [ href "mailto:tazizthegreat@gmail.com" ] [ text "Get in touch" ] ] ]
+    footer [ class footerConsts.class ]
+        [ p [] [ text footerConsts.text, a [ href footerConsts.mail] [ text footerConsts.inTouch] ] ]

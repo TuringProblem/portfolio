@@ -12,4 +12,5 @@ project =
     , url         = "https://github.com/TuringProblem/portfolio"
     , tags        = [ "Elm", "CSS", "HTML" ]
     , additionalText = Nothing
+    , imageUrls    = Just [ "./images/portfolio.png" ]
     }

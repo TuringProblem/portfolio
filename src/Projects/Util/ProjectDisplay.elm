@@ -10,7 +10,7 @@ import Shared.Types exposing (Project)
 -- for now this should just be the logic for the card, but I'm going to create a component folder and add things in there - similiar to model structure
 viewProject : (Project -> msg) -> Project -> Html msg
 viewProject onSelect project =
-    div [ class "project-card", onClick (onSelect project), style "cursor" "hover"]
+    div [ class project.class, onClick (onSelect project), style "cursor" "hover"]
         [ h3 [] [ text project.title ]
         , p [] [ text project.description ]
         , div [ class "tags" ] (List.map viewTag project.tags)

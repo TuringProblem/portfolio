@@ -12,6 +12,7 @@ type alias Project =
     , url         : String
     , tags        : List String
     , additionalText : Maybe String
+    , imageUrls    : Maybe (List String)
     }
 
 

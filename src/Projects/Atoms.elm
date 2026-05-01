@@ -12,4 +12,5 @@ project =
     , url         = "https://github.com/TuringProblem/atoms"
     , tags        = [ "Typst", "Rust" ]
     , additionalText = Just "I'm not sure if you enjoy Latex, but $x = 5$ - that's pretty neat to have"
+    , imageUrls    = Just [ "https://raw.githubusercontent.com/TuringProblem/atoms/main/images/atoms-icon.svg" ]
     }
