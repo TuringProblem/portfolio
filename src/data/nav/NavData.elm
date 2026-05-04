@@ -6,7 +6,9 @@ import Data.Nav.NavModel exposing (NavProp)
 
 navData : List NavProp
 navData =
-  [ { href = "#projects", text = "Projects" }
+  [ 
+    { href = "/blog", text = "Blog" }
+  , { href = "#projects", text = "Projects" }
   , { href = "#about", text = "About" }
   , { href = "https://github.com/turingProblem", text = "GitHub" }
   ]
