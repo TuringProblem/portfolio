@@ -79,12 +79,10 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         GoTo page ->
-            let
-                resetIndex =
+            let resetIndex =
                     case page of
                         ProjectDetail _ -> 0
-                        Home -> model.carouselIndex
-            in
+                        Home -> model.carouselIndex in
             ( { model | page = page, carouselIndex = resetIndex }, Cmd.none )
 
         CarouselPrev ->
