@@ -60,7 +60,26 @@ atTypeParser =
 
 bracedValue : Parser String
 bracedValue =
-    getChompedString (chompWhile (\c -> c /= '}'))
+    loop ( 0, "" ) bracedValueHelp
+        |> map Tuple.second
+
+
+bracedValueHelp : ( Int, String ) -> Parser (Step ( Int, String ) ( Int, String ))
+bracedValueHelp ( depth, acc ) =
+    oneOf
+        [ map (\chunk -> Loop ( depth, acc ++ chunk ))
+            (getChompedString
+                (succeed ()
+                    |. chompIf (\c -> c /= '{' && c /= '}')
+                    |. chompWhile (\c -> c /= '{' && c /= '}')
+                )
+            )
+        , map (\_ -> Loop ( depth + 1, acc ++ "{" )) (symbol "{")
+        , if depth > 0 then
+            map (\_ -> Loop ( depth - 1, acc ++ "}" )) (symbol "}")
+          else
+            succeed (Done ( 0, acc ))
+        ]
 
 
 paramsParser : Parser (List ( String, String ))

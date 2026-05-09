@@ -36,7 +36,7 @@ renderToken token =
             let lang = getParam "language" params |> Maybe.withDefault ""
             in
             Html.pre [ class "dsl-codeblock" ]
-                [ Html.code [ class ("language-" ++ lang) ] [ Html.text codeContent ] ]
+                [ Html.code [ class ("language-" ++ lang) ] (renderString codeContent) ]
 
 
 getParam : String -> List ( String, String ) -> Maybe String

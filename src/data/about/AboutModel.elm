@@ -2,7 +2,10 @@ module Data.About.AboutModel exposing (AboutProp, viewAbout)
 
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Utils.Parser.StringRenderer exposing (renderString)
 
+
+-- author: { @Override } : Since: 20260509 @1904
 type alias AboutProp = 
   {
     class : String,
@@ -15,6 +18,6 @@ viewAbout aboutItems =
   div [] (List.map (\item ->
     section [ class item.class, id item.class ]
       [ h2 [] [ text item.headerText ]
-      , p [] [ text item.text ]
+      , p [] (renderString item.text)
       ]
     ) aboutItems)
