@@ -3,7 +3,7 @@ module Utils.Parser.StringParser exposing (AtType(..), Token(..), parseString)
 import Parser exposing (..)
 
 
--- author: { @Override } : Since: 20260802
+-- author: { @Override } : Since: 20260504
 
 
 type AtType
