@@ -10,11 +10,18 @@ type alias NavProp =
   , text : String
   }
 
+-- This flag is what is going to trigger the blog when it's ready
+isBlogEnabled : Bool
+isBlogEnabled = False
+
+
+displayProps : NavProp -> Html msg
+displayProps = (\item -> li [] [ (if item.href == "/blog" && not isBlogEnabled then a[][] else a [ href item.href ] [ text item.text ]) ]) 
 
 viewNav : List NavProp -> Html msg
 viewNav navItems =
     nav [ class "nav" ]
         [ div [ class "nav-name"] []
         , ul [ class "nav-links" ]
-            (List.map (\item -> li [] [ a [ href item.href ] [ text item.text ] ]) navItems)
+            (List.map displayProps navItems)
         ]

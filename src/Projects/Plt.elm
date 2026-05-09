@@ -12,5 +12,5 @@ project =
     , url         = "https://github.com/TuringProblem/plt"
     , tags        = [ "TypeScript", "Racket", "Ocaml", "Plait" ]
     , additionalText = Just "There is something really cool about compilers - I've always had a fascination with them. I think it's mostly because we just expect the language to work as developers but don't really appreciate the high-level abstraction that we get to use on a daily basis because MAN DOES IT GET LOW-LEVEL ."
-    , imageUrls    = Just [ "./images/theory.png", "./images/logic.jpg" ]
+    , imageUrls    = Just [ "./images/theory.png", "./images/logic.jpg", "./images/formal-languages.png"]
     }
