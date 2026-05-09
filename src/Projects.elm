@@ -26,8 +26,9 @@ projects =
 viewProjects : (Project -> msg) -> Html msg
 viewProjects onSelect =
     section [ class "projects", id "projects" ]
-        [ h2 [] [ text "Projects" ]
+        [ div[class "projects-wrapper"][h2 [] [ text "Projects" ]
         , div [ class "project-grid" ] (List.map (viewProject onSelect) projects)
+          ]
         ]
 
 
