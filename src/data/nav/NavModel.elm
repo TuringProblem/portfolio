@@ -21,7 +21,8 @@ displayProps = (\item -> li [] [ (if item.href == "/blog" && not isBlogEnabled t
 viewNav : List NavProp -> Html msg
 viewNav navItems =
     nav [ class "nav" ]
-        [ div [ class "nav-name"] []
+        [ a [ href "#", class "nav-logo" ]
+            [ img [ src "./images/avatar.jpg", alt "Andrew", class "nav-avatar" ] [] ]
         , ul [ class "nav-links" ]
             (List.map displayProps navItems)
         ]

@@ -8,6 +8,7 @@ import Projects.Atoms
 import Projects.Okronos
 import Projects.Plt
 import Projects.Portfolio
+import Projects.Jpiler
 import Projects.Util.ProjectDisplay exposing (viewProject, viewTag)
 import Components.Carousel.Carousel exposing (viewCarousel)
 
@@ -20,14 +21,16 @@ projects =
     , Projects.Okronos.project
     , Projects.Atoms.project
     , Projects.Plt.project
+    , Projects.Jpiler.project
     ]
 
 
 viewProjects : (Project -> msg) -> Html msg
 viewProjects onSelect =
     section [ class "projects", id "projects" ]
-        [ div[class "projects-wrapper"][h2 [] [ text "Projects" ]
-        , div [ class "project-grid" ] (List.map (viewProject onSelect) projects)
+        [ h2 [] [ text "Projects" ]
+        , div[class "projects-wrapper"][
+        div [ class "project-grid" ] (List.map (viewProject onSelect) projects)
           ]
         ]
 
