@@ -13,11 +13,14 @@ type alias AboutProp =
     text : String
   }
 
-viewAbout : List AboutProp -> Html msg
-viewAbout aboutItems =
-  div [] (List.map (\item ->
+displayAboutComponents : AboutProp -> Html msg
+displayAboutComponents = (\item ->
     section [ class item.class, id item.class ]
       [ h2 [] [ text item.headerText ]
       , p [] (renderString item.text)
       ]
-    ) aboutItems)
+    ) 
+
+viewAbout : List AboutProp -> Html msg
+viewAbout aboutItems =
+  div [] (List.map  displayAboutComponents aboutItems)

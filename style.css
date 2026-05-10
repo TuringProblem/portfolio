@@ -31,7 +31,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 0;
+  padding: 1.5rem 1.25rem;
   border-bottom: 1px solid var(--border);
   position: fixed;
   top: 0;
@@ -123,11 +123,7 @@ body {
   overflow: auto;
 }
 
-@media (max-width: 768px) {
-  .projects-wrapper {
-    max-height: 400px;
-  }
-}
+
 
 .projects h2,
 .about h2 {
@@ -140,10 +136,28 @@ body {
 }
 
 .project-grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
+
+@media (max-width: 1100px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .projects-wrapper {
+    max-height: 400px;
+  }
+  .project-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .atoms {
   display: block;
   background: var(--surface);
@@ -175,6 +189,39 @@ body {
   font-size: 0.9rem;
   margin-bottom: 0.75rem;
 }
+
+.deej {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s;
+  cursor: pointer;
+}
+
+.deej:hover {
+  border-color: var(--accent);
+  background-image: url("https://raw.githubusercontent.com/TuringProblem/deej/main/images/atoms-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.deej h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.deej p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
 
 
 

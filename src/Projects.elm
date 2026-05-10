@@ -5,6 +5,7 @@ import Html.Attributes exposing (..)
 import Html.Events exposing (onClick)
 import Shared.Types exposing (Project)
 import Projects.Atoms
+import Projects.Deej
 import Projects.Okronos
 import Projects.Plt
 import Projects.Portfolio
@@ -20,6 +21,7 @@ projects =
     [ Projects.Portfolio.project
     , Projects.Okronos.project
     , Projects.Atoms.project
+    , Projects.Deej.project
     , Projects.Plt.project
     , Projects.Jpiler.project
     ]
