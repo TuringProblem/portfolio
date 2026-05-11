@@ -70,8 +70,12 @@ viewProjectDetail onBack onPrev onNext carouselIndex project =
                 , a [ class "project-link", href project.url, target "_blank", rel "noopener noreferrer" ]
                     [ text "View on GitHub →" ]
                 ]
+                -- Here I wanted to clean this up - need to think of how I'm going to approach this nad what fields 
+            , div[class "project-main-container"] [
+             div[class "text-with-additional"][ p [ class "project-detail-description" ] [ text project.description ]
+                , displayAdditionalText project.additionalText
+              ]
             , displayImageUrls onPrev onNext carouselIndex project.imageUrls
-            , p [ class "project-detail-description" ] [ text project.description ]
-            , displayAdditionalText project.additionalText
+              ]
             ]
         ]
