@@ -204,10 +204,8 @@ body {
 
 .deej:hover {
   border-color: var(--accent);
-  background-image: url("https://raw.githubusercontent.com/TuringProblem/deej/main/images/atoms-icon.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("https://private-user-images.githubusercontent.com/122590935/368389727-4c6d22d8-7583-4079-9992-f0ebe3ebbd4e.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzg1MTQzMzMsIm5iZiI6MTc3ODUxNDAzMywicGF0aCI6Ii8xMjI1OTA5MzUvMzY4Mzg5NzI3LTRjNmQyMmQ4LTc1ODMtNDA3OS05OTkyLWYwZWJlM2ViYmQ0ZS5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTExJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUxMVQxNTQwMzNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00N2MwOGM2MWNkMDI2MDg3ZjU2NzdlMWQzMTQ5YjM1YWRjNzNiNDEyYTljYWEyMzYwZjkxYWUxNTgzMTlmNjRmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZnaWYifQ.yemgfW1Tlc085dWmUiTY7tRG3Xu-PZlt18b6_wP2W8E");
+  object-fit: cover;
 }
 
 .deej h3 {
@@ -271,6 +269,7 @@ body {
 .okronos:hover {
   border-color: var(--accent);
   background-image: url("./images/okronos.jpg");
+  background-size: cover;
 }
 
 .okronos h3 {
@@ -301,6 +300,7 @@ body {
 .plt:hover {
   border-color: var(--accent);
   background-image: url("./images/theory.png");
+  background-size: cover;
   color: black;
 }
 
@@ -330,7 +330,8 @@ body {
 
 .portfolio:hover {
   border-color: var(--accent);
-  background-image: url("./images/portfolio.png")
+  background-image: url("./images/portfolio.png");
+  background-size: cover;
 }
 
 .portfolio h3 {
@@ -494,8 +495,8 @@ body {
 .carousel-image {
   width: 100%;
   border-radius: 8px;
-  object-fit: cover;
-  max-height: 250px;
+  background-size: cover;
+  max-height: 550px;
   display: block;
   animation: carouselFadeIn 0.35s ease;
 }
