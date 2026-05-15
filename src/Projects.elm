@@ -3,7 +3,7 @@ module Projects exposing (viewProjectDetail, viewProjects)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onClick)
-import Shared.Types exposing (Project)
+import Shared.Types exposing (Project, Theme(..))
 import Projects.Atoms
 import Projects.Deej
 import Projects.Okronos
@@ -57,25 +57,31 @@ displayImageUrls onPrev onNext carouselIndex imageUrls =
             viewCarousel onPrev onNext carouselIndex urls
 
 
-viewProjectDetail : msg -> msg -> msg -> Int -> Project -> Html msg
-viewProjectDetail onBack onPrev onNext carouselIndex project =
-    div [ class "app" ]
-        [ section [ class "project-detail" ]
+viewProjectDetail : msg -> msg -> Theme -> msg -> msg -> Int -> Project -> Html msg
+viewProjectDetail onBack onToggleTheme theme onPrev onNext carouselIndex project =
+    section [ class "project-detail" ]
+        [ div [ class "project-detail-topbar" ]
             [ button [ class "back-btn", onClick onBack ] [ text "← Back" ]
-            , div [ class "project-detail-header" ]
-                [ div [ class "project-detail-inner-header" ]
-                    [ h1 [] [ text project.title ]
-                    , div [ class "tags" ] (List.map viewTag project.tags)
-                    ]
-                , a [ class "project-link", href project.url, target "_blank", rel "noopener noreferrer" ]
-                    [ text "View on GitHub →" ]
+            , button [ class "theme-toggle", onClick onToggleTheme ]
+                [ text (case theme of
+                    Dark -> "Light"
+                    Light -> "Dark"
+                ) ]
+            ]
+        , div [ class "project-detail-header" ]
+            [ div [ class "project-detail-inner-header" ]
+                [ h1 [] [ text project.title ]
+                , div [ class "tags" ] (List.map viewTag project.tags)
                 ]
-                -- Here I wanted to clean this up - need to think of how I'm going to approach this nad what fields 
-            , div[class "project-main-container"] [
-             div[class "text-with-additional"][ p [ class "project-detail-description" ] [ text project.description ]
+            , a [ class "project-link", href project.url, target "_blank", rel "noopener noreferrer" ]
+                [ text "View on GitHub →" ]
+            ]
+            -- Here I wanted to clean this up - need to think of how I'm going to approach this nad what fields
+        , div [ class "project-main-container" ]
+            [ div [ class "text-with-additional" ]
+                [ p [ class "project-detail-description" ] [ text project.description ]
                 , displayAdditionalText project.additionalText
-              ]
+                ]
             , displayImageUrls onPrev onNext carouselIndex project.imageUrls
-              ]
             ]
         ]

@@ -1,9 +1,14 @@
-module Shared.Types exposing (Project)
+module Shared.Types exposing (Project, Theme(..))
 
 -- author: { @Override } : Since: 20260725 @1604
 
 -- Shared types that multiple modules need.
 -- Lives here to avoid circular imports between Projects.elm and individual project modules.
+
+type Theme
+    = Light
+    | Dark
+
 
 type alias Project =
     { class       : String

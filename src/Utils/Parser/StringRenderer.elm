@@ -22,12 +22,17 @@ renderToken token =
         Tag Href url params ->
             let
                 maybeColor = getParam "color" params
+                maybeDownloadable = getParam "download" params
                 label      = getParam "text" params |> Maybe.withDefault url
                 colorAttr  = case maybeColor of
                     Just c  -> [ style "color" c ]
                     Nothing -> []
+
+                downloadAttr = case maybeDownloadable of
+                    Just d  -> [ download d]
+                    Nothing -> []
             in
-            a ([ href url, target "_blank" ] ++ colorAttr) [ Html.text label ]
+            a ([ href url, target "_blank"] ++ colorAttr ++ downloadAttr) [ Html.text label ]
 
         Tag Math expr _ ->
             span [ class "math" ] [ Html.text expr ]

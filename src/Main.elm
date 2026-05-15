@@ -4,7 +4,7 @@ import Browser
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Projects exposing (viewProjectDetail, viewProjects)
-import Shared.Types exposing (Project)
+import Shared.Types exposing (Project, Theme(..))
 import Data.Nav.NavModel exposing (viewNav)
 import Data.Nav.NavData exposing (navData)
 import Data.About.AboutModel exposing (viewAbout)
@@ -23,6 +23,7 @@ type Page
 type alias Model =
     { page : Page
     , carouselIndex : Int
+    , theme : Theme
     }
 
 type Msg
@@ -30,12 +31,13 @@ type Msg
     | CarouselPrev
     | CarouselNext
     | CarouselTick Time.Posix
+    | ToggleTheme
 
 
 main : Program () Model Msg
 main =
     Browser.element
-        { init          = \_ -> ( { page = Home, carouselIndex = 0 }, Cmd.none )
+        { init          = \_ -> ( { page = Home, carouselIndex = 0, theme = Dark }, Cmd.none )
         , update        = update
         , view          = view
         , subscriptions = subscriptions
@@ -94,26 +96,36 @@ update msg model =
         CarouselTick _ ->
             ( { model | carouselIndex = model.carouselIndex + 1 }, Cmd.none )
 
+        ToggleTheme ->
+            let newTheme = case model.theme of
+                    Light -> Dark
+                    Dark -> Light
+            in
+            ( { model | theme = newTheme }, Cmd.none )
+
 
 view : Model -> Html Msg
 view model =
-    case model.page of
-        Home ->
-            viewHome
+    let
+        themeAttr =
+            case model.theme of
+                Light -> [ attribute "data-theme" "light" ]
+                Dark -> []
+    in
+    div ([ class "app" ] ++ themeAttr)
+        (case model.page of
+            Home ->
+                [ viewNav navData model.theme ToggleTheme
+                , viewHero heroData
+                , viewProjects (\p -> GoTo (ProjectDetail p))
+                , viewAbout aboutData
+                , viewFooter
+                ]
 
-        ProjectDetail project ->
-            viewProjectDetail (GoTo Home) CarouselPrev CarouselNext model.carouselIndex project
-
-
-viewHome : Html Msg
-viewHome =
-    div [ class "app" ]
-        [ viewNav navData
-        , viewHero heroData
-        , viewProjects (\p -> GoTo (ProjectDetail p))
-        , viewAbout aboutData
-        , viewFooter
-        ]
+            ProjectDetail project ->
+                [ viewProjectDetail (GoTo Home) ToggleTheme model.theme CarouselPrev CarouselNext model.carouselIndex project
+                ]
+        )
 
 viewFooter : Html msg
 viewFooter =

@@ -98,6 +98,11 @@ paramsHelp acc =
                 |= bracedValue
                 |. symbol "}"
             )
+        , backtrackable
+            (succeed (\k -> Loop (( k, "" ) :: acc))
+                |. spaces
+                |= keyParser
+            )
         , succeed (Done (List.reverse acc))
         ]
 
