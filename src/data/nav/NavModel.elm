@@ -22,7 +22,7 @@ viewNav : List NavProp -> Html msg
 viewNav navItems =
     nav [ class "nav" ]
         [ a [ href "#", class "nav-logo" ]
-            [ img [ src "./images/avatar.jpg", alt "Andrew", class "nav-avatar" ] [] ]
+            [ img [ src "./images/formal-languages.png", alt "Andrew", class "nav-avatar" ] [] ]
         , ul [ class "nav-links" ]
             (List.map displayProps navItems)
         ]
