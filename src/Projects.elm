@@ -52,7 +52,6 @@ displayImageUrls onPrev onNext carouselIndex imageUrls =
     case imageUrls of
         Nothing ->
             div [] []
-
         Just urls ->
             viewCarousel onPrev onNext carouselIndex urls
 

@@ -29,10 +29,14 @@ renderToken token =
                     Nothing -> []
 
                 downloadAttr = case maybeDownloadable of
-                    Just d  -> [ download d]
+                    Just d  -> [ download d ]
                     Nothing -> []
+
+                targetAttr = case maybeDownloadable of
+                    Just _  -> []
+                    Nothing -> [ target "_blank" ]
             in
-            a ([ href url, target "_blank"] ++ colorAttr ++ downloadAttr) [ Html.text label ]
+            a ([ href url ] ++ targetAttr ++ colorAttr ++ downloadAttr) [ Html.text label ]
 
         Tag Math expr _ ->
             span [ class "math" ] [ Html.text expr ]

@@ -12,6 +12,6 @@ aboutData =
     {
       class = "about",
       headerText = "About",
-      text = "Software engineer based in Boston. Here are some things I enjoy. <@codeblock={-   Music 🎶\n-   <@href={https://en.wikipedia.org/wiki/Disc_golf} text={Disc Golf} color={#3ded97}> 🥏\n-   Gaming 🎮\n-   Basketball 🏀}> If you want to check out my resume <@href={./images/resume.png} text={click me} color={#3ded97} download>"
+      text = "Software engineer based in Boston. Here are some things I enjoy. <@codeblock={-   Music 🎶\n-   <@href={https://en.wikipedia.org/wiki/Disc_golf} text={Disc Golf} color={#3ded97}> 🥏\n-   Gaming 🎮\n-   Basketball 🏀}> If you want to check out my resume <@href={./images/rs.png} text={click me} color={#3ded97} download>"
     }
   ]
