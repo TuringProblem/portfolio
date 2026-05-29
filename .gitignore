@@ -7,7 +7,6 @@ build/
 *.js.map
 
 # Elm compiler output
-elm.js
 elm-stuff/
 
 # Compiled JavaScript files from TypeScript
